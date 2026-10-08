@@ -1,0 +1,11 @@
+{
+  "name": "isaiah-53",
+  "private": true,
+  "description": "Test tooling for the Isaiah 53 study page. The page itself lives in static/.",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  }
+}

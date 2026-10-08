@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isaiah 53</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@400;600&display=swap">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --pane: #f4f1ea;
+    --text: #1f1d1a;
+    --muted: #6b665e;
+    --rule: #ddd7cb;
+    --hl-bg: #f6dc8a;
+    --hl-text: #1f1d1a;
+    --added: #1d66ad;
+    --removed: #8a847a;
+    --font-en: Georgia, "Times New Roman", serif;
+    --font-he: "Noto Serif Hebrew", "SBL Hebrew", "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17161a;
+      --pane: #1f1e23;
+      --text: #e8e4dc;
+      --muted: #9a958c;
+      --rule: #3a3840;
+      --hl-bg: #7a5f17;
+      --hl-text: #fff8e6;
+      --added: #7fb6ec;
+      --removed: #8a857c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-en);
+    display: grid;
+    grid-template-columns: 60% 40%;
+    overflow: hidden;
+  }
+
+  /* Left pane: controls + verse text */
+  #left { display: flex; flex-direction: column; min-width: 0; height: 100vh; border-right: 1px solid var(--rule); }
+  #controls {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--rule);
+  }
+  #controls button {
+    font: inherit;
+    font-size: 22px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--pane);
+    color: var(--text);
+    cursor: pointer;
+  }
+  #controls button:disabled { opacity: 0.35; cursor: default; }
+  #center { display: flex; justify-content: center; align-items: baseline; gap: 20px; flex-wrap: wrap; }
+  #title { font-size: 24px; font-weight: 600; }
+  #toggle-label { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); cursor: pointer; font-size: 17px; }
+  #toggle { width: 18px; height: 18px; accent-color: var(--added); cursor: pointer; }
+
+  #text-area { flex: 1; min-height: 0; overflow-y: auto; overflow-x: hidden; }
+  #text { --fs: 24px; padding: 0 24px; }
+  #hebrew, #english { padding: 0.8em 0; }
+  #hebrew {
+    font-family: var(--font-he);
+    font-size: calc(var(--fs) * 1.3);
+    line-height: 1.7;
+    border-bottom: 1px solid var(--rule);
+  }
+  #english { font-size: var(--fs); line-height: 1.55; }
+
+  .word { white-space: nowrap; }
+  .tok { border-radius: 0.15em; }
+  .tok[data-g] { cursor: pointer; }
+  .tok.hl, .gap.hl { background: var(--hl-bg); color: var(--hl-text); }
+  .gap.hl + .tok.hl { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+  .tok.hl:has(+ .gap.hl) { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+  .tok.italic { font-style: italic; }
+  .tok.added { display: none; color: var(--added); }
+  .diff-on .tok.added { display: inline; }
+  .diff-on .tok.removed { text-decoration: line-through; color: var(--removed); }
+
+  /* Right pane: deep dive */
+  #right { background: var(--pane); height: 100vh; overflow-y: auto; padding: 20px 24px; min-width: 0; }
+  #dive-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  /* Deep-dive text scales with the window. */
+  #right { --dfs: clamp(16px, 1.15vw, 24px); }
+  #dive-hebrew { font-family: var(--font-he); font-size: calc(var(--dfs) * 2.3); }
+  #dive-pin { color: var(--muted); font-size: calc(var(--dfs) * 0.8); }
+  #dive-translit { font-style: italic; color: var(--muted); font-size: calc(var(--dfs) * 1.1); margin-top: 4px; }
+  #dive-rendering { font-size: calc(var(--dfs) * 1.25); margin-top: 4px; }
+  #dive-body { font-size: var(--dfs); line-height: 1.55; margin-top: 16px; }
+  #dive-mosiah { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--rule); font-size: calc(var(--dfs) * 0.95); line-height: 1.5; }
+  #dive-mosiah h2 { font-size: calc(var(--dfs) * 0.8); margin: 0 0 6px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+  .he { font-family: var(--font-he); }
+</style>
+</head>
+<body>
+<main id="left">
+  <nav id="controls">
+    <button id="prev" type="button" aria-label="Previous verse">&lt;</button>
+    <div id="center">
+      <span id="title"></span>
+      <label id="toggle-label"><input id="toggle" type="checkbox"> <span id="toggle-text"></span></label>
+    </div>
+    <button id="next" type="button" aria-label="Next verse">&gt;</button>
+  </nav>
+  <div id="text-area">
+    <div id="text">
+      <div id="hebrew" lang="he" dir="rtl"></div>
+      <div id="english"></div>
+    </div>
+  </div>
+</main>
+<aside id="right" aria-live="polite"></aside>
+
+<script id="chapter-data" type="application/json">{"chapter":{"id":"isaiah-53","book":"Isaiah","chapterNumber":53,"parallel":{"book":"Mosiah","chapterNumber":14}},"verses":[{"number":11,"hebrew":[{"text":"מֵ","align":"v11-1"},{"text":"עֲמַל","align":"v11-2","joined":true},{"text":"נַפְשׁוֹ","align":"v11-3"},{"text":"יִרְאֶה","align":"v11-4"},{"text":"יִשְׂבָּע","align":"v11-5"},{"text":"בְּ","align":"v11-6"},{"text":"דַעְתּוֹ","align":"v11-7","joined":true},{"text":"יַצְדִּיק","align":"v11-8"},{"text":"צַדִּיק","align":"v11-9"},{"text":"עַבְדִּי","align":"v11-10"},{"text":"לָ","align":"v11-11"},{"text":"רַבִּים","align":"v11-12","joined":true},{"text":"וַ","align":"v11-13"},{"text":"עֲוֹנֹתָם","align":"v11-14","joined":true},{"text":"הוּא","align":"v11-15"},{"text":"יִסְבֹּל","align":"v11-16"},{"text":"׃","align":null,"joined":true}],"english":[{"text":"He","align":"v11-4"},{"text":"shall","align":"v11-4"},{"text":"see","align":"v11-4"},{"text":"of","align":"v11-1","diff":"removed"},{"text":"the","align":"v11-2"},{"text":"travail","align":"v11-2"},{"text":"of","align":"v11-3"},{"text":"his","align":"v11-3"},{"text":"soul","align":"v11-3"},{"text":",","align":null,"punct":true},{"text":"and","align":"v11-5"},{"text":"shall","align":"v11-5"},{"text":"be","align":"v11-5"},{"text":"satisfied","align":"v11-5"},{"text":":","align":null,"punct":true},{"text":"by","align":"v11-6"},{"text":"his","align":"v11-7"},{"text":"knowledge","align":"v11-7"},{"text":"shall","align":"v11-8"},{"text":"my","align":"v11-10"},{"text":"righteous","align":"v11-9"},{"text":"servant","align":"v11-10"},{"text":"justify","align":"v11-8"},{"text":"many","align":"v11-12"},{"text":";","align":null,"punct":true},{"text":"for","align":"v11-13"},{"text":"he","align":"v11-15"},{"text":"shall","align":"v11-16"},{"text":"bear","align":"v11-16"},{"text":"their","align":"v11-14"},{"text":"iniquities","align":"v11-14"},{"text":".","align":null,"punct":true}],"alignments":[{"id":"v11-1","deepDive":"v11-1"},{"id":"v11-2","deepDive":"v11-2"},{"id":"v11-3","deepDive":"v11-3"},{"id":"v11-4","deepDive":"v11-4"},{"id":"v11-5","deepDive":"v11-5"},{"id":"v11-6","deepDive":"v11-6"},{"id":"v11-7","deepDive":"v11-7"},{"id":"v11-8","deepDive":"v11-8"},{"id":"v11-9","deepDive":"v11-9"},{"id":"v11-10","deepDive":"v11-10"},{"id":"v11-11","deepDive":"v11-11"},{"id":"v11-12","deepDive":"v11-12"},{"id":"v11-13","deepDive":"v11-13"},{"id":"v11-14","deepDive":"v11-14"},{"id":"v11-15","deepDive":"v11-15"},{"id":"v11-16","deepDive":"v11-16"}],"mosiahNote":"Mosiah reads \"he shall see the travail of his soul and shall be satisfied\" — inserting \"the travail of his soul\" as the explicit object of \"he shall see,\" where the Hebrew leaves the object unstated and KJV supplies it from context. Both KJV and Mosiah resolve the ambiguity the same way, but the Hebrew leaves he shall see standing alone."},{"number":12,"hebrew":[{"text":"לָכֵן","align":"v12-1"},{"text":"אֲחַלֶּק־","align":"v12-2"},{"text":"לוֹ","align":"v12-3","joined":true},{"text":"בָ","align":"v12-4"},{"text":"רַבִּים","align":"v12-5","joined":true},{"text":"וְ","align":"v12-6"},{"text":"אֶת־","align":"v12-7","joined":true},{"text":"עַצוּמִים","align":"v12-8","joined":true},{"text":"יְחַלֵּק","align":"v12-9"},{"text":"שָׁלָל","align":"v12-10"},{"text":"תַּחַת","align":"v12-11"},{"text":"אֲשֶׁר","align":"v12-12"},{"text":"הֶעֱרָה","align":"v12-13"},{"text":"לַ","align":"v12-14"},{"text":"מָּוֶת","align":"v12-15","joined":true},{"text":"נַפְשׁוֹ","align":"v12-16"},{"text":"וְ","align":"v12-17"},{"text":"אֶת־","align":"v12-18","joined":true},{"text":"פֹּשְׁעִים","align":"v12-19","joined":true},{"text":"נִמְנָה","align":"v12-20"},{"text":"וְ","align":"v12-21"},{"text":"הוּא","align":"v12-22","joined":true},{"text":"חֵטְא־","align":"v12-23"},{"text":"רַבִּים","align":"v12-24","joined":true},{"text":"נָשָׂא","align":"v12-25"},{"text":"וְ","align":"v12-26"},{"text":"לַ","align":"v12-27","joined":true},{"text":"פֹּשְׁעִים","align":"v12-28","joined":true},{"text":"יַפְגִּיעַ","align":"v12-29"},{"text":"׃","align":null,"joined":true}],"english":[{"text":"Therefore","align":"v12-1"},{"text":"will","align":"v12-2"},{"text":"I","align":"v12-2"},{"text":"divide","align":"v12-2"},{"text":"him","align":"v12-3"},{"text":"a","align":"v12-2"},{"text":"portion","align":"v12-2"},{"text":"with","align":"v12-4"},{"text":"the","align":"v12-5"},{"text":"great","align":"v12-5"},{"text":",","align":null,"punct":true},{"text":"and","align":"v12-6"},{"text":"he","align":"v12-9"},{"text":"shall","align":"v12-9"},{"text":"divide","align":"v12-9"},{"text":"the","align":"v12-10"},{"text":"spoil","align":"v12-10"},{"text":"with","align":"v12-8"},{"text":"the","align":"v12-8"},{"text":"strong","align":"v12-8"},{"text":";","align":null,"punct":true},{"text":"because","align":"v12-11"},{"text":"he","align":"v12-13"},{"text":"hath","align":"v12-13"},{"text":"poured","align":"v12-13"},{"text":"out","align":"v12-13"},{"text":"his","align":"v12-16"},{"text":"soul","align":"v12-16"},{"text":"unto","align":"v12-14"},{"text":"death","align":"v12-15"},{"text":":","align":null,"punct":true},{"text":"and","align":"v12-17"},{"text":"he","align":"v12-20"},{"text":"was","align":"v12-20"},{"text":"numbered","align":"v12-20"},{"text":"with","align":"v12-19"},{"text":"the","align":"v12-19"},{"text":"transgressors","align":"v12-19"},{"text":";","align":null,"punct":true},{"text":"and","align":"v12-21"},{"text":"he","align":"v12-22"},{"text":"bare","align":"v12-25"},{"text":"the","align":"v12-23"},{"text":"sin","align":"v12-23"},{"text":"of","align":"v12-24"},{"text":"many","align":"v12-24"},{"text":",","align":null,"punct":true},{"text":"and","align":"v12-26"},{"text":"made","align":"v12-29"},{"text":"intercession","align":"v12-29"},{"text":"for","align":"v12-27"},{"text":"the","align":"v12-28"},{"text":"transgressors","align":"v12-28"},{"text":".","align":null,"punct":true}],"alignments":[{"id":"v12-1","deepDive":"v12-1"},{"id":"v12-2","deepDive":"v12-2"},{"id":"v12-3","deepDive":"v12-3"},{"id":"v12-4","deepDive":"v12-4"},{"id":"v12-5","deepDive":"v12-5"},{"id":"v12-6","deepDive":"v12-6"},{"id":"v12-7","deepDive":"v12-7"},{"id":"v12-8","deepDive":"v12-8"},{"id":"v12-9","deepDive":"v12-9"},{"id":"v12-10","deepDive":"v12-10"},{"id":"v12-11","deepDive":"v12-11"},{"id":"v12-12","deepDive":"v12-12"},{"id":"v12-13","deepDive":"v12-13"},{"id":"v12-14","deepDive":"v12-14"},{"id":"v12-15","deepDive":"v12-15"},{"id":"v12-16","deepDive":"v12-16"},{"id":"v12-17","deepDive":"v12-17"},{"id":"v12-18","deepDive":"v12-18"},{"id":"v12-19","deepDive":"v12-19"},{"id":"v12-20","deepDive":"v12-20"},{"id":"v12-21","deepDive":"v12-21"},{"id":"v12-22","deepDive":"v12-22"},{"id":"v12-23","deepDive":"v12-23"},{"id":"v12-24","deepDive":"v12-24"},{"id":"v12-25","deepDive":"v12-25"},{"id":"v12-26","deepDive":"v12-26"},{"id":"v12-27","deepDive":"v12-27"},{"id":"v12-28","deepDive":"v12-28"},{"id":"v12-29","deepDive":"v12-29"}],"mosiahNote":"Identical to KJV — no differences."}],"deepDives":{"v11-1":{"hebrew":"מֵ","translit":"me","rendering":"of","body":"prefix meaning \"from, out of.\" KJV renders it \"of\" but the force is from out of — he shall see from out of the travail of his soul, emerging from within it.","straightforward":false},"v11-2":{"hebrew":"עֲמַל","translit":"amal","rendering":"the travail","body":"Root: עָמַל (amal) \"to toil, to labor, to suffer, to be weary.\" The noun means toil, labor, trouble, suffering, misery, weariness. KJV \"travail\" captures the labor dimension but the word is broader — exhausting toil, grinding suffering, miserable labor. It is the word used of the crushing burden of hard servitude and of life's painful struggle. Not merely birth-pangs but the whole weight of suffering and toil.","straightforward":false},"v11-3":{"hebrew":"נַפְשׁוֹ","translit":"nafsho","rendering":"of his soul","body":"Root: נֶפֶשׁ (nefesh) as in verse 10 — the whole living being, the self in its entirety, life itself. The suffix וֹ means \"his.\" Not just the suffering of his inner soul but the toil of his entire being.","straightforward":false},"v11-4":{"hebrew":"יִרְאֶה","translit":"yirʾeh","rendering":"he shall see","body":"Root: רָאָה (raʾah) \"to see, to behold, to experience.\" The same word as in verse 10. He shall see — but the object of his seeing is not stated in the Hebrew. The text simply says he shall see — what he sees is left open. KJV supplies \"of the travail of his soul\" as the object but in the Hebrew he shall see stands alone, complete in itself. He shall simply see — after all the darkness, he shall see.","straightforward":false},"v11-5":{"hebrew":"יִשְׂבָּע","translit":"yisba","rendering":"and shall be satisfied","body":"Root: שָׂבַע (sabaʿ) \"to be satisfied, to be sated, to have enough, to be full.\" Used of being satisfied with food, with life, with good things. After all the crushing and toil and death — he shall be full, he shall have enough, he shall be satisfied. The word implies abundance reaching the point of fullness — not mere contentment but satiation.","straightforward":false},"v11-6":{"hebrew":"בְּ","translit":"be","rendering":"by / through / in","body":"prefix meaning \"in, by, with, through,\" straightforward.","straightforward":true},"v11-7":{"hebrew":"דַעְתּוֹ","translit":"daʿto","rendering":"his knowledge","body":"Root: יָדַע (yadaʿ) as in verse 3 — intimate, experiential knowledge, knowing from the inside. The suffix וֹ means \"his.\" This is not intellectual knowledge but deep, personal, lived knowing. By his intimate knowing — of God, of suffering, of humanity — he shall justify many. The instrument of justification is his profound experiential knowledge.","straightforward":false},"v11-8":{"hebrew":"יַצְדִּיק","translit":"yatsdiq","rendering":"shall justify","body":"Root: צָדַק (tsadaq) \"to be righteous, to be just, to justify, to declare righteous, to vindicate.\" A causative form — he shall cause many to be righteous, he shall declare many righteous, he shall make many just. Not merely pronouncing them innocent but causing them to be righteous — a transformative act, not only a legal declaration.","straightforward":false},"v11-9":{"hebrew":"צַדִּיק","translit":"tsaddiq","rendering":"righteous","body":"Root: צָדַק (tsadaq) as above. The adjective righteous, just, right. He is called my righteous servant — the same root used in יַצְדִּיק. The one who is righteous causes others to be righteous. The word play is intentional — righteousness flows from him who possesses it.","straightforward":false},"v11-10":{"hebrew":"עַבְדִּי","translit":"avdi","rendering":"my servant","body":"Root: עֶבֶד (eved) \"servant, slave, worker, one who serves.\" The suffix י means \"my.\" This is the voice of God speaking — my servant. עֶבֶד carries the full range from slave to trusted royal official to one who is wholly devoted to another's purposes. It is a title of both lowliness and honor — the great servants of God in the Hebrew Bible are called by this name.","straightforward":false},"v11-11":{"hebrew":"לָ","translit":"la","rendering":"for / to","body":"prefix combining לְ and the definite article, meaning \"for the, to the,\" straightforward.","straightforward":true},"v11-12":{"hebrew":"רַבִּים","translit":"rabbim","rendering":"many","body":"Root: רַב (rav) \"many, great, numerous, much.\" The plural — the many, a great number. In Hebrew thought רַבִּים can carry the sense of the multitude, the mass of people — not merely some but the great many. The same word will appear again in verse 12.","straightforward":false},"v11-13":{"hebrew":"וַ","translit":"va","rendering":"for","body":"conjunction prefix, straightforward.","straightforward":true},"v11-14":{"hebrew":"עֲוֹנֹתָם","translit":"avonotam","rendering":"their iniquities","body":"Root: עָוָה (avah) as in verses 5 and 6 — moral crookedness, twistedness, guilt. The suffix ם means \"their.\" The iniquities of the many — the same multitude he justifies.","straightforward":false},"v11-15":{"hebrew":"הוּא","translit":"hu","rendering":"he","body":"the personal pronoun standing alone for emphasis, as in verses 4, 5, and 7. He himself — no other.","straightforward":false},"v11-16":{"hebrew":"יִסְבֹּל","translit":"yisbol","rendering":"shall bear","body":"Root: סָבַל (saval) as in verse 4 — to bear a heavy load, to toil under weight, to be burdened. The same word used of carrying the heavy weight of sorrows in verse 4. He who was crushed under the weight of suffering shall bear — still carrying, still laboring under the weight — but now it is their iniquities he carries. The repetition of this root from verse 4 ties the two verses together deliberately.","straightforward":false},"v12-1":{"hebrew":"לָכֵן","translit":"lakhen","rendering":"therefore","body":"a strong consequential particle — therefore, for this reason, on account of this. It draws a direct line from everything that has come before — the suffering, the crushing, the bearing of iniquity — to what follows. The reward is a direct consequence of the servant's work.","straightforward":false},"v12-2":{"hebrew":"אֲחַלֶּק","translit":"akhalleq","rendering":"will I divide","body":"Root: חָלַק (khalaq) \"to divide, to apportion, to share out, to distribute.\" A first person form — I will divide, I will apportion. The speaker is God — the same voice that called him my servant in verse 11. God himself is the one apportioning the reward. KJV \"divide him a portion\" is slightly awkward — the Hebrew is I will apportion to him among the many.","straightforward":false},"v12-3":{"hebrew":"לוֹ","translit":"lo","rendering":"to him / for him","body":"the preposition לְ with the suffix \"him,\" straightforward.","straightforward":true},"v12-4":{"hebrew":"בָ","translit":"va","rendering":"with / among","body":"prefix meaning \"in, among, with,\" straightforward.","straightforward":true},"v12-5":{"hebrew":"רַבִּים","translit":"rabbim","rendering":"the great / the many","body":"Root: רַב (rav) as in verse 11 — many, great, numerous. KJV renders it \"the great\" here but the word is the same rabbim — the many — as in verse 11. The shift to \"the great\" in KJV introduces a distinction not present in the Hebrew. He is given his portion among the many — the same multitude whose iniquities he bore.","straightforward":false},"v12-6":{"hebrew":"וְ","translit":"ve","rendering":"and","body":"conjunction prefix, straightforward.","straightforward":true},"v12-7":{"hebrew":"אֶת","translit":"et","rendering":null,"body":"direct object marker, straightforward.","straightforward":true},"v12-8":{"hebrew":"עַצוּמִים","translit":"atsumim","rendering":"the strong","body":"Root: עָצַם (atsam) \"to be strong, to be mighty, to be numerous, to be powerful.\" The plural — the strong ones, the mighty, the powerful. KJV \"the strong\" is accurate. He shall divide spoil with the mighty — a conqueror's language, the language of victory after battle.","straightforward":false},"v12-9":{"hebrew":"יְחַלֵּק","translit":"yekhalleq","rendering":"he shall divide","body":"Root: חָלַק (khalaq) as above — to divide, to apportion, to share out. Now a third person form — he shall divide. The shift from first person (I will apportion) to third person (he shall divide) in the same breath is notable — God apportions to him, and he himself divides the spoil.","straightforward":false},"v12-10":{"hebrew":"שָׁלָל","translit":"shalal","rendering":"the spoil","body":"Root: שָׁלַל (shalal) \"to plunder, to take spoil.\" The noun means plunder, booty, spoil of war — what a victorious warrior takes from the defeated enemy. The entire image is of a warrior who has won a decisive battle and now divides the plunder among his companions. The servant who was crushed and killed is now the conquering warrior distributing spoil.","straightforward":false},"v12-11":{"hebrew":"תַּחַת","translit":"takhat","rendering":"because / in place of / instead of","body":"Root: תַּחַת (takhat) \"under, beneath, in place of, instead of, because of, in exchange for.\" A rich preposition. KJV renders it \"because\" but the word carries the sense of in the place of, in exchange for, as a substitution for. The reward comes in exchange for, as a substitution for what follows — his self-pouring unto death. The substitutionary force of תַּחַת is stronger than mere causation.","straightforward":false},"v12-12":{"hebrew":"אֲשֶׁר","translit":"asher","rendering":"that / which / because","body":"relative pronoun or conjunction, straightforward.","straightforward":true},"v12-13":{"hebrew":"הֶעֱרָה","translit":"heʿerah","rendering":"he hath poured out","body":"Root: עָרָה (arah) \"to pour out, to bare, to empty, to lay bare, to expose.\" A striking word — to pour out completely, to empty utterly, to strip bare. Not a gentle giving but a total emptying out. He poured out — emptied, stripped bare — his soul unto death. The image is of a vessel completely emptied of its contents.","straightforward":false},"v12-14":{"hebrew":"לַ","translit":"la","rendering":"unto / to the","body":"prefix combining לְ and the definite article, straightforward.","straightforward":true},"v12-15":{"hebrew":"מָּוֶת","translit":"mavet","rendering":"death","body":"Root: מוּת (mut) \"to die.\" The noun — death. He poured out his soul into death, unto death, to the point of death. Straightforward but weighty.","straightforward":false},"v12-16":{"hebrew":"נַפְשׁוֹ","translit":"nafsho","rendering":"his soul","body":"Root: נֶפֶשׁ (nefesh) as in verses 10 and 11 — the whole living being, the self in its entirety, life itself. The suffix וֹ means \"his.\" He poured out his entire being, his whole self unto death — total self-expenditure.","straightforward":false},"v12-17":{"hebrew":"וְ","translit":"ve","rendering":"and","body":"conjunction prefix, straightforward.","straightforward":true},"v12-18":{"hebrew":"אֶת","translit":"et","rendering":null,"body":"direct object marker, straightforward.","straightforward":true},"v12-19":{"hebrew":"פֹּשְׁעִים","translit":"posheʿim","rendering":"the transgressors","body":"Root: פָּשַׁע (pashaʿ) as in verses 5, 6, and 8 — willful rebels, those who deliberately revolt. The plural participle — the ones actively rebelling. He was numbered with those in the very act of rebellion.","straightforward":false},"v12-20":{"hebrew":"נִמְנָה","translit":"nimnah","rendering":"he was numbered","body":"Root: מָנָה (manah) \"to count, to number, to reckon, to assign.\" A passive form — he was counted, he was reckoned, he was assigned to their number. Not by his own nature but by assignment — he was placed in their count though he was not of them.","straightforward":false},"v12-21":{"hebrew":"וְ","translit":"ve","rendering":"and","body":"conjunction prefix, straightforward.","straightforward":true},"v12-22":{"hebrew":"הוּא","translit":"hu","rendering":"he","body":"the personal pronoun standing alone for emphasis, as throughout the chapter. He himself — the contrast is sharp. He was counted among rebels, and yet he himself —","straightforward":false},"v12-23":{"hebrew":"חֵטְא","translit":"khet","rendering":"the sin","body":"Root: חָטָא (khata) \"to miss, to sin, to go wrong, to bear the consequence of sin.\" The noun חֵטְא means sin, wrongdoing, the offense itself. A different word from פֶּשַׁע (peshaʿ, rebellion) and עָוֹן (avon, crookedness) — this is sin as missing the mark, as going wrong. All three major Hebrew words for sin appear in this chapter — פֶּשַׁע (willful rebellion), עָוֹן (moral crookedness), and חֵטְא (missing the mark) — and all three are borne by the servant.","straightforward":false},"v12-24":{"hebrew":"רַבִּים","translit":"rabbim","rendering":"of many","body":"Root: רַב (rav) as in verses 11 and earlier in this verse — the many, the multitude. The same word threaded throughout — he justifies the many, divides spoil among the many, and bears the sin of the many.","straightforward":false},"v12-25":{"hebrew":"נָשָׂא","translit":"nasa","rendering":"he bare","body":"Root: נָשָׂא (nasa) as in verse 4 — to lift, to carry, to bear, to take up. The same word used in verse 4 — he bore our griefs. Now at the close of the chapter the same word returns — he lifted and carried the sin of the many. The chapter ends where it began in terms of bearing.","straightforward":false},"v12-26":{"hebrew":"וְ","translit":"ve","rendering":"and","body":"conjunction prefix, straightforward.","straightforward":true},"v12-27":{"hebrew":"לַ","translit":"la","rendering":"for / to the","body":"prefix combining לְ and the definite article, straightforward.","straightforward":true},"v12-28":{"hebrew":"פֹּשְׁעִים","translit":"posheʿim","rendering":"the transgressors","body":"the same word as above — the willful rebels. He was numbered among them, and now he acts on behalf of them.","straightforward":false},"v12-29":{"hebrew":"יַפְגִּיעַ","translit":"yafgiaʿ","rendering":"made intercession","body":"Root: פָּגַע (pagaʿ) as in verse 6 — to meet, to encounter, to strike, to fall upon, to intercede. In verse 6 this same root was used of YHWH causing our iniquity to strike the servant — the LORD made iniquity collide with him. Now at the chapter's close the same root appears again — but now the servant himself makes intercession, causes a meeting on behalf of the rebels. The word that described violence done to him now describes his own action for others. The one who was struck now intercedes. The root פָּגַע bookends the chapter's central act — struck on their behalf, he now pleads on their behalf.","straightforward":false}}}</script>
+<script>
+"use strict";
+(() => {
+  const MIN_FS = 14, MAX_FS = 96;
+  const $ = (id) => document.getElementById(id);
+  const state = { data: null, index: 0, diff: false, hovered: null, pinned: null };
+
+  const active = () => state.pinned ?? state.hovered;
+  const verse = () => state.data.verses[state.index];
+
+  const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  // Wrap runs of Hebrew (with maqaf or spaces between words) so they use the Hebrew font.
+  const markHebrew = (s) => esc(s).replace(/[֐-׿]+(?:[\s־][֐-׿]+)*/g,
+    (m) => `<span class="he" lang="he" dir="rtl">${m}</span>`);
+
+  function tokenSpan(t) {
+    const span = document.createElement("span");
+    span.className = "tok";
+    span.textContent = t.text;
+    if (t.align) span.dataset.g = t.align;
+    if (t.italic) span.classList.add("italic");
+    if (t.diff) span.classList.add(t.diff);
+    return span;
+  }
+
+  // Hebrew: tokens flagged `joined` attach to the previous token, forming one word.
+  function renderHebrew(tokens) {
+    const box = $("hebrew");
+    box.replaceChildren();
+    let word = null;
+    for (const t of tokens) {
+      if (!t.joined || !word) {
+        if (word) box.append(" ");
+        word = document.createElement("span");
+        word.className = "word";
+        box.append(word);
+      }
+      word.append(tokenSpan(t));
+    }
+  }
+
+  // English: a space precedes every token except punctuation. A space between two tokens of the
+  // same group highlights with them, so a phrase reads as one block.
+  function renderEnglish(tokens) {
+    const box = $("english");
+    box.replaceChildren();
+    tokens.forEach((t, i) => {
+      if (i > 0 && !t.punct) {
+        const prev = tokens[i - 1];
+        if (t.align && t.align === prev.align && !t.diff && !prev.diff) {
+          const gap = document.createElement("span");
+          gap.className = "gap";
+          gap.dataset.gap = t.align;
+          gap.textContent = " ";
+          box.append(gap);
+        } else {
+          box.append(" ");
+        }
+      }
+      box.append(tokenSpan(t));
+    });
+  }
+
+  function renderVerse() {
+    const { chapter, verses } = state.data;
+    const v = verse();
+    $("title").textContent = `${chapter.book} ${chapter.chapterNumber}:${v.number}`;
+    $("toggle-text").textContent = `${chapter.parallel.book} ${chapter.parallel.chapterNumber}`;
+    $("prev").disabled = state.index === 0;
+    $("next").disabled = state.index === verses.length - 1;
+    renderHebrew(v.hebrew);
+    renderEnglish(v.english);
+    renderDiff();
+    renderActive();
+  }
+
+  function renderDiff() {
+    $("toggle").checked = state.diff;
+    $("english").classList.toggle("diff-on", state.diff);
+    fit();
+  }
+
+  function renderActive() {
+    const g = active();
+    for (const el of document.querySelectorAll("#text .tok")) el.classList.toggle("hl", g !== null && el.dataset.g === g);
+    for (const el of document.querySelectorAll("#text .gap")) el.classList.toggle("hl", g !== null && el.dataset.gap === g);
+    renderDeepDive(g);
+  }
+
+  function renderDeepDive(g) {
+    const pane = $("right");
+    if (g === null) { pane.replaceChildren(); return; }
+    const v = verse();
+    const a = v.alignments.find((x) => x.id === g);
+    const d = state.data.deepDives[a.deepDive];
+    const { parallel, chapterNumber } = state.data.chapter;
+    pane.innerHTML = `
+      <div id="dive-head">
+        <span id="dive-hebrew" lang="he" dir="rtl">${esc(d.hebrew)}</span>
+        ${state.pinned ? '<span id="dive-pin">Pinned (Esc to clear)</span>' : ""}
+      </div>
+      <div id="dive-translit">${esc(d.translit)}</div>
+      ${d.rendering ? `<div id="dive-rendering">&ldquo;${esc(d.rendering)}&rdquo;</div>` : ""}
+      <div id="dive-body">${markHebrew(d.body)}</div>
+      ${v.mosiahNote ? `<section id="dive-mosiah"><h2>${esc(parallel.book)} ${parallel.chapterNumber}:${v.number}</h2>${markHebrew(v.mosiahNote)}</section>` : ""}`;
+  }
+
+  // Largest font size at which the verse fits the text area without scrolling (binary search).
+  function fit() {
+    const area = $("text-area"), text = $("text");
+    const fits = (fs) => {
+      text.style.setProperty("--fs", `${fs}px`);
+      return text.offsetHeight <= area.clientHeight && text.scrollWidth <= text.clientWidth;
+    };
+    let lo = MIN_FS, hi = MAX_FS;
+    if (!fits(lo)) return;
+    while (hi - lo > 0.5) {
+      const mid = (lo + hi) / 2;
+      if (fits(mid)) lo = mid; else hi = mid;
+    }
+    text.style.setProperty("--fs", `${lo}px`);
+  }
+
+  function go(delta) {
+    const i = state.index + delta;
+    if (i < 0 || i >= state.data.verses.length) return;
+    state.index = i;
+    state.hovered = state.pinned = null;
+    renderVerse();
+  }
+
+  function setHovered(g) {
+    if (g === state.hovered) return;
+    state.hovered = g;
+    if (state.pinned === null) renderActive();
+  }
+
+  function setPinned(g) {
+    state.pinned = g;
+    renderActive();
+  }
+
+  // Hovering a token activates its group. Moving into the deep-dive pane keeps the current group,
+  // so the reader can scroll it; anywhere else clears it.
+  document.addEventListener("pointerover", (e) => {
+    if (e.target.closest("#right")) return;
+    setHovered(e.target.closest("#text .tok[data-g]")?.dataset.g ?? null);
+  });
+  document.documentElement.addEventListener("pointerleave", () => setHovered(null));
+
+  $("text").addEventListener("click", (e) => {
+    const g = e.target.closest(".tok[data-g]")?.dataset.g;
+    if (g) setPinned(state.pinned === g ? null : g);
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") go(-1);
+    else if (e.key === "ArrowRight") go(1);
+    else if (e.key === "Escape" && state.pinned !== null) setPinned(null);
+  });
+
+  $("prev").addEventListener("click", () => go(-1));
+  $("next").addEventListener("click", () => go(1));
+  $("toggle").addEventListener("change", (e) => { state.diff = e.target.checked; renderDiff(); });
+
+  new ResizeObserver(() => fit()).observe($("text-area"));
+  // Webfonts change text metrics when they arrive, so refit then.
+  document.fonts.addEventListener("loadingdone", () => fit());
+  document.fonts.ready.then(() => fit());
+
+  function load(data) {
+    state.data = data;
+    state.index = 0;
+    state.hovered = state.pinned = null;
+    renderVerse();
+  }
+
+  // Exposed for tests.
+  window.studyPage = { load, state };
+
+  load(JSON.parse($("chapter-data").textContent));
+})();
+</script>
+</body>
+</html>
