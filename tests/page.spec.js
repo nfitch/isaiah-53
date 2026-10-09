@@ -12,16 +12,24 @@ test.beforeEach(async ({ page }) => {
   page.on("console", (m) => { if (["error", "warning"].includes(m.type())) consoleProblems.push(m.text()); });
   page.on("pageerror", (e) => consoleProblems.push(String(e)));
   await page.goto("index.html");
+  await expect(page.locator("#title")).toHaveText("Isaiah 53:1");
   await page.evaluate(() => document.fonts.ready);
 });
+
+/** Navigate with the arrow keys from the current verse to verse n. */
+async function gotoVerse(page, n) {
+  const current = async () => Number((await page.locator("#title").textContent()).split(":")[1]);
+  while ((await current()) !== n) await page.keyboard.press((await current()) < n ? "ArrowRight" : "ArrowLeft");
+}
 
 // F11: checked after every test, so it covers load and all interactions.
 test.afterEach(() => expect(consoleProblems).toEqual([]));
 
-/** Replace the page's data with a modified copy of verse 11 (for cases the transcript lacks). */
+/** Replace the page's data with a modified copy of verse 11 alone (for cases the transcript lacks). */
 async function loadFixture(page, edit) {
   await page.evaluate((src) => {
     const data = structuredClone(window.studyPage.state.data);
+    data.verses = data.verses.filter((v) => v.number === 11);
     new Function("data", src)(data);
     window.studyPage.load(data);
   }, edit);
@@ -35,7 +43,6 @@ test("F1 layout: 60/40 panes, control bar order, Hebrew above English", async ({
   expect(Math.abs(right.width - vw * 0.4)).toBeLessThan(2);
   expect(right.x).toBeGreaterThanOrEqual(left.x + left.width - 1);
 
-  await expect(page.locator("#title")).toHaveText("Isaiah 53:11");
   await expect(page.locator("#toggle-label")).toHaveText(/Mosiah 14/);
   const x = async (sel) => (await page.locator(sel).boundingBox()).x;
   expect(await x("#prev")).toBeLessThan(await x("#title"));
@@ -48,6 +55,7 @@ test("F1 layout: 60/40 panes, control bar order, Hebrew above English", async ({
 });
 
 test("F2 Hebrew is RTL in Noto Serif Hebrew; word segments join but hover separately", async ({ page }) => {
+  await gotoVerse(page, 11);
   const hebrew = page.locator("#hebrew");
   await expect(hebrew).toHaveCSS("direction", "rtl");
   expect(await hebrew.evaluate((el) => getComputedStyle(el).fontFamily)).toContain("Noto Serif Hebrew");
@@ -103,6 +111,7 @@ test("F4 Mosiah toggle: removed struck through, added shown in the Mosiah color"
 });
 
 test("F5 hover highlights the group in both languages and shows its deep dive", async ({ page }) => {
+  await gotoVerse(page, 11);
   // Hebrew -> English
   await page.hover(heb("v11-2"));
   await expect(page.locator(".tok.hl")).toHaveCount(3); // עֲמַל + "the" + "travail"
@@ -125,12 +134,14 @@ test("F5 hover highlights the group in both languages and shows its deep dive", 
 });
 
 test("F5 moving into the deep-dive pane keeps the hovered group", async ({ page }) => {
+  await gotoVerse(page, 11);
   await page.hover(heb("v11-2"));
   await page.hover("#right");
   await expect(page.locator("#dive-rendering")).toHaveText("“the travail”");
 });
 
 test("F6 click pins, hover is ignored while pinned, click again or Esc unpins, click elsewhere moves the pin", async ({ page }) => {
+  await gotoVerse(page, 11);
   await page.click(heb("v11-2"));
   await expect(page.locator("#dive-pin")).toBeVisible();
   await page.hover(heb("v11-3"));
@@ -156,6 +167,7 @@ test("F6 click pins, hover is ignored while pinned, click again or Esc unpins, c
 });
 
 test("F7 right pane: empty when idle, full and straightforward entries, Mosiah note", async ({ page }) => {
+  await gotoVerse(page, 11);
   await expect(page.locator("#right")).toBeEmpty();
 
   await page.hover(heb("v11-2"));
@@ -178,29 +190,33 @@ test("F8 navigation: buttons and arrow keys, disabled at the ends, pin cleared, 
   await expect(page.locator("#prev")).toBeDisabled();
   await expect(page.locator("#next")).toBeEnabled();
   await page.locator("#toggle").check();
-  await page.click(heb("v11-2"));
+  await page.click(heb("v1-2"));
+  await expect(page.locator("#dive-pin")).toBeVisible();
 
   await page.click("#next");
-  await expect(page.locator("#title")).toHaveText("Isaiah 53:12");
-  await expect(page.locator("#next")).toBeDisabled();
+  await expect(page.locator("#title")).toHaveText("Isaiah 53:2");
+  await expect(page.locator("#prev")).toBeEnabled();
   await expect(page.locator("#toggle")).toBeChecked();
   await expect(page.locator("#english")).toHaveClass(/diff-on/);
   await page.hover("#title");
   await expect(page.locator("#right")).toBeEmpty();
   await expect(page.locator(".tok.hl")).toHaveCount(0);
 
+  await page.keyboard.press("ArrowLeft");
+  await expect(page.locator("#title")).toHaveText("Isaiah 53:1");
+  await page.keyboard.press("ArrowLeft"); // already at the start
+  await expect(page.locator("#title")).toHaveText("Isaiah 53:1");
+
+  await gotoVerse(page, 12);
+  await expect(page.locator("#next")).toBeDisabled();
   await page.keyboard.press("ArrowRight"); // already at the end
   await expect(page.locator("#title")).toHaveText("Isaiah 53:12");
-  await page.keyboard.press("ArrowLeft");
-  await expect(page.locator("#title")).toHaveText("Isaiah 53:11");
-  await page.keyboard.press("ArrowLeft"); // already at the start
-  await expect(page.locator("#title")).toHaveText("Isaiah 53:11");
 });
 
 for (const viewport of [{ width: 1280, height: 800 }, { width: 1920, height: 1080 }]) {
   test(`F9 text fills the pane without horizontal scrolling at ${viewport.width}x${viewport.height}`, async ({ page }) => {
     await page.setViewportSize(viewport);
-    for (const verse of [11, 12]) {
+    for (let verse = 1; verse <= 12; verse++) {
       for (const diff of [false, true]) {
         await page.locator("#toggle").setChecked(diff);
         await page.waitForTimeout(100); // let the ResizeObserver settle
@@ -222,7 +238,7 @@ for (const viewport of [{ width: 1280, height: 800 }, { width: 1920, height: 108
         expect(m.fill, where).toBeGreaterThan(0.85);
         expect(m.fs, where).toBeGreaterThan(20);
       }
-      if (verse === 11) await page.click("#next");
+      if (verse < 12) await page.click("#next");
     }
   });
 }

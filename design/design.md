@@ -108,6 +108,8 @@ How the content maps to the page:
 - "Straightforward" entries have no explanation; their deep dive is the short form (see Deep dive).
 - The Mosiah notes are prose and are not reliable: they report "identical" for verses 1-8 and 12, and the note on verse 11 is muddled. From memory, Mosiah 14:1 begins "Yea," 14:4 has "has borne" for "hath borne", 14:9 has "evil" for "violence", and 14:11 omits "of". For now the transcript is used as-is. A later rework (done by a subagent) will verify the Mosiah differences and KJV italics against authoritative texts.
 - KJV italics are not in the transcript and must come from a KJV source that records them.
+- The Mosiah note for verse 11 repeats an error that the critique corrected in the v11-4 deep dive: KJV did not supply "of the travail of his soul"; that phrase is in the Hebrew. Fix it in Phase 6.
+- The transliterations do not follow one consistent rule for aleph and ayin (critique item H17, not applied). Revisit in Phase 6.
 
 ## Architecture
 
@@ -115,7 +117,17 @@ How the content maps to the page:
   - `static/index.html`, with inline CSS and JS.
   - `static/old-testament-isaiah-53.json`.
 - No framework, no build step, no server-side code, no Docker.
-- `tools/` holds Python scripts that build the chapter data from the transcript (`parse_transcript.py`, `build_data.py`). They are not part of the deliverable.
+- `tools/` holds the data pipeline, which is not part of the deliverable:
+
+  | File | Purpose |
+  |------|---------|
+  | `parse_transcript.py` | Parses the transcript. |
+  | `build_data.py` | Holds the English alignments and builds `static/old-testament-isaiah-53.json`. |
+  | `revisions.json` | Reviewed edits applied on top of the transcript. Each edit records its source and reason. |
+  | `report.py` | Writes the alignment and deep-dive review report. |
+  | `changes_report.py` | Writes a before/after view of every revision. |
+
+- `design/critique/` keeps the critique rounds (the proposals and reviews from each critic) and `changes.md`, the before/after view nf approved.
 - nf serves `static/` with a static file server of their choice. A server is needed because browsers block `fetch` from `file://`.
 - Test tooling (Playwright run with `npx`, plus a JSON validation script) lives outside `static/` and is not part of the deliverable.
 
@@ -172,8 +184,8 @@ Status: `[x]` done, `[ ]` not started. The phase in progress is marked "(in prog
 
 - [x] 0. Design: this document
 - [x] 1. UI mock: static HTML with hardcoded sample data (see Phase 1 Implementation Checklist)
-- [ ] 2. Transcript ingestion: convert the Claude transcript, as-is, into the JSON format for all 12 verses.
-- [ ] 3. Wiring: render the JSON in the UI.
+- [x] 2. Transcript ingestion and wiring: convert the Claude transcript into the JSON format for all 12 verses, refine it through subagent critique, and render it in the UI (see Phase 2 Implementation Checklist)
+- [x] 3. Wiring: folded into Phase 2.
 - [ ] 4. Deployment: GitHub Pages.
 - [ ] 5. Mobile: responsive layout and touch interaction.
 - [ ] 6. Transcript rework (subagent): verify the Mosiah differences, the KJV italics, and the Hebrew against the authoritative texts, then regenerate the JSON.
@@ -227,6 +239,48 @@ Human review:
 - [x] Meticulously review every checklist item. Do not skim. Read each item and verify it was actually completed -- not "probably done" or "I think I did that." Actually check.
 - [x] Check off every box. If a box cannot be checked, explain why and resolve it before closing.
 
+## Phase 2 Implementation Checklist
+
+Scope: generate `static/old-testament-isaiah-53.json` for verses 1-12 from the transcript, refine the content through subagent critique rounds, and wire `index.html` to the file (Phase 3, folded in).
+
+### Success criteria
+
+Functional correctness:
+- [x] C1. `python3 tools/build_data.py` (with no verse arguments, meaning all verses) writes `static/old-testament-isaiah-53.json`. The file is generated only; nobody edits it by hand.
+- [x] C2. For all 12 verses, the build fails unless the Hebrew segments rejoin into the transcript's Hebrew line and the English tokens rebuild the transcript's KJV text exactly.
+- [x] C3. Hand-made English alignments for verses 1-10, following the rules used for 11 and 12:
+  - Every English word belongs to a group, except pure Mosiah additions.
+  - A word with no Hebrew counterpart joins the adjacent phrase it belongs with.
+  - Punctuation is unaligned.
+- [x] C4. Mosiah differences are encoded from the transcript's notes as-is. That gives verse 9 ("violence" becomes "evil", as a removed token plus an added token) and verse 11 ("of" removed). Every other verse has no differences. The rework in Phase 6 corrects this.
+- [x] C5. A validation test checks the JSON's rules:
+  - ids are unique, and every `align` and `deepDive` reference resolves;
+  - every alignment has at least one Hebrew token;
+  - every English word is aligned, except punctuation and `added` tokens;
+  - `joined` never appears on a verse's first Hebrew token;
+  - the verse numbers run 1-12 in order.
+- [x] C7. Critique rounds: subagents critique (a) how each verse is carved into phrases and how they align, (b) the English renderings, and (c) the deep-dive text. They run for several rounds until they reach consensus.
+  - Changes stay small. The transcript is "good enough"; nothing drastically different.
+  - The Mosiah notes are out of scope (Phase 6).
+  - Accepted changes live in `tools/revisions.json` and are applied on top of the transcript at build time. The transcript itself is not edited, so every change can be traced.
+- [x] C8. Wiring: `index.html` loads `old-testament-isaiah-53.json` with a relative `fetch` and the embedded sample data is removed. The Phase 1 tests run against the real file.
+- [x] C6. An alignment report, `tmp/alignment-report.md`, lists each verse's groups (Hebrew, then transliteration, then English words) so nf can review the alignments without the UI.
+
+Documentation:
+- [x] D1. This document's data model and the README match the generated file and the build command.
+- [x] D2. No stale references.
+
+Tests:
+- [x] T1. All tests pass (the Phase 1 tests plus C5). The output is captured to `./tmp/` and verified from the file.
+
+Human review:
+- [x] H1. nf reviews the consolidated critique changes, and reviews the alignments in the browser, before the commit. (Approved by nf.)
+
+### Close-out
+- [x] Run `/nf-check-work` to verify that every success criterion is met.
+- [x] Meticulously review every checklist item. Do not skim. Read each item and verify it was actually completed -- not "probably done" or "I think I did that." Actually check.
+- [x] Check off every box. If a box cannot be checked, explain why and resolve it before closing.
+
 ## Decisions
 
 | # | Question | Decision |
@@ -252,6 +306,9 @@ Human review:
 | 19 | Phrase coverage | Every KJV word maps to a phrase; only pure Mosiah additions are unmapped |
 | 20 | Unpin | Click the pinned phrase again, or press Esc |
 | 21 | Verse change | Clears the pin and keeps the toggle state; the arrow keys navigate |
+| 23 | Phase 3 | Folded into Phase 2 |
+| 25 | Deep-dive font size | Scales with the window: `clamp(20px, 1.45vw, 30px)` for the body text (increased at nf's request) |
+| 24 | Content refinement | Subagent critique rounds on the phrasing, renderings, and deep dives; small changes only, kept in `tools/revisions.json` |
 | 22 | Look | Panes 60/40, Noto Serif Hebrew, light theme plus dark mode that follows the system setting, one shared highlight color |
 
 ## Open Questions

@@ -1,0 +1,164 @@
+{"proposals": [
+  {"pid": "H1", "id": "v1-8", "kind": "translit",
+   "current": "niglətah", "proposed": "niglatah",
+   "reason": "The lamed carries qamets (נִגְלָֽתָה), not shewa; 'ə' is also the only schwa symbol used anywhere in the transliterations.",
+   "severity": "low"},
+
+  {"pid": "H2", "id": "v2-11", "kind": "alignment",
+   "current": "a:11 dry:11 ground:10", "proposed": "a:10 dry:11 ground:10",
+   "reason": "The article belongs with the noun phrase headed by אֶרֶץ ('a ... ground'). This matches the verse's own pattern (a:4 tender plant, a:8 root), where the article goes with the noun.",
+   "severity": "low"},
+
+  {"pid": "H3", "id": "v3-8", "kind": "translit",
+   "current": "yduaʿ", "proposed": "duaʿ",
+   "reason": "In וִידוּעַ the yod's shewa merges into the vav's hiriq (vi-), so the yod is silent and the word is pronounced viduaʿ. 'yduaʿ' suggests a sound that is not there. Lexical form is yaduaʿ if a citation form is preferred.",
+   "severity": "low"},
+
+  {"pid": "H4", "id": "v3-12", "kind": "translit",
+   "current": "mastir", "proposed": "mastēr",
+   "reason": "מַסְתֵּר has tsere under the tav, not hiriq. 'mastir' is the wrong vowel.",
+   "severity": "medium"},
+
+  {"pid": "H5", "id": "v3-5", "kind": "body-fact",
+   "current": "here the singular form, meaning a man in the specific sense — a particular individual of standing.",
+   "proposed": "here the singular form, meaning a man, an individual: a man characterized by pains.",
+   "reason": "Singular אִישׁ does not mean 'a man of standing'. It is the ordinary word for 'man' or 'each one'. The same overclaim appears in v6-5 ('a person of standing'), where אִישׁ is simply distributive ('each one').",
+   "severity": "medium"},
+
+  {"pid": "H6", "id": "v3-18", "kind": "body-fact",
+   "current": "The suffix נֻהוּ means \"him\"",
+   "proposed": "The ending ־נוּ marks \"we\" and the suffix ־הוּ means \"him\"",
+   "reason": "חֲשַׁבְנֻהוּ is ḥashav + nu (we) + hu (him). Calling the whole of ־נֻהוּ 'him' conflicts with the very next clause, which says the subject is 'we'.",
+   "severity": "low"},
+
+  {"pid": "H7", "id": "v4-12", "kind": "translit",
+   "current": "mukeh", "proposed": "mukkeh",
+   "reason": "The kaf of מֻכֵּה has dagesh forte (assimilated nun of נכה). Other entries double for dagesh forte (kullanu, medukka, yekhalleq).",
+   "severity": "low"},
+
+  {"pid": "H8", "id": "v5-3", "kind": "translit",
+   "current": "mekhollal", "proposed": "mekholal",
+   "reason": "מְחֹלָל (polal participle) has no dagesh in the lamed, so the l should not be doubled.",
+   "severity": "low"},
+
+  {"pid": "H9", "id": "v5-15", "kind": "rendering",
+   "current": "we are healed", "proposed": "are healed / healing came",
+   "reason": "נִרְפָּא is niphal 3ms, impersonal ('it is healed'). The 'we' comes from לָנוּ (v5-16, 'to us'), and the alignment already puts 'we' there. The current rendering wrongly puts first person plural into the verb.",
+   "severity": "medium"},
+
+  {"pid": "H10", "id": "v6-11", "kind": "rendering",
+   "current": "hath laid on", "proposed": "hath laid / caused to fall",
+   "reason": "'on' is rendered by בּוֹ (v6-12, 'on him') and aligned there, so the current gloss counts 'on' twice. 'caused to fall' gives the hiphil sense the deep dive describes.",
+   "severity": "low"},
+
+  {"pid": "H11", "id": "v6-11", "kind": "translit",
+   "current": "hipgiaʿ", "proposed": "hifgiaʿ",
+   "reason": "The pe follows a vowel and has no dagesh lene, so it is f. This also makes it match v12-29 'yafgiaʿ', which the deep dives explicitly link as the same root.",
+   "severity": "low"},
+
+  {"pid": "H12", "id": "v7-16", "kind": "body-fact",
+   "current": "This is the only occurrence where the gender is specified.",
+   "proposed": "(delete the sentence)",
+   "reason": "This is false: רָחֵל (ewe) also occurs at Gen 31:38, Gen 32:15 and Song 6:6.",
+   "severity": "medium"},
+
+  {"pid": "H13", "id": "v7-10", "kind": "body-fact",
+   "current": "specifically a young sheep or goat",
+   "proposed": "a single sheep or goat (one animal of the flock)",
+   "reason": "שֶׂה means an individual member of the flock of any age. It is not specifically a young animal. The contrast with collective צֹאן, which the deep dive goes on to make, still holds.",
+   "severity": "low"},
+
+  {"pid": "H14", "id": "v8-20", "kind": "alignment",
+   "current": "was:21 he:21 stricken:20", "proposed": "was:20 he:21 stricken:20",
+   "reason": "KJV 'was he stricken' renders the noun נֶגַע ('a stroke') as 'was stricken', and takes 'he' from לָמוֹ read as 'to him'. Only 'he' belongs with לָמוֹ.",
+   "severity": "medium"},
+
+  {"pid": "H15", "id": "v8-20", "kind": "rendering",
+   "current": "was he stricken", "proposed": "a stroke / was stricken",
+   "reason": "נֶגַע is a noun (stroke, plague), not a verb. The current gloss also repeats the 'was he' given in v8-21's rendering.",
+   "severity": "medium"},
+
+  {"pid": "H16", "id": "v8-21", "kind": "rendering",
+   "current": "was he / to them", "proposed": "to him / to them",
+   "reason": "לָמוֹ is a preposition with a suffix. 'was he' is KJV phrasing and not a meaning of the word, and the deep dive itself presents the choice as 'to him' vs 'to them'.",
+   "severity": "medium"},
+
+  {"pid": "H17", "id": "v8-15", "kind": "translit",
+   "current": "erets", "proposed": "ʾerets",
+   "reason": "The same word is transliterated 'ʾerets' in v2-10. Aleph and ayin marks are also missing from several other entries (otser, ammi, avon, ashir, asah, amal, avdi, atsumim, lo in v9), so a single consistent policy would help.",
+   "severity": "low"},
+
+  {"pid": "H18", "id": "v8-10", "kind": "translit",
+   "current": "mi", "proposed": "mî",
+   "reason": "The same word מִי is 'mî' in v1-1 and v1-7.",
+   "severity": "low"},
+
+  {"pid": "H19", "id": "v9-3", "kind": "rendering",
+   "current": "", "proposed": "with",
+   "reason": "Here אֶת is the preposition 'with' (his grave was with the wicked), not the object marker, and KJV 'with' is already aligned to it. An empty rendering implies it is untranslated.",
+   "severity": "high"},
+
+  {"pid": "H20", "id": "v9-3", "kind": "body-fact",
+   "current": "direct object marker, straightforward.",
+   "proposed": "the preposition אֵת \"with, alongside\" (a homonym of the object marker), straightforward.",
+   "reason": "The deep dive misidentifies the particle. The same error appears in v9-7, which needs the same fix.",
+   "severity": "high"},
+
+  {"pid": "H21", "id": "v9-7", "kind": "rendering",
+   "current": "", "proposed": "with",
+   "reason": "Same as v9-3: וְאֶת־עָשִׁיר means 'and with a rich man'. The preposition 'with' is already aligned here.",
+   "severity": "high"},
+
+  {"pid": "H22", "id": "v10-7", "kind": "body-fact",
+   "current": "The subject is second person singular — you, thou — but who is being addressed?",
+   "proposed": "The form can be second person masculine (\"thou shalt make\") or third person feminine, with נַפְשׁוֹ as its subject (\"his soul shall make\"). If it is second person, who is being addressed?",
+   "reason": "תָּשִׂים is morphologically ambiguous, and נֶפֶשׁ is feminine. Many translations read 'when his soul makes an offering for guilt', so stating '2nd person' as fact is an error.",
+   "severity": "medium"},
+
+  {"pid": "H23", "id": "v10-19", "kind": "translit",
+   "current": "yitsllakh", "proposed": "yitslakh",
+   "reason": "This is a typo: יִצְלָח has a single lamed with no dagesh.",
+   "severity": "low"},
+
+  {"pid": "H24", "id": "v11-4", "kind": "body-fact",
+   "current": "KJV supplies \"of the travail of his soul\" as the object but in the Hebrew he shall see stands alone, complete in itself.",
+   "proposed": "The phrase before it, מֵעֲמַל נַפְשׁוֹ, says where the seeing comes from (\"out of the travail of his soul\"), not what he sees. KJV's \"of\" makes it read like an object. (The Qumran Isaiah scroll and the LXX supply \"light\" as the object.)",
+   "reason": "'of the travail of his soul' is in the Hebrew (v11-1 to v11-3); KJV did not supply it. What is missing is a direct object of יִרְאֶה. The Mosiah note builds on the same misstatement and should be checked in the later phase.",
+   "severity": "high"},
+
+  {"pid": "H25", "id": "v11-5", "kind": "translit",
+   "current": "yisba", "proposed": "yisbaʿ",
+   "reason": "The final ayin is dropped. The deep dive's own root form is 'sabaʿ'.",
+   "severity": "low"},
+
+  {"pid": "H26", "id": "v12-5", "kind": "body-fact",
+   "current": "The shift to \"the great\" in KJV introduces a distinction not present in the Hebrew.",
+   "proposed": "רַבִּים can mean both \"many\" and \"great\". KJV chose \"great\", which suits the parallel with עֲצוּמִים (\"the strong\"), but the echo of \"the many\" in verse 11 is lost.",
+   "reason": "רַב does mean 'great' (e.g. Job 32:9), so KJV's rendering is a legitimate choice, not an invented distinction.",
+   "severity": "low"},
+
+  {"pid": "H27", "id": "v12-7", "kind": "alignment",
+   "current": "with:8 the:8 strong:8", "proposed": "with:7 the:8 strong:8",
+   "reason": "In יְחַלֵּק שָׁלָל אֶת־עֲצוּמִים, אֶת is the preposition 'with' (he divides spoil with the strong), so KJV 'with' translates it directly.",
+   "severity": "high"},
+
+  {"pid": "H28", "id": "v12-7", "kind": "rendering",
+   "current": "", "proposed": "with",
+   "reason": "This is the preposition אֵת 'with', not the object marker. The deep dive ('direct object marker') should become 'the preposition \"with\"' as in H20.",
+   "severity": "high"},
+
+  {"pid": "H29", "id": "v12-18", "kind": "alignment",
+   "current": "with:19 the:19 transgressors:19", "proposed": "with:18 the:19 transgressors:19",
+   "reason": "נִמְנָה is passive (niphal) and cannot take a direct object, so אֶת־פֹּשְׁעִים means 'with the transgressors'. KJV 'with' renders אֶת.",
+   "severity": "high"},
+
+  {"pid": "H30", "id": "v12-18", "kind": "rendering",
+   "current": "", "proposed": "with",
+   "reason": "Same as H28. The deep dive ('direct object marker') needs the same correction.",
+   "severity": "high"},
+
+  {"pid": "H31", "id": "v12-25", "kind": "rendering",
+   "current": "he bare", "proposed": "bare",
+   "reason": "'he' is the separate pronoun הוּא (v12-22) and is aligned there. The same pattern is handled correctly in v4-4 ('hath borne').",
+   "severity": "low"}
+]}

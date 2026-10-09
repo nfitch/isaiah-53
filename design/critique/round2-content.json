@@ -1,0 +1,372 @@
+{
+  "reviews": [
+    {
+      "source": "round1-content:C1",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C2",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C4",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C5",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C6",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C8",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C9",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C11",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C12",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C13",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C18",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C22",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C23",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C24",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C25",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C26",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C33",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C36",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C37",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C38",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C39",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C41",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C42",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C43",
+      "verdict": "agree",
+      "reason": "Holds up applied; any seam is handled in seams."
+    },
+    {
+      "source": "round1-content:C3",
+      "verdict": "modify",
+      "modified_to": "a rare plural, rather than the generic word for humanity (אָדָם, adam). Some read it as men of standing, prominent men — abandoned not just by people generally but by those who matter; others take it simply as \"men.\"",
+      "reason": "Restores more of the original voice and substance while presenting 'men of standing' as one reading, not fact."
+    },
+    {
+      "source": "round1-content:C7",
+      "verdict": "modify",
+      "modified_to": "He did not lift them lightly — he carried the full weight of them.",
+      "reason": "The applied text repeats the preceding sentence ('emphasizes the heaviness of the load'). This keeps the original image without 'staggered.'"
+    },
+    {
+      "source": "round1-content:C10",
+      "verdict": "modify",
+      "modified_to": "A healing that restores to wholeness. The form is impersonal — literally \"it is healed\" or \"healing has come\" — with \"to us\" (לָנוּ) following; KJV recasts it as \"we are healed.\"",
+      "reason": "Keeps the original wholeness line (it fits רָפָא's range) and adds the grammar point."
+    },
+    {
+      "source": "round1-content:C14",
+      "verdict": "modify",
+      "modified_to": "It may be not a single moment of silence but a sustained refusal to open his mouth — a sense KJV's simple past \"opened not\" flattens.",
+      "reason": "Keeps the original sentence, framed as possible rather than certain."
+    },
+    {
+      "source": "round1-content:C15",
+      "verdict": "modify",
+      "modified_to": "a single animal of the flock, sheep or goat, of any age; KJV \"lamb\" narrows it to a young one. Not the collective flock (צֹּאן) of verse 6 but one particular animal — one among many.",
+      "reason": "Keeps 'one among many' and says what KJV 'lamb' narrows, so the entry still explains a KJV loss."
+    },
+    {
+      "source": "round1-content:C16",
+      "verdict": "modify",
+      "modified_to": "Not the generic word for sheep. It is the only sheep word in this chapter that specifies gender.",
+      "reason": "Applied, this repeats the preceding 'specifically a ewe — a female sheep.'"
+    },
+    {
+      "source": "round1-content:C17",
+      "verdict": "modify",
+      "modified_to": "the phrase he did not open his mouth appears once before and once after,",
+      "reason": "Applied, it reads 'after the two images, framing the two images'."
+    },
+    {
+      "source": "round1-content:C19",
+      "verdict": "modify",
+      "modified_to": "Both senses are possible here — seized from restraint and from judgment, or taken away in death.",
+      "reason": "Keeps the original content as two named options rather than a bare 'both possible.'"
+    },
+    {
+      "source": "round1-content:C20",
+      "verdict": "modify",
+      "modified_to": "Here it is a noun, not a verb — a stroke, a plague-blow (\"a stroke was to him/them\"); KJV turns it into the verb \"was he stricken.\"",
+      "reason": "The body already names leprosy and the verse 4 root earlier, so applied it says both twice."
+    },
+    {
+      "source": "round1-content:C21",
+      "verdict": "modify",
+      "modified_to": "The verb is third person singular (\"he gave\"), but KJV \"he made\" can read as if the servant chose it himself, which the Hebrew does not say.",
+      "reason": "Applied, it repeats the preceding 'the subject is ambiguous… indefinite' sentences. This keeps only the correction, close to the original wording."
+    },
+    {
+      "source": "round1-content:C27",
+      "verdict": "modify",
+      "modified_to": "KJV \"it pleased\" is too passive — as if it merely happened to please him. The Hebrew is active and volitional — he delighted in it, he willed it, he desired it.",
+      "reason": "Gentler: keeps the original 'active and volitional' wording and removes only the two theological sentences."
+    },
+    {
+      "source": "round1-content:C28",
+      "verdict": "modify",
+      "modified_to": "The same crushing as before — to crush him utterly.",
+      "reason": "Applied, 'as in verse 5' appears twice. This restores the original sentence minus the theological line."
+    },
+    {
+      "source": "round1-content:C29",
+      "verdict": "modify",
+      "modified_to": "The form can be second person masculine (\"you make\") or third person feminine. If third feminine, the subject is נַפְשׁוֹ (his soul, a feminine noun): \"if his soul makes a guilt offering.\" If second person, the verse shifts suddenly from speaking about YHWH to addressing someone directly, and the addressee is unspecified — it could be the servant himself, the people, the prophet, or God.",
+      "reason": "Restores the original 'verse shifts suddenly' observation and 'the prophet' option inside the corrected grammar."
+    },
+    {
+      "source": "round1-content:C30",
+      "verdict": "modify",
+      "modified_to": "After being crushed and cut off from the land of the living (verse 8) — he shall see. Here the object follows directly: he shall see seed.",
+      "reason": "Too drastic as applied. This keeps the original textual tension (cut off, yet he sees) and anchors it to verse 8 instead of a claim about resurrection."
+    },
+    {
+      "source": "round1-content:C31",
+      "verdict": "modify",
+      "modified_to": "There is no \"his\" in the Hebrew — simply \"he shall see seed.\" Yet verse 8 asked who would declare his generation; the two verses stand in tension.",
+      "reason": "Keeps the original verse 8 contrast in close to its own words, without 'deliberate and profound.'"
+    },
+    {
+      "source": "round1-content:C32",
+      "verdict": "modify",
+      "modified_to": "In the Masoretic text he shall see stands alone, with no direct object: מֵעֲמַל נַפְשׁוֹ (\"from the travail of his soul\") is in the Hebrew, but it is a prepositional phrase, not the thing seen. KJV makes it the object (\"see of the travail\"). The Dead Sea Isaiah scroll and the Greek supply an object: \"he shall see light.\"",
+      "reason": "Keeps the original 'he shall see stands alone' phrasing, which is true of the direct object, while fixing the error."
+    },
+    {
+      "source": "round1-content:C34",
+      "verdict": "modify",
+      "modified_to": "By his intimate knowing he shall justify many. \"His knowledge\" can also be read as the knowledge of him that others have.",
+      "reason": "Applied, it repeats the first sentence ('intimate, experiential knowledge'). This keeps the original 'by his intimate knowing he shall justify many' and adds the ambiguity."
+    },
+    {
+      "source": "round1-content:C35",
+      "verdict": "modify",
+      "modified_to": "Both a legal declaration and a making righteous fall within the word's range; the Hebrew does not decide between them.",
+      "reason": "Applied, it repeats the preceding sentence's list of senses. This is shorter and reuses the original 'legal declaration' wording."
+    },
+    {
+      "source": "round1-content:C40",
+      "verdict": "modify",
+      "modified_to": "Joined with אֲשֶׁר, תַּחַת אֲשֶׁר is an ordinary idiom for \"because\"; but the root sense — in the place of, in exchange for — remains audible beneath it.",
+      "reason": "Keeps more of the original 'in exchange for' emphasis without the substitution claim. Pair with the v12-11 seam."
+    },
+    {
+      "source": "round1-content:C44",
+      "verdict": "modify",
+      "modified_to": "The one who was struck now intercedes. The verb is imperfect — he intercedes, or will intercede — where KJV uses the past \"made intercession.\"",
+      "reason": "Restores the original 'The one who was struck now intercedes' and drops only the bookend flourish."
+    },
+    {
+      "source": "round1-hebrew:H1",
+      "verdict": "agree",
+      "reason": "Qamets under the lamed; correct."
+    },
+    {
+      "source": "round1-hebrew:H3",
+      "verdict": "agree",
+      "reason": "The yod is silent after vi-; correct for the split segment."
+    },
+    {
+      "source": "round1-hebrew:H4",
+      "verdict": "agree",
+      "reason": "Tsere is correct. Note it is the only macron among the translits; 'master' would avoid that but reads as English, so keep it."
+    },
+    {
+      "source": "round1-hebrew:H7",
+      "verdict": "agree",
+      "reason": "Dagesh forte; correct."
+    },
+    {
+      "source": "round1-hebrew:H8",
+      "verdict": "agree",
+      "reason": "The polal participle has no doubled lamed; correct."
+    },
+    {
+      "source": "round1-hebrew:H9",
+      "verdict": "agree",
+      "reason": "The verb is impersonal; matches the C10 body fix."
+    },
+    {
+      "source": "round1-hebrew:H10",
+      "verdict": "agree",
+      "reason": "This removes the double-counted 'on' and matches the hiphil."
+    },
+    {
+      "source": "round1-hebrew:H11",
+      "verdict": "agree",
+      "reason": "No dagesh lene after the vowel; matches yafgiaʿ."
+    },
+    {
+      "source": "round1-hebrew:H15",
+      "verdict": "agree",
+      "reason": "The word is a noun; matches the C20 body fix."
+    },
+    {
+      "source": "round1-hebrew:H16",
+      "verdict": "agree",
+      "reason": "Matches the deep dive's 'to him / to them' framing."
+    },
+    {
+      "source": "round1-hebrew:H18",
+      "verdict": "agree",
+      "reason": "Consistent with v1-1."
+    },
+    {
+      "source": "round1-hebrew:H23",
+      "verdict": "agree",
+      "reason": "Typo fix."
+    },
+    {
+      "source": "round1-hebrew:H25",
+      "verdict": "agree",
+      "reason": "Restores the ayin."
+    },
+    {
+      "source": "round1-hebrew:H31",
+      "verdict": "agree",
+      "reason": "The 'he' belongs to הוּא in v12-22."
+    },
+    {
+      "source": "round1-hebrew:H2",
+      "verdict": "agree",
+      "reason": "The alignment edit puts the article with the noun phrase; consistent within the verse."
+    },
+    {
+      "source": "round1-hebrew:H14",
+      "verdict": "agree",
+      "reason": "Only 'he' belongs with לָמוֹ; consistent with H15/H16."
+    },
+    {
+      "source": "round1-hebrew:H27",
+      "verdict": "agree",
+      "reason": "אֶת is the preposition; consistent with C38."
+    },
+    {
+      "source": "round1-hebrew:H29",
+      "verdict": "agree",
+      "reason": "Passive נִמְנָה; אֶת is 'with'; consistent with C41."
+    }
+  ],
+  "seams": [
+    {
+      "id": "v7-16",
+      "field": "body",
+      "current": "to a mother sheep before her shearers",
+      "proposed": "to a ewe before her shearers",
+      "reason": "After the C16 fix, 'mother sheep' survives in the last sentence and contradicts it."
+    },
+    {
+      "id": "v12-5",
+      "field": "body",
+      "current": "KJV renders it \"the great\" here but the word is the same rabbim — the many — as in verse 11. רַב can mean",
+      "proposed": "KJV renders it \"the great\" here. רַב can mean",
+      "reason": "The surviving original sentence contradicts the revised one and repeats the verse 11 point."
+    },
+    {
+      "id": "v12-11",
+      "field": "body",
+      "current": "KJV renders it \"because\" but the word carries the sense of in the place of, in exchange for, as a substitution for. Joined",
+      "proposed": "KJV renders it \"because,\" which is right for the idiom. Joined",
+      "reason": "The surviving sentence asserts the substitution sense that the revision corrects, so the two now contradict."
+    },
+    {
+      "id": "v2-4",
+      "field": "body",
+      "current": "but it loses the nursling image. The image is",
+      "proposed": "but it loses the nursling sense. The picture is",
+      "reason": "'image' appears twice in a row."
+    },
+    {
+      "id": "v12-19",
+      "field": "body",
+      "current": "He was numbered with those in the very act of rebellion.",
+      "proposed": "He was numbered with the rebels.",
+      "reason": "A noun participle means 'rebels'; 'in the very act' overreads it (low, but it is a one-line fix next to an already-revised phrase)."
+    }
+  ],
+  "new": []
+}

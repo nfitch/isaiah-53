@@ -1,0 +1,400 @@
+{
+  "proposals": [
+    {
+      "pid": "C1",
+      "id": "v2-2",
+      "kind": "body-fact",
+      "current": "KJV renders it as future tense but the Hebrew is past tense — he came up, he sprouted.",
+      "proposed": "KJV renders it as future tense, reading the passage as prophecy, but the Hebrew form is the narrative past (wayyiqtol) — he came up, he sprouted.",
+      "reason": "Hebrew has no tense in the English sense; the form is wayyiqtol, which normally narrates past events. This keeps the point while explaining why KJV chose the future.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C2",
+      "id": "v2-4",
+      "kind": "body-fact",
+      "current": "\"Tender plant\" is an interpretation.",
+      "proposed": "Applied to plants the word means a young shoot or sucker, so \"tender plant\" is a fair rendering, but it loses the nursling image.",
+      "reason": "יוֹנֵק is attested in a botanical sense (cf. יוֹנֶקֶת, \"shoot,\" Job 8:16), so calling the KJV rendering merely \"an interpretation\" is unfair.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C3",
+      "id": "v3-4",
+      "kind": "body-fact",
+      "current": "not the generic word for humanity (אָדָם, adam) but specifically men of standing, prominent men, notable persons. The word carries weight — he is abandoned not just by people generally but by those who matter, the significant ones.",
+      "proposed": "a rare plural form. Some read it as men of standing, in contrast to the generic אָדָם (adam); others take it simply as \"men.\"",
+      "reason": "The \"men of standing\" reading is one disputed view, not settled lexical fact. As written, the entry builds commentary on top of it.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C4",
+      "id": "v3-5",
+      "kind": "body-fact",
+      "current": "here the singular form, meaning a man in the specific sense — a particular individual of standing.",
+      "proposed": "here the singular, in a construct phrase — \"a man of pains,\" a Hebrew idiom that characterizes a person by what marks him.",
+      "reason": "Nothing in אִישׁ מַכְאֹבוֹת implies standing; the real nuance is the \"man of X\" construct idiom.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C5",
+      "id": "v3-13",
+      "kind": "body-gap",
+      "current": "always plural in Hebrew, as discussed in verse 2.",
+      "proposed": "always plural in Hebrew, as discussed in verse 2. There is no \"our\" in the Hebrew; KJV supplies it.",
+      "reason": "KJV's \"we hid ... our faces\" puts the subject and the possessive in; the Hebrew only has \"hiding faces from him.\"",
+      "severity": "medium"
+    },
+    {
+      "pid": "C6",
+      "id": "v3-18",
+      "kind": "body-fact",
+      "current": "The suffix נֻהוּ means \"him\" — it is we again,",
+      "proposed": "The ending נוּ marks \"we\" and הוּ marks \"him\" — it is we again,",
+      "reason": "נֻהוּ is two elements: the 1cp verb ending plus the 3ms object suffix. It is not a single suffix meaning \"him.\"",
+      "severity": "medium"
+    },
+    {
+      "pid": "C7",
+      "id": "v4-7",
+      "kind": "body-editorial",
+      "current": "He did not lift lightly — he staggered under the weight of them.",
+      "proposed": "The emphasis is on the weight of the load.",
+      "reason": "\"Staggered\" is a homiletic image, not something the Hebrew says.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C8",
+      "id": "v4-13",
+      "kind": "body-fact",
+      "current": "the plural form of the divine name, used as the standard word for God. Grammatically plural, theologically singular.",
+      "proposed": "the standard Hebrew word for God. Plural in form, but construed with singular verbs when it refers to Israel's God.",
+      "reason": "אֱלֹהִים is not \"the divine name\" (that is YHWH; see v1-6). \"Theologically singular\" is a theological statement; the grammatical fact is singular agreement.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C9",
+      "id": "v5-14",
+      "kind": "body-gap",
+      "current": "KJV \"stripes\" is accurate — the wounds left by beating.",
+      "proposed": "The Hebrew is singular — his welt, his wound — used collectively; KJV \"stripes\" makes it plural.",
+      "reason": "The noun is singular in the Hebrew, which is a real difference from the KJV that the entry misses.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C10",
+      "id": "v5-15",
+      "kind": "body-gap",
+      "current": "A complete healing — not just relief from symptoms but restoration to wholeness.",
+      "proposed": "The form is impersonal — literally \"it is healed\" or \"healing has come\" — with \"to us\" (לָנוּ) following; KJV recasts it as \"we are healed.\"",
+      "reason": "The grammar (niphal 3ms, impersonal) is the real nuance KJV flattens; the \"not just symptoms\" line is padding.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C11",
+      "id": "v6-11",
+      "kind": "body-editorial",
+      "current": "KJV \"hath laid on\" is far too gentle — this is a violent meeting, a striking, a collision.",
+      "proposed": "KJV \"hath laid on\" is gentler than the Hebrew, which can carry the sense of a forceful meeting or striking.",
+      "reason": "Out of context the root also means just \"meet\" or \"intercede\" (as v12-29 shows), so claiming certain violence overclaims.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C12",
+      "id": "v6-12",
+      "kind": "body-fact",
+      "current": "Into him, upon him, against him — the preposition בְּ intensifies the sense of collision.",
+      "proposed": "Upon him, against him — בְּ is the preposition פָּגַע normally takes (to meet with, fall upon).",
+      "reason": "בְּ is the verb's ordinary preposition, not an intensifier.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C13",
+      "id": "v6-5",
+      "kind": "body-consistency",
+      "current": "as discussed in verse 3, אִישׁ carries the sense of a person of standing, an individual.",
+      "proposed": "אִישׁ is the ordinary word for a man, an individual.",
+      "reason": "This depends on the overclaimed \"men of standing\" reading in v3-4/v3-5, which is corrected above.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C14",
+      "id": "v7-7",
+      "kind": "body-editorial",
+      "current": "Not a single moment of silence but a sustained, repeated refusal to open his mouth.",
+      "proposed": "KJV's simple past \"opened not\" flattens that possible durative sense.",
+      "reason": "The entry states as certain a nuance the imperfect only allows; this keeps it framed as possible.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C15",
+      "id": "v7-10",
+      "kind": "body-fact",
+      "current": "specifically a young sheep or goat — a single, individual animal. Not the collective flock (צֹּאן) of verse 6 but one particular young animal. The specificity is intentional — one among many, led alone.",
+      "proposed": "a single animal of the flock, sheep or goat, of any age. Not the collective flock (צֹּאן) of verse 6 but one individual animal.",
+      "reason": "שֶׂה is not age-specific. \"Lamb\" is KJV's choice. \"Intentional ... led alone\" is commentary.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C16",
+      "id": "v7-16",
+      "kind": "body-fact",
+      "current": "Not the generic word for sheep but the word for a mother sheep. This is the only occurrence where the gender is specified.",
+      "proposed": "Not the generic word for sheep but the word for a female sheep. It is the only sheep word in this chapter that specifies gender.",
+      "reason": "רָחֵל occurs elsewhere (Gen 31:38, Song 6:6), so \"only occurrence\" is false. It means \"ewe,\" not specifically a mother.",
+      "severity": "high"
+    },
+    {
+      "pid": "C17",
+      "id": "v7-22",
+      "kind": "body-fact",
+      "current": "the verse opens and closes with the same phrase, he did not open his mouth,",
+      "proposed": "the phrase he did not open his mouth appears once before and once after the two images,",
+      "reason": "The verse opens with נִגַּשׂ, not with this phrase. The phrase's first occurrence is mid-verse.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C18",
+      "id": "v8-1",
+      "kind": "body-gap",
+      "current": "prefix meaning \"from, out of,\" straightforward.",
+      "proposed": "prefix meaning \"from, out of,\" but מִן can also mean \"by, because of\" — by oppression and judgment he was taken away. KJV takes it as \"from.\"",
+      "reason": "This is a well-known ambiguity in the verse (\"from\" vs. \"by\") that changes the sense, so it should not be marked straightforward.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C19",
+      "id": "v8-6",
+      "kind": "body-editorial",
+      "current": "The ambiguity is deliberate — taken from restraint and from judgment by being taken in death.",
+      "proposed": "Both senses are possible here.",
+      "reason": "Calling the ambiguity deliberate, and resolving it as death, is interpretation.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C20",
+      "id": "v8-20",
+      "kind": "body-fact",
+      "current": "KJV \"stricken\" is adequate but the word carries the specific sense of struck by God with plague or disease — the same misreading the witnesses made in verse 4, now acknowledged as having fallen on him for their transgression.",
+      "proposed": "Here it is a noun, not a verb — a stroke, a plague-blow (\"a stroke was to him/them\"); KJV turns it into the verb \"was he stricken.\" It is the word used of the plague of leprosy, the same root as נָגוּעַ in verse 4.",
+      "reason": "נֶגַע is a noun here, and the entry misses that. The \"misreading ... now acknowledged\" clause is commentary.",
+      "severity": "high"
+    },
+    {
+      "pid": "C21",
+      "id": "v9-2",
+      "kind": "body-fact",
+      "current": "KJV \"he made\" implies he chose it himself which is not in the Hebrew.",
+      "proposed": "The verb is third person singular — \"he gave\" — but the \"he\" is unnamed and may be indefinite (\"one assigned\"); KJV \"he made\" can read as if the servant chose it himself.",
+      "reason": "The Hebrew does have a 3ms subject (\"he\"). What is unclear is who that subject is, not whether there is one.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C22",
+      "id": "v9-3",
+      "kind": "body-fact",
+      "current": "direct object marker, straightforward.",
+      "proposed": "here not the object marker but the homonymous preposition אֵת \"with\" — with the wicked. KJV \"with\" is accurate.",
+      "reason": "In אֶת־רְשָׁעִים קִבְרוֹ, אֶת is the preposition \"with\" (the object is קִבְרוֹ). The current gloss is wrong.",
+      "severity": "high"
+    },
+    {
+      "pid": "C23",
+      "id": "v9-3",
+      "kind": "rendering",
+      "current": "",
+      "proposed": "with",
+      "reason": "The rendering is empty because the word was treated as the untranslatable object marker. Here it is the preposition \"with.\"",
+      "severity": "high"
+    },
+    {
+      "pid": "C24",
+      "id": "v9-7",
+      "kind": "body-fact",
+      "current": "direct object marker, straightforward.",
+      "proposed": "again the preposition אֵת \"with\" — with a rich man. Straightforward.",
+      "reason": "Same error as v9-3: אֶת־עָשִׁיר means \"with the rich.\"",
+      "severity": "high"
+    },
+    {
+      "pid": "C25",
+      "id": "v9-7",
+      "kind": "rendering",
+      "current": "",
+      "proposed": "with",
+      "reason": "Preposition \"with,\" not the object marker.",
+      "severity": "high"
+    },
+    {
+      "pid": "C26",
+      "id": "v9-11",
+      "kind": "body-gap",
+      "current": "KJV renders it \"because,\" straightforward.",
+      "proposed": "KJV renders it \"because\"; עַל לֹא can also mean \"although\" — although he had done no violence. Many modern translations read it that way.",
+      "reason": "The because/although choice changes the logic of the verse, so marking it straightforward undersells it.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C27",
+      "id": "v10-3",
+      "kind": "body-editorial",
+      "current": "KJV \"it pleased\" is too passive and accidental — as if it merely happened to please him. The Hebrew is active and volitional — he delighted in it, he willed it, he desired it. The LORD did not merely permit the crushing — he took pleasure in willing it. This is one of the most theologically weighty words in the chapter.",
+      "proposed": "KJV \"it pleased\" can sound impersonal to modern ears. The Hebrew makes the LORD the subject of the verb — he willed it, he desired it, he took pleasure in it.",
+      "reason": "\"Did not merely permit ... took pleasure in willing it\" and \"most theologically weighty\" are theological commentary, which the skill forbids. Also, KJV \"it pleased\" did not mean \"accidental.\"",
+      "severity": "high"
+    },
+    {
+      "pid": "C28",
+      "id": "v10-4",
+      "kind": "body-editorial",
+      "current": "The same crushing as before — to crush him utterly. The LORD delighted in crushing him.",
+      "proposed": "The same verb as in verse 5 — to crush him.",
+      "reason": "This repeats the theological gloss from v10-3.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C29",
+      "id": "v10-7",
+      "kind": "body-fact",
+      "current": "The subject is second person singular — you, thou — but who is being addressed? The verse shifts suddenly from speaking about YHWH to addressing someone directly. The addressee is unspecified — it could be the servant himself, the people, the prophet, or God.",
+      "proposed": "The form can be second person masculine (\"you make\") or third person feminine. If third feminine, the subject is נַפְשׁוֹ (his soul, a feminine noun): \"if his soul makes a guilt offering.\" If second person, the addressee is unspecified — it could be the servant, the people, or God.",
+      "reason": "תָּשִׂים is also the 3fs form, and many translations read it that way with נֶפֶשׁ as the subject. Leaving this out is a real grammatical gap.",
+      "severity": "high"
+    },
+    {
+      "pid": "C30",
+      "id": "v10-10",
+      "kind": "body-editorial",
+      "current": "After being crushed and cut off and killed — he shall see. The return to life is implied in this word without being stated. One who has died does not see — yet the text says he shall.",
+      "proposed": "Here the object follows directly: he shall see seed.",
+      "reason": "\"The return to life is implied\" is theological interpretation, which the skill forbids.",
+      "severity": "high"
+    },
+    {
+      "pid": "C31",
+      "id": "v10-11",
+      "kind": "body-editorial",
+      "current": "He shall see his seed — yet verse 8 asked who would declare his generation, implying he had none. The tension between these two verses is deliberate and profound.",
+      "proposed": "There is no \"his\" in the Hebrew — simply \"he shall see seed.\" The word sits against the question of \"his generation\" in verse 8.",
+      "reason": "The note misses that the possessive is absent, and \"deliberate and profound\" is commentary.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C32",
+      "id": "v11-4",
+      "kind": "body-fact",
+      "current": "He shall see — but the object of his seeing is not stated in the Hebrew. The text simply says he shall see — what he sees is left open. KJV supplies \"of the travail of his soul\" as the object but in the Hebrew he shall see stands alone, complete in itself. He shall simply see — after all the darkness, he shall see.",
+      "proposed": "In the Masoretic text the verb has no direct object: מֵעֲמַל נַפְשׁוֹ (\"from the travail of his soul\") is in the Hebrew, but it is a prepositional phrase, not the thing seen. KJV makes it the object (\"see of the travail\"). The Dead Sea Isaiah scroll and the Greek supply an object: \"he shall see light.\"",
+      "reason": "The current note says KJV \"supplies\" the travail phrase, but מֵעֲמַל נַפְשׁוֹ opens the Hebrew verse. What is actually missing is a direct object, and the Qumran/LXX \"light\" is the relevant fact. The Mosiah note at v11 repeats the error (out of scope here).",
+      "severity": "high"
+    },
+    {
+      "pid": "C33",
+      "id": "v11-6",
+      "kind": "body-gap",
+      "current": "prefix meaning \"in, by, with, through,\" straightforward.",
+      "proposed": "prefix meaning \"in, by, with, through.\" The phrase בְּדַעְתּוֹ can attach backward (\"satisfied with his knowledge\") or forward (\"by his knowledge shall ... justify\"); KJV takes it forward.",
+      "reason": "This is a well-known phrasing ambiguity that the KJV punctuation resolves silently.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C34",
+      "id": "v11-7",
+      "kind": "body-editorial",
+      "current": "This is not intellectual knowledge but deep, personal, lived knowing. By his intimate knowing — of God, of suffering, of humanity — he shall justify many. The instrument of justification is his profound experiential knowledge.",
+      "proposed": "The root reaches beyond intellectual knowing to personal, experiential knowledge. \"His knowledge\" can also be read as the knowledge of him that others have.",
+      "reason": "\"Of God, of suffering, of humanity\" and \"instrument of justification\" are interpretation. The real ambiguity (subjective vs. objective genitive) is missing.",
+      "severity": "high"
+    },
+    {
+      "pid": "C35",
+      "id": "v11-8",
+      "kind": "body-editorial",
+      "current": "Not merely pronouncing them innocent but causing them to be righteous — a transformative act, not only a legal declaration.",
+      "proposed": "The causative can mean to declare righteous (a legal verdict) or to make righteous; the Hebrew does not decide between them.",
+      "reason": "Taking a side in the forensic vs. transformative debate is theological opinion.",
+      "severity": "high"
+    },
+    {
+      "pid": "C36",
+      "id": "v11-9",
+      "kind": "body-editorial",
+      "current": "The word play is intentional — righteousness flows from him who possesses it.",
+      "proposed": "The two words sit side by side — yatsdiq tsaddiq — a sound play English loses.",
+      "reason": "\"Righteousness flows from him\" is commentary. The sound play is the linguistic point.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C37",
+      "id": "v12-5",
+      "kind": "body-fact",
+      "current": "The shift to \"the great\" in KJV introduces a distinction not present in the Hebrew. He is given his portion among the many — the same multitude whose iniquities he bore.",
+      "proposed": "רַב can mean great as well as many, and the parallel with עֲצוּמִים (the mighty) supports \"the great\" here; but it is the same word KJV renders \"many\" in verse 11 and later in this verse.",
+      "reason": "\"Great\" is within רַב's range and fits the parallelism, so saying KJV adds a distinction overclaims. The line about the same multitude is interpretation.",
+      "severity": "medium"
+    },
+    {
+      "pid": "C38",
+      "id": "v12-7",
+      "kind": "body-fact",
+      "current": "direct object marker, straightforward.",
+      "proposed": "here the preposition אֵת \"with\" — with the mighty. KJV \"with\" is accurate.",
+      "reason": "אֶת־עֲצוּמִים is \"with the strong\"; the object of יְחַלֵּק is שָׁלָל.",
+      "severity": "high"
+    },
+    {
+      "pid": "C39",
+      "id": "v12-7",
+      "kind": "rendering",
+      "current": "",
+      "proposed": "with",
+      "reason": "Preposition \"with,\" not the object marker.",
+      "severity": "high"
+    },
+    {
+      "pid": "C40",
+      "id": "v12-11",
+      "kind": "body-editorial",
+      "current": "The reward comes in exchange for, as a substitution for what follows — his self-pouring unto death. The substitutionary force of תַּחַת is stronger than mere causation.",
+      "proposed": "Joined with אֲשֶׁר, תַּחַת אֲשֶׁר is an ordinary idiom for \"because\"; the root sense \"in place of, in exchange for\" stays in the background.",
+      "reason": "תַּחַת אֲשֶׁר is a standard causal idiom. Claiming \"substitutionary force\" is theological reading presented as grammar.",
+      "severity": "high"
+    },
+    {
+      "pid": "C41",
+      "id": "v12-18",
+      "kind": "body-fact",
+      "current": "direct object marker, straightforward.",
+      "proposed": "here the preposition אֵת \"with\" — with the transgressors. KJV \"with\" is accurate.",
+      "reason": "נִמְנָה is passive and takes no direct object; אֶת־פֹּשְׁעִים means \"with transgressors.\"",
+      "severity": "high"
+    },
+    {
+      "pid": "C42",
+      "id": "v12-18",
+      "kind": "rendering",
+      "current": "",
+      "proposed": "with",
+      "reason": "Preposition \"with,\" not the object marker.",
+      "severity": "high"
+    },
+    {
+      "pid": "C43",
+      "id": "v12-19",
+      "kind": "body-fact",
+      "current": "as in verses 5, 6, and 8",
+      "proposed": "as in verses 5 and 8",
+      "reason": "Verse 6 has no form of פָּשַׁע (it uses עָוֹן). The cross-reference is wrong.",
+      "severity": "high"
+    },
+    {
+      "pid": "C44",
+      "id": "v12-29",
+      "kind": "body-editorial",
+      "current": "The one who was struck now intercedes. The root פָּגַע bookends the chapter's central act — struck on their behalf, he now pleads on their behalf.",
+      "proposed": "The verb is imperfect — he intercedes, or will intercede — where KJV uses the past \"made intercession.\"",
+      "reason": "This removes the homiletic close and adds the tense point KJV flattens.",
+      "severity": "medium"
+    }
+  ]
+}

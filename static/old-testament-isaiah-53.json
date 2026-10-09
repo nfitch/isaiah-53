@@ -1,0 +1,5440 @@
+{
+ "chapter": {
+  "id": "isaiah-53",
+  "book": "Isaiah",
+  "chapterNumber": 53,
+  "parallel": {
+   "book": "Mosiah",
+   "chapterNumber": 14
+  }
+ },
+ "verses": [
+  {
+   "number": 1,
+   "hebrew": [
+    {
+     "text": "מִי",
+     "align": "v1-1"
+    },
+    {
+     "text": "הֶאֱמִין",
+     "align": "v1-2"
+    },
+    {
+     "text": "לִשְׁמֻעָתֵנוּ",
+     "align": "v1-3"
+    },
+    {
+     "text": "וּ",
+     "align": "v1-4"
+    },
+    {
+     "text": "זְרוֹעַ",
+     "align": "v1-5",
+     "joined": true
+    },
+    {
+     "text": "יְהוָה",
+     "align": "v1-6"
+    },
+    {
+     "text": "עַל־מִי",
+     "align": "v1-7"
+    },
+    {
+     "text": "נִגְלָֽתָה",
+     "align": "v1-8"
+    },
+    {
+     "text": "׃",
+     "align": null,
+     "joined": true
+    }
+   ],
+   "english": [
+    {
+     "text": "Who",
+     "align": "v1-1"
+    },
+    {
+     "text": "hath",
+     "align": "v1-2"
+    },
+    {
+     "text": "believed",
+     "align": "v1-2"
+    },
+    {
+     "text": "our",
+     "align": "v1-3"
+    },
+    {
+     "text": "report",
+     "align": "v1-3"
+    },
+    {
+     "text": "?",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v1-4"
+    },
+    {
+     "text": "to",
+     "align": "v1-7"
+    },
+    {
+     "text": "whom",
+     "align": "v1-7"
+    },
+    {
+     "text": "is",
+     "align": "v1-8"
+    },
+    {
+     "text": "the",
+     "align": "v1-5"
+    },
+    {
+     "text": "arm",
+     "align": "v1-5"
+    },
+    {
+     "text": "of",
+     "align": "v1-6"
+    },
+    {
+     "text": "the",
+     "align": "v1-6"
+    },
+    {
+     "text": "LORD",
+     "align": "v1-6"
+    },
+    {
+     "text": "revealed",
+     "align": "v1-8"
+    },
+    {
+     "text": "?",
+     "align": null,
+     "punct": true
+    }
+   ],
+   "alignments": [
+    {
+     "id": "v1-1",
+     "deepDive": "v1-1"
+    },
+    {
+     "id": "v1-2",
+     "deepDive": "v1-2"
+    },
+    {
+     "id": "v1-3",
+     "deepDive": "v1-3"
+    },
+    {
+     "id": "v1-4",
+     "deepDive": "v1-4"
+    },
+    {
+     "id": "v1-5",
+     "deepDive": "v1-5"
+    },
+    {
+     "id": "v1-6",
+     "deepDive": "v1-6"
+    },
+    {
+     "id": "v1-7",
+     "deepDive": "v1-7"
+    },
+    {
+     "id": "v1-8",
+     "deepDive": "v1-8"
+    }
+   ],
+   "mosiahNote": "Identical to KJV — no differences."
+  },
+  {
+   "number": 2,
+   "hebrew": [
+    {
+     "text": "וַ",
+     "align": "v2-1"
+    },
+    {
+     "text": "יַּעַל",
+     "align": "v2-2",
+     "joined": true
+    },
+    {
+     "text": "כַּ",
+     "align": "v2-3"
+    },
+    {
+     "text": "יּוֹנֵק",
+     "align": "v2-4",
+     "joined": true
+    },
+    {
+     "text": "לְפָנָיו",
+     "align": "v2-5"
+    },
+    {
+     "text": "וְ",
+     "align": "v2-6"
+    },
+    {
+     "text": "כַ",
+     "align": "v2-7",
+     "joined": true
+    },
+    {
+     "text": "שֹּׁרֶשׁ",
+     "align": "v2-8",
+     "joined": true
+    },
+    {
+     "text": "מֵ",
+     "align": "v2-9"
+    },
+    {
+     "text": "אֶרֶץ",
+     "align": "v2-10",
+     "joined": true
+    },
+    {
+     "text": "צִיָּה",
+     "align": "v2-11"
+    },
+    {
+     "text": "לֹא־",
+     "align": "v2-12"
+    },
+    {
+     "text": "תֹאַר",
+     "align": "v2-13",
+     "joined": true
+    },
+    {
+     "text": "לוֹ",
+     "align": "v2-14"
+    },
+    {
+     "text": "וְ",
+     "align": "v2-15"
+    },
+    {
+     "text": "לֹא",
+     "align": "v2-16",
+     "joined": true
+    },
+    {
+     "text": "הָדָר",
+     "align": "v2-17"
+    },
+    {
+     "text": "וְ",
+     "align": "v2-18"
+    },
+    {
+     "text": "נִרְאֵהוּ",
+     "align": "v2-19",
+     "joined": true
+    },
+    {
+     "text": "וְ",
+     "align": "v2-20"
+    },
+    {
+     "text": "לֹא־",
+     "align": "v2-21",
+     "joined": true
+    },
+    {
+     "text": "מַרְאֶה",
+     "align": "v2-22",
+     "joined": true
+    },
+    {
+     "text": "וְ",
+     "align": "v2-23"
+    },
+    {
+     "text": "נֶחְמְדֵהוּ",
+     "align": "v2-24",
+     "joined": true
+    },
+    {
+     "text": "׃",
+     "align": null,
+     "joined": true
+    }
+   ],
+   "english": [
+    {
+     "text": "For",
+     "align": "v2-1"
+    },
+    {
+     "text": "he",
+     "align": "v2-2"
+    },
+    {
+     "text": "shall",
+     "align": "v2-2"
+    },
+    {
+     "text": "grow",
+     "align": "v2-2"
+    },
+    {
+     "text": "up",
+     "align": "v2-2"
+    },
+    {
+     "text": "before",
+     "align": "v2-5"
+    },
+    {
+     "text": "him",
+     "align": "v2-5"
+    },
+    {
+     "text": "as",
+     "align": "v2-3"
+    },
+    {
+     "text": "a",
+     "align": "v2-4"
+    },
+    {
+     "text": "tender",
+     "align": "v2-4"
+    },
+    {
+     "text": "plant",
+     "align": "v2-4"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v2-6"
+    },
+    {
+     "text": "as",
+     "align": "v2-7"
+    },
+    {
+     "text": "a",
+     "align": "v2-8"
+    },
+    {
+     "text": "root",
+     "align": "v2-8"
+    },
+    {
+     "text": "out",
+     "align": "v2-9"
+    },
+    {
+     "text": "of",
+     "align": "v2-9"
+    },
+    {
+     "text": "a",
+     "align": "v2-10"
+    },
+    {
+     "text": "dry",
+     "align": "v2-11"
+    },
+    {
+     "text": "ground",
+     "align": "v2-10"
+    },
+    {
+     "text": ":",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "he",
+     "align": "v2-14"
+    },
+    {
+     "text": "hath",
+     "align": "v2-14"
+    },
+    {
+     "text": "no",
+     "align": "v2-12"
+    },
+    {
+     "text": "form",
+     "align": "v2-13"
+    },
+    {
+     "text": "nor",
+     "align": "v2-15"
+    },
+    {
+     "text": "comeliness",
+     "align": "v2-17"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v2-18"
+    },
+    {
+     "text": "when",
+     "align": "v2-19"
+    },
+    {
+     "text": "we",
+     "align": "v2-19"
+    },
+    {
+     "text": "shall",
+     "align": "v2-19"
+    },
+    {
+     "text": "see",
+     "align": "v2-19"
+    },
+    {
+     "text": "him",
+     "align": "v2-19"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "there",
+     "align": "v2-21"
+    },
+    {
+     "text": "is",
+     "align": "v2-21"
+    },
+    {
+     "text": "no",
+     "align": "v2-21"
+    },
+    {
+     "text": "beauty",
+     "align": "v2-22"
+    },
+    {
+     "text": "that",
+     "align": "v2-23"
+    },
+    {
+     "text": "we",
+     "align": "v2-24"
+    },
+    {
+     "text": "should",
+     "align": "v2-24"
+    },
+    {
+     "text": "desire",
+     "align": "v2-24"
+    },
+    {
+     "text": "him",
+     "align": "v2-24"
+    },
+    {
+     "text": ".",
+     "align": null,
+     "punct": true
+    }
+   ],
+   "alignments": [
+    {
+     "id": "v2-1",
+     "deepDive": "v2-1"
+    },
+    {
+     "id": "v2-2",
+     "deepDive": "v2-2"
+    },
+    {
+     "id": "v2-3",
+     "deepDive": "v2-3"
+    },
+    {
+     "id": "v2-4",
+     "deepDive": "v2-4"
+    },
+    {
+     "id": "v2-5",
+     "deepDive": "v2-5"
+    },
+    {
+     "id": "v2-6",
+     "deepDive": "v2-6"
+    },
+    {
+     "id": "v2-7",
+     "deepDive": "v2-7"
+    },
+    {
+     "id": "v2-8",
+     "deepDive": "v2-8"
+    },
+    {
+     "id": "v2-9",
+     "deepDive": "v2-9"
+    },
+    {
+     "id": "v2-10",
+     "deepDive": "v2-10"
+    },
+    {
+     "id": "v2-11",
+     "deepDive": "v2-11"
+    },
+    {
+     "id": "v2-12",
+     "deepDive": "v2-12"
+    },
+    {
+     "id": "v2-13",
+     "deepDive": "v2-13"
+    },
+    {
+     "id": "v2-14",
+     "deepDive": "v2-14"
+    },
+    {
+     "id": "v2-15",
+     "deepDive": "v2-15"
+    },
+    {
+     "id": "v2-16",
+     "deepDive": "v2-16"
+    },
+    {
+     "id": "v2-17",
+     "deepDive": "v2-17"
+    },
+    {
+     "id": "v2-18",
+     "deepDive": "v2-18"
+    },
+    {
+     "id": "v2-19",
+     "deepDive": "v2-19"
+    },
+    {
+     "id": "v2-20",
+     "deepDive": "v2-20"
+    },
+    {
+     "id": "v2-21",
+     "deepDive": "v2-21"
+    },
+    {
+     "id": "v2-22",
+     "deepDive": "v2-22"
+    },
+    {
+     "id": "v2-23",
+     "deepDive": "v2-23"
+    },
+    {
+     "id": "v2-24",
+     "deepDive": "v2-24"
+    }
+   ],
+   "mosiahNote": "Identical to KJV — no differences."
+  },
+  {
+   "number": 3,
+   "hebrew": [
+    {
+     "text": "נִבְזֶה",
+     "align": "v3-1"
+    },
+    {
+     "text": "וַ",
+     "align": "v3-2"
+    },
+    {
+     "text": "חֲדַל",
+     "align": "v3-3",
+     "joined": true
+    },
+    {
+     "text": "אִישִׁים",
+     "align": "v3-4"
+    },
+    {
+     "text": "אִישׁ",
+     "align": "v3-5"
+    },
+    {
+     "text": "מַכְאֹבוֹת",
+     "align": "v3-6"
+    },
+    {
+     "text": "וִ",
+     "align": "v3-7"
+    },
+    {
+     "text": "ידוּעַ",
+     "align": "v3-8",
+     "joined": true
+    },
+    {
+     "text": "חֹלִי",
+     "align": "v3-9"
+    },
+    {
+     "text": "וּ",
+     "align": "v3-10"
+    },
+    {
+     "text": "כְ",
+     "align": "v3-11",
+     "joined": true
+    },
+    {
+     "text": "מַסְתֵּר",
+     "align": "v3-12",
+     "joined": true
+    },
+    {
+     "text": "פָּנִים",
+     "align": "v3-13"
+    },
+    {
+     "text": "מִמֶּנּוּ",
+     "align": "v3-14"
+    },
+    {
+     "text": "נִבְזֶה",
+     "align": "v3-15"
+    },
+    {
+     "text": "וְ",
+     "align": "v3-16"
+    },
+    {
+     "text": "לֹא",
+     "align": "v3-17",
+     "joined": true
+    },
+    {
+     "text": "חֲשַׁבְנֻהוּ",
+     "align": "v3-18"
+    },
+    {
+     "text": "׃",
+     "align": null,
+     "joined": true
+    }
+   ],
+   "english": [
+    {
+     "text": "He",
+     "align": "v3-1"
+    },
+    {
+     "text": "is",
+     "align": "v3-1"
+    },
+    {
+     "text": "despised",
+     "align": "v3-1"
+    },
+    {
+     "text": "and",
+     "align": "v3-2"
+    },
+    {
+     "text": "rejected",
+     "align": "v3-3"
+    },
+    {
+     "text": "of",
+     "align": "v3-4"
+    },
+    {
+     "text": "men",
+     "align": "v3-4"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "a",
+     "align": "v3-5"
+    },
+    {
+     "text": "man",
+     "align": "v3-5"
+    },
+    {
+     "text": "of",
+     "align": "v3-6"
+    },
+    {
+     "text": "sorrows",
+     "align": "v3-6"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v3-7"
+    },
+    {
+     "text": "acquainted",
+     "align": "v3-8"
+    },
+    {
+     "text": "with",
+     "align": "v3-8"
+    },
+    {
+     "text": "grief",
+     "align": "v3-9"
+    },
+    {
+     "text": ":",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v3-10"
+    },
+    {
+     "text": "we",
+     "align": "v3-12"
+    },
+    {
+     "text": "hid",
+     "align": "v3-12"
+    },
+    {
+     "text": "as",
+     "align": "v3-11"
+    },
+    {
+     "text": "it",
+     "align": "v3-11"
+    },
+    {
+     "text": "were",
+     "align": "v3-11"
+    },
+    {
+     "text": "our",
+     "align": "v3-13"
+    },
+    {
+     "text": "faces",
+     "align": "v3-13"
+    },
+    {
+     "text": "from",
+     "align": "v3-14"
+    },
+    {
+     "text": "him",
+     "align": "v3-14"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "he",
+     "align": "v3-15"
+    },
+    {
+     "text": "was",
+     "align": "v3-15"
+    },
+    {
+     "text": "despised",
+     "align": "v3-15"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v3-16"
+    },
+    {
+     "text": "we",
+     "align": "v3-18"
+    },
+    {
+     "text": "esteemed",
+     "align": "v3-18"
+    },
+    {
+     "text": "him",
+     "align": "v3-18"
+    },
+    {
+     "text": "not",
+     "align": "v3-17"
+    },
+    {
+     "text": ".",
+     "align": null,
+     "punct": true
+    }
+   ],
+   "alignments": [
+    {
+     "id": "v3-1",
+     "deepDive": "v3-1"
+    },
+    {
+     "id": "v3-2",
+     "deepDive": "v3-2"
+    },
+    {
+     "id": "v3-3",
+     "deepDive": "v3-3"
+    },
+    {
+     "id": "v3-4",
+     "deepDive": "v3-4"
+    },
+    {
+     "id": "v3-5",
+     "deepDive": "v3-5"
+    },
+    {
+     "id": "v3-6",
+     "deepDive": "v3-6"
+    },
+    {
+     "id": "v3-7",
+     "deepDive": "v3-7"
+    },
+    {
+     "id": "v3-8",
+     "deepDive": "v3-8"
+    },
+    {
+     "id": "v3-9",
+     "deepDive": "v3-9"
+    },
+    {
+     "id": "v3-10",
+     "deepDive": "v3-10"
+    },
+    {
+     "id": "v3-11",
+     "deepDive": "v3-11"
+    },
+    {
+     "id": "v3-12",
+     "deepDive": "v3-12"
+    },
+    {
+     "id": "v3-13",
+     "deepDive": "v3-13"
+    },
+    {
+     "id": "v3-14",
+     "deepDive": "v3-14"
+    },
+    {
+     "id": "v3-15",
+     "deepDive": "v3-15"
+    },
+    {
+     "id": "v3-16",
+     "deepDive": "v3-16"
+    },
+    {
+     "id": "v3-17",
+     "deepDive": "v3-17"
+    },
+    {
+     "id": "v3-18",
+     "deepDive": "v3-18"
+    }
+   ],
+   "mosiahNote": "Identical to KJV — no differences."
+  },
+  {
+   "number": 4,
+   "hebrew": [
+    {
+     "text": "אָכֵן",
+     "align": "v4-1"
+    },
+    {
+     "text": "חֳלָיֵנוּ",
+     "align": "v4-2"
+    },
+    {
+     "text": "הוּא",
+     "align": "v4-3"
+    },
+    {
+     "text": "נָשָׂא",
+     "align": "v4-4"
+    },
+    {
+     "text": "וּ",
+     "align": "v4-5"
+    },
+    {
+     "text": "מַכְאֹבֵינוּ",
+     "align": "v4-6",
+     "joined": true
+    },
+    {
+     "text": "סְבָלָם",
+     "align": "v4-7"
+    },
+    {
+     "text": "וַ",
+     "align": "v4-8"
+    },
+    {
+     "text": "אֲנַחְנוּ",
+     "align": "v4-9",
+     "joined": true
+    },
+    {
+     "text": "חֲשַׁבְנֻהוּ",
+     "align": "v4-10"
+    },
+    {
+     "text": "נָגוּעַ",
+     "align": "v4-11"
+    },
+    {
+     "text": "מֻכֵּה",
+     "align": "v4-12"
+    },
+    {
+     "text": "אֱלֹהִים",
+     "align": "v4-13"
+    },
+    {
+     "text": "וּ",
+     "align": "v4-14"
+    },
+    {
+     "text": "מְעֻנֶּה",
+     "align": "v4-15",
+     "joined": true
+    },
+    {
+     "text": "׃",
+     "align": null,
+     "joined": true
+    }
+   ],
+   "english": [
+    {
+     "text": "Surely",
+     "align": "v4-1"
+    },
+    {
+     "text": "he",
+     "align": "v4-3"
+    },
+    {
+     "text": "hath",
+     "align": "v4-4"
+    },
+    {
+     "text": "borne",
+     "align": "v4-4"
+    },
+    {
+     "text": "our",
+     "align": "v4-2"
+    },
+    {
+     "text": "griefs",
+     "align": "v4-2"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v4-5"
+    },
+    {
+     "text": "carried",
+     "align": "v4-7"
+    },
+    {
+     "text": "our",
+     "align": "v4-6"
+    },
+    {
+     "text": "sorrows",
+     "align": "v4-6"
+    },
+    {
+     "text": ":",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "yet",
+     "align": "v4-8"
+    },
+    {
+     "text": "we",
+     "align": "v4-9"
+    },
+    {
+     "text": "did",
+     "align": "v4-10"
+    },
+    {
+     "text": "esteem",
+     "align": "v4-10"
+    },
+    {
+     "text": "him",
+     "align": "v4-10"
+    },
+    {
+     "text": "stricken",
+     "align": "v4-11"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "smitten",
+     "align": "v4-12"
+    },
+    {
+     "text": "of",
+     "align": "v4-13"
+    },
+    {
+     "text": "God",
+     "align": "v4-13"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v4-14"
+    },
+    {
+     "text": "afflicted",
+     "align": "v4-15"
+    },
+    {
+     "text": ".",
+     "align": null,
+     "punct": true
+    }
+   ],
+   "alignments": [
+    {
+     "id": "v4-1",
+     "deepDive": "v4-1"
+    },
+    {
+     "id": "v4-2",
+     "deepDive": "v4-2"
+    },
+    {
+     "id": "v4-3",
+     "deepDive": "v4-3"
+    },
+    {
+     "id": "v4-4",
+     "deepDive": "v4-4"
+    },
+    {
+     "id": "v4-5",
+     "deepDive": "v4-5"
+    },
+    {
+     "id": "v4-6",
+     "deepDive": "v4-6"
+    },
+    {
+     "id": "v4-7",
+     "deepDive": "v4-7"
+    },
+    {
+     "id": "v4-8",
+     "deepDive": "v4-8"
+    },
+    {
+     "id": "v4-9",
+     "deepDive": "v4-9"
+    },
+    {
+     "id": "v4-10",
+     "deepDive": "v4-10"
+    },
+    {
+     "id": "v4-11",
+     "deepDive": "v4-11"
+    },
+    {
+     "id": "v4-12",
+     "deepDive": "v4-12"
+    },
+    {
+     "id": "v4-13",
+     "deepDive": "v4-13"
+    },
+    {
+     "id": "v4-14",
+     "deepDive": "v4-14"
+    },
+    {
+     "id": "v4-15",
+     "deepDive": "v4-15"
+    }
+   ],
+   "mosiahNote": "Identical to KJV — no differences."
+  },
+  {
+   "number": 5,
+   "hebrew": [
+    {
+     "text": "וְ",
+     "align": "v5-1"
+    },
+    {
+     "text": "הוּא",
+     "align": "v5-2",
+     "joined": true
+    },
+    {
+     "text": "מְחֹלָל",
+     "align": "v5-3"
+    },
+    {
+     "text": "מִ",
+     "align": "v5-4"
+    },
+    {
+     "text": "פְּשָׁעֵינוּ",
+     "align": "v5-5",
+     "joined": true
+    },
+    {
+     "text": "מְדֻכָּא",
+     "align": "v5-6"
+    },
+    {
+     "text": "מֵ",
+     "align": "v5-7"
+    },
+    {
+     "text": "עֲוֹנֹתֵינוּ",
+     "align": "v5-8",
+     "joined": true
+    },
+    {
+     "text": "מוּסַר",
+     "align": "v5-9"
+    },
+    {
+     "text": "שְׁלוֹמֵנוּ",
+     "align": "v5-10"
+    },
+    {
+     "text": "עָלָיו",
+     "align": "v5-11"
+    },
+    {
+     "text": "וּ",
+     "align": "v5-12"
+    },
+    {
+     "text": "בַ",
+     "align": "v5-13",
+     "joined": true
+    },
+    {
+     "text": "חֲבֻרָתוֹ",
+     "align": "v5-14",
+     "joined": true
+    },
+    {
+     "text": "נִרְפָּא־",
+     "align": "v5-15"
+    },
+    {
+     "text": "לָנוּ",
+     "align": "v5-16",
+     "joined": true
+    },
+    {
+     "text": "׃",
+     "align": null,
+     "joined": true
+    }
+   ],
+   "english": [
+    {
+     "text": "But",
+     "align": "v5-1"
+    },
+    {
+     "text": "he",
+     "align": "v5-2"
+    },
+    {
+     "text": "was",
+     "align": "v5-3"
+    },
+    {
+     "text": "wounded",
+     "align": "v5-3"
+    },
+    {
+     "text": "for",
+     "align": "v5-4"
+    },
+    {
+     "text": "our",
+     "align": "v5-5"
+    },
+    {
+     "text": "transgressions",
+     "align": "v5-5"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "he",
+     "align": "v5-6"
+    },
+    {
+     "text": "was",
+     "align": "v5-6"
+    },
+    {
+     "text": "bruised",
+     "align": "v5-6"
+    },
+    {
+     "text": "for",
+     "align": "v5-7"
+    },
+    {
+     "text": "our",
+     "align": "v5-8"
+    },
+    {
+     "text": "iniquities",
+     "align": "v5-8"
+    },
+    {
+     "text": ":",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "the",
+     "align": "v5-9"
+    },
+    {
+     "text": "chastisement",
+     "align": "v5-9"
+    },
+    {
+     "text": "of",
+     "align": "v5-10"
+    },
+    {
+     "text": "our",
+     "align": "v5-10"
+    },
+    {
+     "text": "peace",
+     "align": "v5-10"
+    },
+    {
+     "text": "was",
+     "align": "v5-11"
+    },
+    {
+     "text": "upon",
+     "align": "v5-11"
+    },
+    {
+     "text": "him",
+     "align": "v5-11"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v5-12"
+    },
+    {
+     "text": "with",
+     "align": "v5-13"
+    },
+    {
+     "text": "his",
+     "align": "v5-14"
+    },
+    {
+     "text": "stripes",
+     "align": "v5-14"
+    },
+    {
+     "text": "we",
+     "align": "v5-16"
+    },
+    {
+     "text": "are",
+     "align": "v5-15"
+    },
+    {
+     "text": "healed",
+     "align": "v5-15"
+    },
+    {
+     "text": ".",
+     "align": null,
+     "punct": true
+    }
+   ],
+   "alignments": [
+    {
+     "id": "v5-1",
+     "deepDive": "v5-1"
+    },
+    {
+     "id": "v5-2",
+     "deepDive": "v5-2"
+    },
+    {
+     "id": "v5-3",
+     "deepDive": "v5-3"
+    },
+    {
+     "id": "v5-4",
+     "deepDive": "v5-4"
+    },
+    {
+     "id": "v5-5",
+     "deepDive": "v5-5"
+    },
+    {
+     "id": "v5-6",
+     "deepDive": "v5-6"
+    },
+    {
+     "id": "v5-7",
+     "deepDive": "v5-7"
+    },
+    {
+     "id": "v5-8",
+     "deepDive": "v5-8"
+    },
+    {
+     "id": "v5-9",
+     "deepDive": "v5-9"
+    },
+    {
+     "id": "v5-10",
+     "deepDive": "v5-10"
+    },
+    {
+     "id": "v5-11",
+     "deepDive": "v5-11"
+    },
+    {
+     "id": "v5-12",
+     "deepDive": "v5-12"
+    },
+    {
+     "id": "v5-13",
+     "deepDive": "v5-13"
+    },
+    {
+     "id": "v5-14",
+     "deepDive": "v5-14"
+    },
+    {
+     "id": "v5-15",
+     "deepDive": "v5-15"
+    },
+    {
+     "id": "v5-16",
+     "deepDive": "v5-16"
+    }
+   ],
+   "mosiahNote": "Identical to KJV — no differences."
+  },
+  {
+   "number": 6,
+   "hebrew": [
+    {
+     "text": "כֻּלָּנוּ",
+     "align": "v6-1"
+    },
+    {
+     "text": "כַּ",
+     "align": "v6-2"
+    },
+    {
+     "text": "צֹּאן",
+     "align": "v6-3",
+     "joined": true
+    },
+    {
+     "text": "תָּעִינוּ",
+     "align": "v6-4"
+    },
+    {
+     "text": "אִישׁ",
+     "align": "v6-5"
+    },
+    {
+     "text": "לְ",
+     "align": "v6-6"
+    },
+    {
+     "text": "דַרְכּוֹ",
+     "align": "v6-7",
+     "joined": true
+    },
+    {
+     "text": "פָּנִינוּ",
+     "align": "v6-8"
+    },
+    {
+     "text": "וַ",
+     "align": "v6-9"
+    },
+    {
+     "text": "יהוָה",
+     "align": "v6-10",
+     "joined": true
+    },
+    {
+     "text": "הִפְגִּיעַ",
+     "align": "v6-11"
+    },
+    {
+     "text": "בּוֹ",
+     "align": "v6-12"
+    },
+    {
+     "text": "אֵת",
+     "align": "v6-13"
+    },
+    {
+     "text": "עֲוֹן",
+     "align": "v6-14"
+    },
+    {
+     "text": "כֻּלָּנוּ",
+     "align": "v6-15"
+    },
+    {
+     "text": "׃",
+     "align": null,
+     "joined": true
+    }
+   ],
+   "english": [
+    {
+     "text": "All",
+     "align": "v6-1"
+    },
+    {
+     "text": "we",
+     "align": "v6-1"
+    },
+    {
+     "text": "like",
+     "align": "v6-2"
+    },
+    {
+     "text": "sheep",
+     "align": "v6-3"
+    },
+    {
+     "text": "have",
+     "align": "v6-4"
+    },
+    {
+     "text": "gone",
+     "align": "v6-4"
+    },
+    {
+     "text": "astray",
+     "align": "v6-4"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "we",
+     "align": "v6-8"
+    },
+    {
+     "text": "have",
+     "align": "v6-8"
+    },
+    {
+     "text": "turned",
+     "align": "v6-8"
+    },
+    {
+     "text": "every",
+     "align": "v6-5"
+    },
+    {
+     "text": "one",
+     "align": "v6-5"
+    },
+    {
+     "text": "to",
+     "align": "v6-6"
+    },
+    {
+     "text": "his",
+     "align": "v6-7"
+    },
+    {
+     "text": "own",
+     "align": "v6-7"
+    },
+    {
+     "text": "way",
+     "align": "v6-7"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v6-9"
+    },
+    {
+     "text": "the",
+     "align": "v6-10"
+    },
+    {
+     "text": "LORD",
+     "align": "v6-10"
+    },
+    {
+     "text": "hath",
+     "align": "v6-11"
+    },
+    {
+     "text": "laid",
+     "align": "v6-11"
+    },
+    {
+     "text": "on",
+     "align": "v6-12"
+    },
+    {
+     "text": "him",
+     "align": "v6-12"
+    },
+    {
+     "text": "the",
+     "align": "v6-14"
+    },
+    {
+     "text": "iniquity",
+     "align": "v6-14"
+    },
+    {
+     "text": "of",
+     "align": "v6-15"
+    },
+    {
+     "text": "us",
+     "align": "v6-15"
+    },
+    {
+     "text": "all",
+     "align": "v6-15"
+    },
+    {
+     "text": ".",
+     "align": null,
+     "punct": true
+    }
+   ],
+   "alignments": [
+    {
+     "id": "v6-1",
+     "deepDive": "v6-1"
+    },
+    {
+     "id": "v6-2",
+     "deepDive": "v6-2"
+    },
+    {
+     "id": "v6-3",
+     "deepDive": "v6-3"
+    },
+    {
+     "id": "v6-4",
+     "deepDive": "v6-4"
+    },
+    {
+     "id": "v6-5",
+     "deepDive": "v6-5"
+    },
+    {
+     "id": "v6-6",
+     "deepDive": "v6-6"
+    },
+    {
+     "id": "v6-7",
+     "deepDive": "v6-7"
+    },
+    {
+     "id": "v6-8",
+     "deepDive": "v6-8"
+    },
+    {
+     "id": "v6-9",
+     "deepDive": "v6-9"
+    },
+    {
+     "id": "v6-10",
+     "deepDive": "v6-10"
+    },
+    {
+     "id": "v6-11",
+     "deepDive": "v6-11"
+    },
+    {
+     "id": "v6-12",
+     "deepDive": "v6-12"
+    },
+    {
+     "id": "v6-13",
+     "deepDive": "v6-13"
+    },
+    {
+     "id": "v6-14",
+     "deepDive": "v6-14"
+    },
+    {
+     "id": "v6-15",
+     "deepDive": "v6-15"
+    }
+   ],
+   "mosiahNote": "Identical to KJV — no differences."
+  },
+  {
+   "number": 7,
+   "hebrew": [
+    {
+     "text": "נִגַּשׂ",
+     "align": "v7-1"
+    },
+    {
+     "text": "וְ",
+     "align": "v7-2"
+    },
+    {
+     "text": "הוּא",
+     "align": "v7-3",
+     "joined": true
+    },
+    {
+     "text": "נַעֲנֶה",
+     "align": "v7-4"
+    },
+    {
+     "text": "וְ",
+     "align": "v7-5"
+    },
+    {
+     "text": "לֹא",
+     "align": "v7-6",
+     "joined": true
+    },
+    {
+     "text": "יִפְתַּח",
+     "align": "v7-7"
+    },
+    {
+     "text": "פִּיו",
+     "align": "v7-8"
+    },
+    {
+     "text": "כַּ",
+     "align": "v7-9"
+    },
+    {
+     "text": "שֶּׂה",
+     "align": "v7-10",
+     "joined": true
+    },
+    {
+     "text": "לַ",
+     "align": "v7-11"
+    },
+    {
+     "text": "טֶּבַח",
+     "align": "v7-12",
+     "joined": true
+    },
+    {
+     "text": "יוּבָל",
+     "align": "v7-13"
+    },
+    {
+     "text": "וּ",
+     "align": "v7-14"
+    },
+    {
+     "text": "כְ",
+     "align": "v7-15",
+     "joined": true
+    },
+    {
+     "text": "רָחֵל",
+     "align": "v7-16",
+     "joined": true
+    },
+    {
+     "text": "לִפְנֵי",
+     "align": "v7-17"
+    },
+    {
+     "text": "גֹזְזֶיהָ",
+     "align": "v7-18"
+    },
+    {
+     "text": "נֶאֱלָמָה",
+     "align": "v7-19"
+    },
+    {
+     "text": "וְ",
+     "align": "v7-20"
+    },
+    {
+     "text": "לֹא",
+     "align": "v7-21",
+     "joined": true
+    },
+    {
+     "text": "יִפְתַּח",
+     "align": "v7-22"
+    },
+    {
+     "text": "פִּיו",
+     "align": "v7-23"
+    },
+    {
+     "text": "׃",
+     "align": null,
+     "joined": true
+    }
+   ],
+   "english": [
+    {
+     "text": "He",
+     "align": "v7-1"
+    },
+    {
+     "text": "was",
+     "align": "v7-1"
+    },
+    {
+     "text": "oppressed",
+     "align": "v7-1"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v7-2"
+    },
+    {
+     "text": "he",
+     "align": "v7-3"
+    },
+    {
+     "text": "was",
+     "align": "v7-4"
+    },
+    {
+     "text": "afflicted",
+     "align": "v7-4"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "yet",
+     "align": "v7-5"
+    },
+    {
+     "text": "he",
+     "align": "v7-7"
+    },
+    {
+     "text": "opened",
+     "align": "v7-7"
+    },
+    {
+     "text": "not",
+     "align": "v7-6"
+    },
+    {
+     "text": "his",
+     "align": "v7-8"
+    },
+    {
+     "text": "mouth",
+     "align": "v7-8"
+    },
+    {
+     "text": ":",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "he",
+     "align": "v7-13"
+    },
+    {
+     "text": "is",
+     "align": "v7-13"
+    },
+    {
+     "text": "brought",
+     "align": "v7-13"
+    },
+    {
+     "text": "as",
+     "align": "v7-9"
+    },
+    {
+     "text": "a",
+     "align": "v7-10"
+    },
+    {
+     "text": "lamb",
+     "align": "v7-10"
+    },
+    {
+     "text": "to",
+     "align": "v7-11"
+    },
+    {
+     "text": "the",
+     "align": "v7-11"
+    },
+    {
+     "text": "slaughter",
+     "align": "v7-12"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v7-14"
+    },
+    {
+     "text": "as",
+     "align": "v7-15"
+    },
+    {
+     "text": "a",
+     "align": "v7-16"
+    },
+    {
+     "text": "sheep",
+     "align": "v7-16"
+    },
+    {
+     "text": "before",
+     "align": "v7-17"
+    },
+    {
+     "text": "her",
+     "align": "v7-18"
+    },
+    {
+     "text": "shearers",
+     "align": "v7-18"
+    },
+    {
+     "text": "is",
+     "align": "v7-19"
+    },
+    {
+     "text": "dumb",
+     "align": "v7-19"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "so",
+     "align": "v7-20"
+    },
+    {
+     "text": "he",
+     "align": "v7-22"
+    },
+    {
+     "text": "opened",
+     "align": "v7-22"
+    },
+    {
+     "text": "not",
+     "align": "v7-21"
+    },
+    {
+     "text": "his",
+     "align": "v7-23"
+    },
+    {
+     "text": "mouth",
+     "align": "v7-23"
+    },
+    {
+     "text": ".",
+     "align": null,
+     "punct": true
+    }
+   ],
+   "alignments": [
+    {
+     "id": "v7-1",
+     "deepDive": "v7-1"
+    },
+    {
+     "id": "v7-2",
+     "deepDive": "v7-2"
+    },
+    {
+     "id": "v7-3",
+     "deepDive": "v7-3"
+    },
+    {
+     "id": "v7-4",
+     "deepDive": "v7-4"
+    },
+    {
+     "id": "v7-5",
+     "deepDive": "v7-5"
+    },
+    {
+     "id": "v7-6",
+     "deepDive": "v7-6"
+    },
+    {
+     "id": "v7-7",
+     "deepDive": "v7-7"
+    },
+    {
+     "id": "v7-8",
+     "deepDive": "v7-8"
+    },
+    {
+     "id": "v7-9",
+     "deepDive": "v7-9"
+    },
+    {
+     "id": "v7-10",
+     "deepDive": "v7-10"
+    },
+    {
+     "id": "v7-11",
+     "deepDive": "v7-11"
+    },
+    {
+     "id": "v7-12",
+     "deepDive": "v7-12"
+    },
+    {
+     "id": "v7-13",
+     "deepDive": "v7-13"
+    },
+    {
+     "id": "v7-14",
+     "deepDive": "v7-14"
+    },
+    {
+     "id": "v7-15",
+     "deepDive": "v7-15"
+    },
+    {
+     "id": "v7-16",
+     "deepDive": "v7-16"
+    },
+    {
+     "id": "v7-17",
+     "deepDive": "v7-17"
+    },
+    {
+     "id": "v7-18",
+     "deepDive": "v7-18"
+    },
+    {
+     "id": "v7-19",
+     "deepDive": "v7-19"
+    },
+    {
+     "id": "v7-20",
+     "deepDive": "v7-20"
+    },
+    {
+     "id": "v7-21",
+     "deepDive": "v7-21"
+    },
+    {
+     "id": "v7-22",
+     "deepDive": "v7-22"
+    },
+    {
+     "id": "v7-23",
+     "deepDive": "v7-23"
+    }
+   ],
+   "mosiahNote": "Identical to KJV — no differences."
+  },
+  {
+   "number": 8,
+   "hebrew": [
+    {
+     "text": "מֵ",
+     "align": "v8-1"
+    },
+    {
+     "text": "עֹצֶר",
+     "align": "v8-2",
+     "joined": true
+    },
+    {
+     "text": "וּ",
+     "align": "v8-3"
+    },
+    {
+     "text": "מִ",
+     "align": "v8-4",
+     "joined": true
+    },
+    {
+     "text": "מִּשְׁפָּט",
+     "align": "v8-5",
+     "joined": true
+    },
+    {
+     "text": "לֻקָּח",
+     "align": "v8-6"
+    },
+    {
+     "text": "וְ",
+     "align": "v8-7"
+    },
+    {
+     "text": "אֶת־",
+     "align": "v8-8",
+     "joined": true
+    },
+    {
+     "text": "דּוֹרוֹ",
+     "align": "v8-9",
+     "joined": true
+    },
+    {
+     "text": "מִי",
+     "align": "v8-10"
+    },
+    {
+     "text": "יְשׂוֹחֵחַ",
+     "align": "v8-11"
+    },
+    {
+     "text": "כִּי",
+     "align": "v8-12"
+    },
+    {
+     "text": "נִגְזַר",
+     "align": "v8-13"
+    },
+    {
+     "text": "מֵ",
+     "align": "v8-14"
+    },
+    {
+     "text": "אֶרֶץ",
+     "align": "v8-15",
+     "joined": true
+    },
+    {
+     "text": "חַיִּים",
+     "align": "v8-16"
+    },
+    {
+     "text": "מִ",
+     "align": "v8-17"
+    },
+    {
+     "text": "פֶּשַׁע",
+     "align": "v8-18",
+     "joined": true
+    },
+    {
+     "text": "עַמִּי",
+     "align": "v8-19"
+    },
+    {
+     "text": "נֶגַע",
+     "align": "v8-20"
+    },
+    {
+     "text": "לָמוֹ",
+     "align": "v8-21"
+    },
+    {
+     "text": "׃",
+     "align": null,
+     "joined": true
+    }
+   ],
+   "english": [
+    {
+     "text": "He",
+     "align": "v8-6"
+    },
+    {
+     "text": "was",
+     "align": "v8-6"
+    },
+    {
+     "text": "taken",
+     "align": "v8-6"
+    },
+    {
+     "text": "from",
+     "align": "v8-1"
+    },
+    {
+     "text": "prison",
+     "align": "v8-2"
+    },
+    {
+     "text": "and",
+     "align": "v8-3"
+    },
+    {
+     "text": "from",
+     "align": "v8-4"
+    },
+    {
+     "text": "judgment",
+     "align": "v8-5"
+    },
+    {
+     "text": ":",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v8-7"
+    },
+    {
+     "text": "who",
+     "align": "v8-10"
+    },
+    {
+     "text": "shall",
+     "align": "v8-11"
+    },
+    {
+     "text": "declare",
+     "align": "v8-11"
+    },
+    {
+     "text": "his",
+     "align": "v8-9"
+    },
+    {
+     "text": "generation",
+     "align": "v8-9"
+    },
+    {
+     "text": "?",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "for",
+     "align": "v8-12"
+    },
+    {
+     "text": "he",
+     "align": "v8-13"
+    },
+    {
+     "text": "was",
+     "align": "v8-13"
+    },
+    {
+     "text": "cut",
+     "align": "v8-13"
+    },
+    {
+     "text": "off",
+     "align": "v8-13"
+    },
+    {
+     "text": "out",
+     "align": "v8-14"
+    },
+    {
+     "text": "of",
+     "align": "v8-14"
+    },
+    {
+     "text": "the",
+     "align": "v8-15"
+    },
+    {
+     "text": "land",
+     "align": "v8-15"
+    },
+    {
+     "text": "of",
+     "align": "v8-16"
+    },
+    {
+     "text": "the",
+     "align": "v8-16"
+    },
+    {
+     "text": "living",
+     "align": "v8-16"
+    },
+    {
+     "text": ":",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "for",
+     "align": "v8-17"
+    },
+    {
+     "text": "the",
+     "align": "v8-18"
+    },
+    {
+     "text": "transgression",
+     "align": "v8-18"
+    },
+    {
+     "text": "of",
+     "align": "v8-19"
+    },
+    {
+     "text": "my",
+     "align": "v8-19"
+    },
+    {
+     "text": "people",
+     "align": "v8-19"
+    },
+    {
+     "text": "was",
+     "align": "v8-20"
+    },
+    {
+     "text": "he",
+     "align": "v8-21"
+    },
+    {
+     "text": "stricken",
+     "align": "v8-20"
+    },
+    {
+     "text": ".",
+     "align": null,
+     "punct": true
+    }
+   ],
+   "alignments": [
+    {
+     "id": "v8-1",
+     "deepDive": "v8-1"
+    },
+    {
+     "id": "v8-2",
+     "deepDive": "v8-2"
+    },
+    {
+     "id": "v8-3",
+     "deepDive": "v8-3"
+    },
+    {
+     "id": "v8-4",
+     "deepDive": "v8-4"
+    },
+    {
+     "id": "v8-5",
+     "deepDive": "v8-5"
+    },
+    {
+     "id": "v8-6",
+     "deepDive": "v8-6"
+    },
+    {
+     "id": "v8-7",
+     "deepDive": "v8-7"
+    },
+    {
+     "id": "v8-8",
+     "deepDive": "v8-8"
+    },
+    {
+     "id": "v8-9",
+     "deepDive": "v8-9"
+    },
+    {
+     "id": "v8-10",
+     "deepDive": "v8-10"
+    },
+    {
+     "id": "v8-11",
+     "deepDive": "v8-11"
+    },
+    {
+     "id": "v8-12",
+     "deepDive": "v8-12"
+    },
+    {
+     "id": "v8-13",
+     "deepDive": "v8-13"
+    },
+    {
+     "id": "v8-14",
+     "deepDive": "v8-14"
+    },
+    {
+     "id": "v8-15",
+     "deepDive": "v8-15"
+    },
+    {
+     "id": "v8-16",
+     "deepDive": "v8-16"
+    },
+    {
+     "id": "v8-17",
+     "deepDive": "v8-17"
+    },
+    {
+     "id": "v8-18",
+     "deepDive": "v8-18"
+    },
+    {
+     "id": "v8-19",
+     "deepDive": "v8-19"
+    },
+    {
+     "id": "v8-20",
+     "deepDive": "v8-20"
+    },
+    {
+     "id": "v8-21",
+     "deepDive": "v8-21"
+    }
+   ],
+   "mosiahNote": "Identical to KJV — no differences."
+  },
+  {
+   "number": 9,
+   "hebrew": [
+    {
+     "text": "וַ",
+     "align": "v9-1"
+    },
+    {
+     "text": "יִּתֵּן",
+     "align": "v9-2",
+     "joined": true
+    },
+    {
+     "text": "אֶת־",
+     "align": "v9-3"
+    },
+    {
+     "text": "רְשָׁעִים",
+     "align": "v9-4",
+     "joined": true
+    },
+    {
+     "text": "קִבְרוֹ",
+     "align": "v9-5"
+    },
+    {
+     "text": "וְ",
+     "align": "v9-6"
+    },
+    {
+     "text": "אֶת־",
+     "align": "v9-7",
+     "joined": true
+    },
+    {
+     "text": "עָשִׁיר",
+     "align": "v9-8",
+     "joined": true
+    },
+    {
+     "text": "בְּ",
+     "align": "v9-9"
+    },
+    {
+     "text": "מֹתָיו",
+     "align": "v9-10",
+     "joined": true
+    },
+    {
+     "text": "עַל",
+     "align": "v9-11"
+    },
+    {
+     "text": "לֹא־",
+     "align": "v9-12"
+    },
+    {
+     "text": "חָמָס",
+     "align": "v9-13",
+     "joined": true
+    },
+    {
+     "text": "עָשָׂה",
+     "align": "v9-14"
+    },
+    {
+     "text": "וְ",
+     "align": "v9-15"
+    },
+    {
+     "text": "לֹא",
+     "align": "v9-16",
+     "joined": true
+    },
+    {
+     "text": "מִרְמָה",
+     "align": "v9-17"
+    },
+    {
+     "text": "בְּ",
+     "align": "v9-18"
+    },
+    {
+     "text": "פִיו",
+     "align": "v9-19",
+     "joined": true
+    },
+    {
+     "text": "׃",
+     "align": null,
+     "joined": true
+    }
+   ],
+   "english": [
+    {
+     "text": "And",
+     "align": "v9-1"
+    },
+    {
+     "text": "he",
+     "align": "v9-2"
+    },
+    {
+     "text": "made",
+     "align": "v9-2"
+    },
+    {
+     "text": "his",
+     "align": "v9-5"
+    },
+    {
+     "text": "grave",
+     "align": "v9-5"
+    },
+    {
+     "text": "with",
+     "align": "v9-3"
+    },
+    {
+     "text": "the",
+     "align": "v9-4"
+    },
+    {
+     "text": "wicked",
+     "align": "v9-4"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v9-6"
+    },
+    {
+     "text": "with",
+     "align": "v9-7"
+    },
+    {
+     "text": "the",
+     "align": "v9-8"
+    },
+    {
+     "text": "rich",
+     "align": "v9-8"
+    },
+    {
+     "text": "in",
+     "align": "v9-9"
+    },
+    {
+     "text": "his",
+     "align": "v9-10"
+    },
+    {
+     "text": "death",
+     "align": "v9-10"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "because",
+     "align": "v9-11"
+    },
+    {
+     "text": "he",
+     "align": "v9-14"
+    },
+    {
+     "text": "had",
+     "align": "v9-14"
+    },
+    {
+     "text": "done",
+     "align": "v9-14"
+    },
+    {
+     "text": "no",
+     "align": "v9-12"
+    },
+    {
+     "text": "violence",
+     "align": "v9-13",
+     "diff": "removed"
+    },
+    {
+     "text": "evil",
+     "align": "v9-13",
+     "diff": "added"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "neither",
+     "align": "v9-15"
+    },
+    {
+     "text": "was",
+     "align": "v9-16"
+    },
+    {
+     "text": "any",
+     "align": "v9-16"
+    },
+    {
+     "text": "deceit",
+     "align": "v9-17"
+    },
+    {
+     "text": "in",
+     "align": "v9-18"
+    },
+    {
+     "text": "his",
+     "align": "v9-19"
+    },
+    {
+     "text": "mouth",
+     "align": "v9-19"
+    },
+    {
+     "text": ".",
+     "align": null,
+     "punct": true
+    }
+   ],
+   "alignments": [
+    {
+     "id": "v9-1",
+     "deepDive": "v9-1"
+    },
+    {
+     "id": "v9-2",
+     "deepDive": "v9-2"
+    },
+    {
+     "id": "v9-3",
+     "deepDive": "v9-3"
+    },
+    {
+     "id": "v9-4",
+     "deepDive": "v9-4"
+    },
+    {
+     "id": "v9-5",
+     "deepDive": "v9-5"
+    },
+    {
+     "id": "v9-6",
+     "deepDive": "v9-6"
+    },
+    {
+     "id": "v9-7",
+     "deepDive": "v9-7"
+    },
+    {
+     "id": "v9-8",
+     "deepDive": "v9-8"
+    },
+    {
+     "id": "v9-9",
+     "deepDive": "v9-9"
+    },
+    {
+     "id": "v9-10",
+     "deepDive": "v9-10"
+    },
+    {
+     "id": "v9-11",
+     "deepDive": "v9-11"
+    },
+    {
+     "id": "v9-12",
+     "deepDive": "v9-12"
+    },
+    {
+     "id": "v9-13",
+     "deepDive": "v9-13"
+    },
+    {
+     "id": "v9-14",
+     "deepDive": "v9-14"
+    },
+    {
+     "id": "v9-15",
+     "deepDive": "v9-15"
+    },
+    {
+     "id": "v9-16",
+     "deepDive": "v9-16"
+    },
+    {
+     "id": "v9-17",
+     "deepDive": "v9-17"
+    },
+    {
+     "id": "v9-18",
+     "deepDive": "v9-18"
+    },
+    {
+     "id": "v9-19",
+     "deepDive": "v9-19"
+    }
+   ],
+   "mosiahNote": "Mosiah reads \"and he had done no evil\" where KJV reads \"because he had done no violence.\" The Hebrew חָמָס (khamas) means violence, wrong, injustice — the Book of Mormon rendering \"no evil\" is broader and less specific than either the Hebrew or the KJV."
+  },
+  {
+   "number": 10,
+   "hebrew": [
+    {
+     "text": "וַ",
+     "align": "v10-1"
+    },
+    {
+     "text": "יהוָה",
+     "align": "v10-2",
+     "joined": true
+    },
+    {
+     "text": "חָפֵץ",
+     "align": "v10-3"
+    },
+    {
+     "text": "דַּכְּאוֹ",
+     "align": "v10-4"
+    },
+    {
+     "text": "הֶחֱלִי",
+     "align": "v10-5"
+    },
+    {
+     "text": "אִם־",
+     "align": "v10-6"
+    },
+    {
+     "text": "תָּשִׂים",
+     "align": "v10-7",
+     "joined": true
+    },
+    {
+     "text": "אַשְׁמָה",
+     "align": "v10-8"
+    },
+    {
+     "text": "נַפְשׁוֹ",
+     "align": "v10-9"
+    },
+    {
+     "text": "יִרְאֶה",
+     "align": "v10-10"
+    },
+    {
+     "text": "זֶרַע",
+     "align": "v10-11"
+    },
+    {
+     "text": "יַאֲרִיךְ",
+     "align": "v10-12"
+    },
+    {
+     "text": "יָמִים",
+     "align": "v10-13"
+    },
+    {
+     "text": "וְ",
+     "align": "v10-14"
+    },
+    {
+     "text": "חֵפֶץ",
+     "align": "v10-15",
+     "joined": true
+    },
+    {
+     "text": "יְהוָה",
+     "align": "v10-16"
+    },
+    {
+     "text": "בְּ",
+     "align": "v10-17"
+    },
+    {
+     "text": "יָדוֹ",
+     "align": "v10-18",
+     "joined": true
+    },
+    {
+     "text": "יִצְלָח",
+     "align": "v10-19"
+    },
+    {
+     "text": "׃",
+     "align": null,
+     "joined": true
+    }
+   ],
+   "english": [
+    {
+     "text": "Yet",
+     "align": "v10-1"
+    },
+    {
+     "text": "it",
+     "align": "v10-3"
+    },
+    {
+     "text": "pleased",
+     "align": "v10-3"
+    },
+    {
+     "text": "the",
+     "align": "v10-2"
+    },
+    {
+     "text": "LORD",
+     "align": "v10-2"
+    },
+    {
+     "text": "to",
+     "align": "v10-4"
+    },
+    {
+     "text": "bruise",
+     "align": "v10-4"
+    },
+    {
+     "text": "him",
+     "align": "v10-4"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "he",
+     "align": "v10-5"
+    },
+    {
+     "text": "hath",
+     "align": "v10-5"
+    },
+    {
+     "text": "put",
+     "align": "v10-5"
+    },
+    {
+     "text": "him",
+     "align": "v10-5"
+    },
+    {
+     "text": "to",
+     "align": "v10-5"
+    },
+    {
+     "text": "grief",
+     "align": "v10-5"
+    },
+    {
+     "text": ":",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "when",
+     "align": "v10-6"
+    },
+    {
+     "text": "thou",
+     "align": "v10-7"
+    },
+    {
+     "text": "shalt",
+     "align": "v10-7"
+    },
+    {
+     "text": "make",
+     "align": "v10-7"
+    },
+    {
+     "text": "his",
+     "align": "v10-9"
+    },
+    {
+     "text": "soul",
+     "align": "v10-9"
+    },
+    {
+     "text": "an",
+     "align": "v10-8"
+    },
+    {
+     "text": "offering",
+     "align": "v10-8"
+    },
+    {
+     "text": "for",
+     "align": "v10-8"
+    },
+    {
+     "text": "sin",
+     "align": "v10-8"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "he",
+     "align": "v10-10"
+    },
+    {
+     "text": "shall",
+     "align": "v10-10"
+    },
+    {
+     "text": "see",
+     "align": "v10-10"
+    },
+    {
+     "text": "his",
+     "align": "v10-11"
+    },
+    {
+     "text": "seed",
+     "align": "v10-11"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "he",
+     "align": "v10-12"
+    },
+    {
+     "text": "shall",
+     "align": "v10-12"
+    },
+    {
+     "text": "prolong",
+     "align": "v10-12"
+    },
+    {
+     "text": "his",
+     "align": "v10-13"
+    },
+    {
+     "text": "days",
+     "align": "v10-13"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v10-14"
+    },
+    {
+     "text": "the",
+     "align": "v10-15"
+    },
+    {
+     "text": "pleasure",
+     "align": "v10-15"
+    },
+    {
+     "text": "of",
+     "align": "v10-16"
+    },
+    {
+     "text": "the",
+     "align": "v10-16"
+    },
+    {
+     "text": "LORD",
+     "align": "v10-16"
+    },
+    {
+     "text": "shall",
+     "align": "v10-19"
+    },
+    {
+     "text": "prosper",
+     "align": "v10-19"
+    },
+    {
+     "text": "in",
+     "align": "v10-17"
+    },
+    {
+     "text": "his",
+     "align": "v10-18"
+    },
+    {
+     "text": "hand",
+     "align": "v10-18"
+    },
+    {
+     "text": ".",
+     "align": null,
+     "punct": true
+    }
+   ],
+   "alignments": [
+    {
+     "id": "v10-1",
+     "deepDive": "v10-1"
+    },
+    {
+     "id": "v10-2",
+     "deepDive": "v10-2"
+    },
+    {
+     "id": "v10-3",
+     "deepDive": "v10-3"
+    },
+    {
+     "id": "v10-4",
+     "deepDive": "v10-4"
+    },
+    {
+     "id": "v10-5",
+     "deepDive": "v10-5"
+    },
+    {
+     "id": "v10-6",
+     "deepDive": "v10-6"
+    },
+    {
+     "id": "v10-7",
+     "deepDive": "v10-7"
+    },
+    {
+     "id": "v10-8",
+     "deepDive": "v10-8"
+    },
+    {
+     "id": "v10-9",
+     "deepDive": "v10-9"
+    },
+    {
+     "id": "v10-10",
+     "deepDive": "v10-10"
+    },
+    {
+     "id": "v10-11",
+     "deepDive": "v10-11"
+    },
+    {
+     "id": "v10-12",
+     "deepDive": "v10-12"
+    },
+    {
+     "id": "v10-13",
+     "deepDive": "v10-13"
+    },
+    {
+     "id": "v10-14",
+     "deepDive": "v10-14"
+    },
+    {
+     "id": "v10-15",
+     "deepDive": "v10-15"
+    },
+    {
+     "id": "v10-16",
+     "deepDive": "v10-16"
+    },
+    {
+     "id": "v10-17",
+     "deepDive": "v10-17"
+    },
+    {
+     "id": "v10-18",
+     "deepDive": "v10-18"
+    },
+    {
+     "id": "v10-19",
+     "deepDive": "v10-19"
+    }
+   ],
+   "mosiahNote": "Mosiah reads \"when thou shalt make his soul an offering for sin\" — identical to KJV. However Mosiah adds no textual differences elsewhere. One notable point — the Book of Mormon text preserves the same ambiguity of \"if\" vs \"when\" as the KJV, rendering אִם as \"when\" throughout, identical to KJV — no differences."
+  },
+  {
+   "number": 11,
+   "hebrew": [
+    {
+     "text": "מֵ",
+     "align": "v11-1"
+    },
+    {
+     "text": "עֲמַל",
+     "align": "v11-2",
+     "joined": true
+    },
+    {
+     "text": "נַפְשׁוֹ",
+     "align": "v11-3"
+    },
+    {
+     "text": "יִרְאֶה",
+     "align": "v11-4"
+    },
+    {
+     "text": "יִשְׂבָּע",
+     "align": "v11-5"
+    },
+    {
+     "text": "בְּ",
+     "align": "v11-6"
+    },
+    {
+     "text": "דַעְתּוֹ",
+     "align": "v11-7",
+     "joined": true
+    },
+    {
+     "text": "יַצְדִּיק",
+     "align": "v11-8"
+    },
+    {
+     "text": "צַדִּיק",
+     "align": "v11-9"
+    },
+    {
+     "text": "עַבְדִּי",
+     "align": "v11-10"
+    },
+    {
+     "text": "לָ",
+     "align": "v11-11"
+    },
+    {
+     "text": "רַבִּים",
+     "align": "v11-12",
+     "joined": true
+    },
+    {
+     "text": "וַ",
+     "align": "v11-13"
+    },
+    {
+     "text": "עֲוֹנֹתָם",
+     "align": "v11-14",
+     "joined": true
+    },
+    {
+     "text": "הוּא",
+     "align": "v11-15"
+    },
+    {
+     "text": "יִסְבֹּל",
+     "align": "v11-16"
+    },
+    {
+     "text": "׃",
+     "align": null,
+     "joined": true
+    }
+   ],
+   "english": [
+    {
+     "text": "He",
+     "align": "v11-4"
+    },
+    {
+     "text": "shall",
+     "align": "v11-4"
+    },
+    {
+     "text": "see",
+     "align": "v11-4"
+    },
+    {
+     "text": "of",
+     "align": "v11-1",
+     "diff": "removed"
+    },
+    {
+     "text": "the",
+     "align": "v11-2"
+    },
+    {
+     "text": "travail",
+     "align": "v11-2"
+    },
+    {
+     "text": "of",
+     "align": "v11-3"
+    },
+    {
+     "text": "his",
+     "align": "v11-3"
+    },
+    {
+     "text": "soul",
+     "align": "v11-3"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v11-5"
+    },
+    {
+     "text": "shall",
+     "align": "v11-5"
+    },
+    {
+     "text": "be",
+     "align": "v11-5"
+    },
+    {
+     "text": "satisfied",
+     "align": "v11-5"
+    },
+    {
+     "text": ":",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "by",
+     "align": "v11-6"
+    },
+    {
+     "text": "his",
+     "align": "v11-7"
+    },
+    {
+     "text": "knowledge",
+     "align": "v11-7"
+    },
+    {
+     "text": "shall",
+     "align": "v11-8"
+    },
+    {
+     "text": "my",
+     "align": "v11-10"
+    },
+    {
+     "text": "righteous",
+     "align": "v11-9"
+    },
+    {
+     "text": "servant",
+     "align": "v11-10"
+    },
+    {
+     "text": "justify",
+     "align": "v11-8"
+    },
+    {
+     "text": "many",
+     "align": "v11-12"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "for",
+     "align": "v11-13"
+    },
+    {
+     "text": "he",
+     "align": "v11-15"
+    },
+    {
+     "text": "shall",
+     "align": "v11-16"
+    },
+    {
+     "text": "bear",
+     "align": "v11-16"
+    },
+    {
+     "text": "their",
+     "align": "v11-14"
+    },
+    {
+     "text": "iniquities",
+     "align": "v11-14"
+    },
+    {
+     "text": ".",
+     "align": null,
+     "punct": true
+    }
+   ],
+   "alignments": [
+    {
+     "id": "v11-1",
+     "deepDive": "v11-1"
+    },
+    {
+     "id": "v11-2",
+     "deepDive": "v11-2"
+    },
+    {
+     "id": "v11-3",
+     "deepDive": "v11-3"
+    },
+    {
+     "id": "v11-4",
+     "deepDive": "v11-4"
+    },
+    {
+     "id": "v11-5",
+     "deepDive": "v11-5"
+    },
+    {
+     "id": "v11-6",
+     "deepDive": "v11-6"
+    },
+    {
+     "id": "v11-7",
+     "deepDive": "v11-7"
+    },
+    {
+     "id": "v11-8",
+     "deepDive": "v11-8"
+    },
+    {
+     "id": "v11-9",
+     "deepDive": "v11-9"
+    },
+    {
+     "id": "v11-10",
+     "deepDive": "v11-10"
+    },
+    {
+     "id": "v11-11",
+     "deepDive": "v11-11"
+    },
+    {
+     "id": "v11-12",
+     "deepDive": "v11-12"
+    },
+    {
+     "id": "v11-13",
+     "deepDive": "v11-13"
+    },
+    {
+     "id": "v11-14",
+     "deepDive": "v11-14"
+    },
+    {
+     "id": "v11-15",
+     "deepDive": "v11-15"
+    },
+    {
+     "id": "v11-16",
+     "deepDive": "v11-16"
+    }
+   ],
+   "mosiahNote": "Mosiah reads \"he shall see the travail of his soul and shall be satisfied\" — inserting \"the travail of his soul\" as the explicit object of \"he shall see,\" where the Hebrew leaves the object unstated and KJV supplies it from context. Both KJV and Mosiah resolve the ambiguity the same way, but the Hebrew leaves he shall see standing alone."
+  },
+  {
+   "number": 12,
+   "hebrew": [
+    {
+     "text": "לָכֵן",
+     "align": "v12-1"
+    },
+    {
+     "text": "אֲחַלֶּק־",
+     "align": "v12-2"
+    },
+    {
+     "text": "לוֹ",
+     "align": "v12-3",
+     "joined": true
+    },
+    {
+     "text": "בָ",
+     "align": "v12-4"
+    },
+    {
+     "text": "רַבִּים",
+     "align": "v12-5",
+     "joined": true
+    },
+    {
+     "text": "וְ",
+     "align": "v12-6"
+    },
+    {
+     "text": "אֶת־",
+     "align": "v12-7",
+     "joined": true
+    },
+    {
+     "text": "עַצוּמִים",
+     "align": "v12-8",
+     "joined": true
+    },
+    {
+     "text": "יְחַלֵּק",
+     "align": "v12-9"
+    },
+    {
+     "text": "שָׁלָל",
+     "align": "v12-10"
+    },
+    {
+     "text": "תַּחַת",
+     "align": "v12-11"
+    },
+    {
+     "text": "אֲשֶׁר",
+     "align": "v12-12"
+    },
+    {
+     "text": "הֶעֱרָה",
+     "align": "v12-13"
+    },
+    {
+     "text": "לַ",
+     "align": "v12-14"
+    },
+    {
+     "text": "מָּוֶת",
+     "align": "v12-15",
+     "joined": true
+    },
+    {
+     "text": "נַפְשׁוֹ",
+     "align": "v12-16"
+    },
+    {
+     "text": "וְ",
+     "align": "v12-17"
+    },
+    {
+     "text": "אֶת־",
+     "align": "v12-18",
+     "joined": true
+    },
+    {
+     "text": "פֹּשְׁעִים",
+     "align": "v12-19",
+     "joined": true
+    },
+    {
+     "text": "נִמְנָה",
+     "align": "v12-20"
+    },
+    {
+     "text": "וְ",
+     "align": "v12-21"
+    },
+    {
+     "text": "הוּא",
+     "align": "v12-22",
+     "joined": true
+    },
+    {
+     "text": "חֵטְא־",
+     "align": "v12-23"
+    },
+    {
+     "text": "רַבִּים",
+     "align": "v12-24",
+     "joined": true
+    },
+    {
+     "text": "נָשָׂא",
+     "align": "v12-25"
+    },
+    {
+     "text": "וְ",
+     "align": "v12-26"
+    },
+    {
+     "text": "לַ",
+     "align": "v12-27",
+     "joined": true
+    },
+    {
+     "text": "פֹּשְׁעִים",
+     "align": "v12-28",
+     "joined": true
+    },
+    {
+     "text": "יַפְגִּיעַ",
+     "align": "v12-29"
+    },
+    {
+     "text": "׃",
+     "align": null,
+     "joined": true
+    }
+   ],
+   "english": [
+    {
+     "text": "Therefore",
+     "align": "v12-1"
+    },
+    {
+     "text": "will",
+     "align": "v12-2"
+    },
+    {
+     "text": "I",
+     "align": "v12-2"
+    },
+    {
+     "text": "divide",
+     "align": "v12-2"
+    },
+    {
+     "text": "him",
+     "align": "v12-3"
+    },
+    {
+     "text": "a",
+     "align": "v12-2"
+    },
+    {
+     "text": "portion",
+     "align": "v12-2"
+    },
+    {
+     "text": "with",
+     "align": "v12-4"
+    },
+    {
+     "text": "the",
+     "align": "v12-5"
+    },
+    {
+     "text": "great",
+     "align": "v12-5"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v12-6"
+    },
+    {
+     "text": "he",
+     "align": "v12-9"
+    },
+    {
+     "text": "shall",
+     "align": "v12-9"
+    },
+    {
+     "text": "divide",
+     "align": "v12-9"
+    },
+    {
+     "text": "the",
+     "align": "v12-10"
+    },
+    {
+     "text": "spoil",
+     "align": "v12-10"
+    },
+    {
+     "text": "with",
+     "align": "v12-7"
+    },
+    {
+     "text": "the",
+     "align": "v12-8"
+    },
+    {
+     "text": "strong",
+     "align": "v12-8"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "because",
+     "align": "v12-11"
+    },
+    {
+     "text": "he",
+     "align": "v12-13"
+    },
+    {
+     "text": "hath",
+     "align": "v12-13"
+    },
+    {
+     "text": "poured",
+     "align": "v12-13"
+    },
+    {
+     "text": "out",
+     "align": "v12-13"
+    },
+    {
+     "text": "his",
+     "align": "v12-16"
+    },
+    {
+     "text": "soul",
+     "align": "v12-16"
+    },
+    {
+     "text": "unto",
+     "align": "v12-14"
+    },
+    {
+     "text": "death",
+     "align": "v12-15"
+    },
+    {
+     "text": ":",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v12-17"
+    },
+    {
+     "text": "he",
+     "align": "v12-20"
+    },
+    {
+     "text": "was",
+     "align": "v12-20"
+    },
+    {
+     "text": "numbered",
+     "align": "v12-20"
+    },
+    {
+     "text": "with",
+     "align": "v12-18"
+    },
+    {
+     "text": "the",
+     "align": "v12-19"
+    },
+    {
+     "text": "transgressors",
+     "align": "v12-19"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v12-21"
+    },
+    {
+     "text": "he",
+     "align": "v12-22"
+    },
+    {
+     "text": "bare",
+     "align": "v12-25"
+    },
+    {
+     "text": "the",
+     "align": "v12-23"
+    },
+    {
+     "text": "sin",
+     "align": "v12-23"
+    },
+    {
+     "text": "of",
+     "align": "v12-24"
+    },
+    {
+     "text": "many",
+     "align": "v12-24"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "punct": true
+    },
+    {
+     "text": "and",
+     "align": "v12-26"
+    },
+    {
+     "text": "made",
+     "align": "v12-29"
+    },
+    {
+     "text": "intercession",
+     "align": "v12-29"
+    },
+    {
+     "text": "for",
+     "align": "v12-27"
+    },
+    {
+     "text": "the",
+     "align": "v12-28"
+    },
+    {
+     "text": "transgressors",
+     "align": "v12-28"
+    },
+    {
+     "text": ".",
+     "align": null,
+     "punct": true
+    }
+   ],
+   "alignments": [
+    {
+     "id": "v12-1",
+     "deepDive": "v12-1"
+    },
+    {
+     "id": "v12-2",
+     "deepDive": "v12-2"
+    },
+    {
+     "id": "v12-3",
+     "deepDive": "v12-3"
+    },
+    {
+     "id": "v12-4",
+     "deepDive": "v12-4"
+    },
+    {
+     "id": "v12-5",
+     "deepDive": "v12-5"
+    },
+    {
+     "id": "v12-6",
+     "deepDive": "v12-6"
+    },
+    {
+     "id": "v12-7",
+     "deepDive": "v12-7"
+    },
+    {
+     "id": "v12-8",
+     "deepDive": "v12-8"
+    },
+    {
+     "id": "v12-9",
+     "deepDive": "v12-9"
+    },
+    {
+     "id": "v12-10",
+     "deepDive": "v12-10"
+    },
+    {
+     "id": "v12-11",
+     "deepDive": "v12-11"
+    },
+    {
+     "id": "v12-12",
+     "deepDive": "v12-12"
+    },
+    {
+     "id": "v12-13",
+     "deepDive": "v12-13"
+    },
+    {
+     "id": "v12-14",
+     "deepDive": "v12-14"
+    },
+    {
+     "id": "v12-15",
+     "deepDive": "v12-15"
+    },
+    {
+     "id": "v12-16",
+     "deepDive": "v12-16"
+    },
+    {
+     "id": "v12-17",
+     "deepDive": "v12-17"
+    },
+    {
+     "id": "v12-18",
+     "deepDive": "v12-18"
+    },
+    {
+     "id": "v12-19",
+     "deepDive": "v12-19"
+    },
+    {
+     "id": "v12-20",
+     "deepDive": "v12-20"
+    },
+    {
+     "id": "v12-21",
+     "deepDive": "v12-21"
+    },
+    {
+     "id": "v12-22",
+     "deepDive": "v12-22"
+    },
+    {
+     "id": "v12-23",
+     "deepDive": "v12-23"
+    },
+    {
+     "id": "v12-24",
+     "deepDive": "v12-24"
+    },
+    {
+     "id": "v12-25",
+     "deepDive": "v12-25"
+    },
+    {
+     "id": "v12-26",
+     "deepDive": "v12-26"
+    },
+    {
+     "id": "v12-27",
+     "deepDive": "v12-27"
+    },
+    {
+     "id": "v12-28",
+     "deepDive": "v12-28"
+    },
+    {
+     "id": "v12-29",
+     "deepDive": "v12-29"
+    }
+   ],
+   "mosiahNote": "Identical to KJV — no differences."
+  }
+ ],
+ "deepDives": {
+  "v1-1": {
+   "hebrew": "מִי",
+   "translit": "mî",
+   "rendering": "Who",
+   "body": "straightforward.",
+   "straightforward": true
+  },
+  "v1-2": {
+   "hebrew": "הֶאֱמִין",
+   "translit": "heʾemin",
+   "rendering": "hath believed",
+   "body": "Root: אָמַן (ʾaman). Not intellectual belief. To be firm, to lean one's full weight on something. The root of amen. Closer to \"trusted\" or \"put full faith in.\"",
+   "straightforward": false
+  },
+  "v1-3": {
+   "hebrew": "לִשְׁמֻעָתֵנוּ",
+   "translit": "lishmuʿatenu",
+   "rendering": "our report",
+   "body": "Root: שָׁמַע (shamaʿ) \"to hear.\" The noun means our hearing — the thing our own ears received. More intimate than \"report.\" Our testimony of what was heard.",
+   "straightforward": false
+  },
+  "v1-4": {
+   "hebrew": "וּ",
+   "translit": "u",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v1-5": {
+   "hebrew": "זְרוֹעַ",
+   "translit": "zroaʿ",
+   "rendering": "the arm",
+   "body": "Specifically the forearm — the working, striking, saving limb. In Hebrew idiom this is always the arm of power and action. Frequently used for God's saving intervention at the Exodus.",
+   "straightforward": false
+  },
+  "v1-6": {
+   "hebrew": "יְהוָה",
+   "translit": "YHWH",
+   "rendering": "of the LORD",
+   "body": "The divine name.",
+   "straightforward": false
+  },
+  "v1-7": {
+   "hebrew": "עַל־מִי",
+   "translit": "ʿal-mî",
+   "rendering": "to whom / upon whom",
+   "body": "KJV says \"to whom.\" עַל means upon — something descending or landing on a person, not merely directed toward them.",
+   "straightforward": false
+  },
+  "v1-8": {
+   "hebrew": "נִגְלָֽתָה",
+   "translit": "niglatah",
+   "rendering": "is revealed",
+   "body": "Root: גָּלָה (galah). To uncover, strip bare, expose. The KJV \"revealed\" is thinner. The image is of a covering being stripped away, something hidden suddenly laid bare.",
+   "straightforward": false
+  },
+  "v2-1": {
+   "hebrew": "וַ",
+   "translit": "va",
+   "rendering": "for",
+   "body": "narrative conjunction prefix. KJV renders it \"for\" but the Hebrew is simply \"and\" — continuing the account in past tense narrative form.",
+   "straightforward": false
+  },
+  "v2-2": {
+   "hebrew": "יַּעַל",
+   "translit": "yaʿal",
+   "rendering": "he shall grow up",
+   "body": "Root: עָלָה (ʿalah). To go up, ascend, spring up. KJV renders it as future tense, reading the passage as prophecy, but the Hebrew form is the narrative past (wayyiqtol) — he came up, he sprouted. The image is of something pushing upward from below.",
+   "straightforward": false
+  },
+  "v2-3": {
+   "hebrew": "כַּ",
+   "translit": "ka",
+   "rendering": "as",
+   "body": "comparison prefix, straightforward.",
+   "straightforward": true
+  },
+  "v2-4": {
+   "hebrew": "יּוֹנֵק",
+   "translit": "yoneq",
+   "rendering": "a tender plant",
+   "body": "Root: יָנַק (yanaq) \"to suckle, to nurse.\" A yoneq is literally a nursling — something still drawing life from its source. Applied to plants the word means a young shoot or sucker, so \"tender plant\" is a fair rendering, but it loses the nursling sense. The image is of something newly alive and utterly dependent.",
+   "straightforward": false
+  },
+  "v2-5": {
+   "hebrew": "לְפָנָיו",
+   "translit": "lefanav",
+   "rendering": "before him",
+   "body": "Literally \"to his faces.\" פָּנִים (panim) is always plural in Hebrew — faces, presence. \"Before him\" is acceptable but loses the sense of in his very presence, directly before his face. The \"him\" has no explicit antecedent — most naturally refers to YHWH from verse 1.",
+   "straightforward": false
+  },
+  "v2-6": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v2-7": {
+   "hebrew": "כַ",
+   "translit": "ka",
+   "rendering": "as",
+   "body": "comparison prefix, straightforward.",
+   "straightforward": true
+  },
+  "v2-8": {
+   "hebrew": "שֹּׁרֶשׁ",
+   "translit": "shoresh",
+   "rendering": "a root",
+   "body": "accurate, but a root is hidden, underground, unseen. The image emphasizes obscurity and hiddenness, not just origin.",
+   "straightforward": false
+  },
+  "v2-9": {
+   "hebrew": "מֵ",
+   "translit": "me",
+   "rendering": "out of",
+   "body": "prefix meaning \"from,\" straightforward.",
+   "straightforward": true
+  },
+  "v2-10": {
+   "hebrew": "אֶרֶץ",
+   "translit": "ʾerets",
+   "rendering": "ground",
+   "body": "means earth, land, ground, even the world. Straightforward here.",
+   "straightforward": false
+  },
+  "v2-11": {
+   "hebrew": "צִיָּה",
+   "translit": "tsiyyah",
+   "rendering": "dry",
+   "body": "More than dry. Parched, desert, wasteland — a place of desolation where nothing should be able to grow. Stronger than the KJV \"dry ground.\"",
+   "straightforward": false
+  },
+  "v2-12": {
+   "hebrew": "לֹא",
+   "translit": "loʾ",
+   "rendering": "no / not",
+   "body": "negation, straightforward.",
+   "straightforward": true
+  },
+  "v2-13": {
+   "hebrew": "תֹאַר",
+   "translit": "toʾar",
+   "rendering": "form",
+   "body": "means form, outline, shape — specifically the outward appearance or silhouette of a person. Often used of physical attractiveness. \"No distinguishing shape to him.\"",
+   "straightforward": false
+  },
+  "v2-14": {
+   "hebrew": "לוֹ",
+   "translit": "lo",
+   "rendering": "to him / for him",
+   "body": "straightforward.",
+   "straightforward": true
+  },
+  "v2-15": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "nor",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v2-16": {
+   "hebrew": "לֹא",
+   "translit": "loʾ",
+   "rendering": "not",
+   "body": "negation, straightforward.",
+   "straightforward": true
+  },
+  "v2-17": {
+   "hebrew": "הָדָר",
+   "translit": "hadar",
+   "rendering": "comeliness",
+   "body": "splendor, majesty, ornament, glory. Much weightier than \"comeliness.\" This is the word used of royal majesty and divine glory. Its absence here is striking — he has none of the markers of greatness or glory.",
+   "straightforward": false
+  },
+  "v2-18": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v2-19": {
+   "hebrew": "נִרְאֵהוּ",
+   "translit": "nirʾehu",
+   "rendering": "when we shall see him",
+   "body": "Root: רָאָה (raʾah) \"to see.\" Note it is we who are looking — the corporate witness again as in verse 1.",
+   "straightforward": false
+  },
+  "v2-20": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v2-21": {
+   "hebrew": "לֹא",
+   "translit": "loʾ",
+   "rendering": "no / not",
+   "body": "negation, straightforward.",
+   "straightforward": true
+  },
+  "v2-22": {
+   "hebrew": "מַרְאֶה",
+   "translit": "marʾeh",
+   "rendering": "beauty",
+   "body": "means appearance, sight, vision — what the eye actually takes in. KJV renders it \"beauty\" but the word is more neutral — simply no appearance worth noting, nothing that catches the eye.",
+   "straightforward": false
+  },
+  "v2-23": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "that",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v2-24": {
+   "hebrew": "נֶחְמְדֵהוּ",
+   "translit": "nekhmdehu",
+   "rendering": "we should desire him",
+   "body": "Root: חָמַד (khamad) \"to desire, to covet, to take pleasure in.\" The same root used in the tenth commandment \"do not covet.\" It is appetite, longing, deep desire. The KJV rendering is actually quite close here.",
+   "straightforward": false
+  },
+  "v3-1": {
+   "hebrew": "נִבְזֶה",
+   "translit": "nivzeh",
+   "rendering": "despised",
+   "body": "Root: בָּזָה (bazah). To despise, to treat as worthless, to hold in contempt. This is an active, deliberate contempt — not merely being overlooked but being consciously regarded as having no value.",
+   "straightforward": false
+  },
+  "v3-2": {
+   "hebrew": "וַ",
+   "translit": "va",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v3-3": {
+   "hebrew": "חֲדַל",
+   "translit": "khadal",
+   "rendering": "rejected",
+   "body": "Root: חָדַל (khadal). Not the usual word for rejection. It means to cease, to stop, to leave off, to be lacking. KJV renders it \"rejected\" but the image is closer to one from whom people have withdrawn, one left off, abandoned, no longer counted among. He is not pushed away so much as simply ceased to be included.",
+   "straightforward": false
+  },
+  "v3-4": {
+   "hebrew": "אִישִׁים",
+   "translit": "ishim",
+   "rendering": "of men",
+   "body": "plural of אִישׁ (ish) — a rare plural, rather than the generic word for humanity (אָדָם, adam). Some read it as men of standing, prominent men — abandoned not just by people generally but by those who matter; others take it simply as \"men.\"",
+   "straightforward": false
+  },
+  "v3-5": {
+   "hebrew": "אִישׁ",
+   "translit": "ish",
+   "rendering": "a man",
+   "body": "here the singular, in a construct phrase — \"a man of pains,\" a Hebrew idiom that characterizes a person by what marks him.",
+   "straightforward": false
+  },
+  "v3-6": {
+   "hebrew": "מַכְאֹבוֹת",
+   "translit": "makʾovot",
+   "rendering": "of sorrows",
+   "body": "Root: כָּאַב (kaʾav) \"to be in pain, to suffer.\" The noun מַכְאוֹב means pain, suffering, anguish — physical as much as emotional. Plural here — pains, sufferings — not a single sorrow but many. KJV \"sorrows\" captures the plurality but softens the physical edge.",
+   "straightforward": false
+  },
+  "v3-7": {
+   "hebrew": "וִ",
+   "translit": "vi",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v3-8": {
+   "hebrew": "ידוּעַ",
+   "translit": "duaʿ",
+   "rendering": "acquainted with",
+   "body": "Root: יָדַע (yadaʿ) \"to know.\" But יָדַע is far deeper than intellectual knowing — it is intimate, experiential knowledge. The same word used for the most intimate human knowing. He does not merely encounter grief — he knows it intimately, from the inside.",
+   "straightforward": false
+  },
+  "v3-9": {
+   "hebrew": "חֹלִי",
+   "translit": "kholi",
+   "rendering": "grief",
+   "body": "Root: חָלָה (khalah) \"to be sick, to be weak, to be wounded.\" The noun means sickness, disease, weakness. KJV renders it \"grief\" which is too exclusively emotional. The word is primarily physical illness and weakness. He is intimately acquainted with sickness and physical suffering.",
+   "straightforward": false
+  },
+  "v3-10": {
+   "hebrew": "וּ",
+   "translit": "u",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v3-11": {
+   "hebrew": "כְ",
+   "translit": "ke",
+   "rendering": "as / like",
+   "body": "comparison prefix, straightforward.",
+   "straightforward": true
+  },
+  "v3-12": {
+   "hebrew": "מַסְתֵּר",
+   "translit": "mastēr",
+   "rendering": "one hiding / a hiding",
+   "body": "Root: סָתַר (satar) \"to hide, to conceal.\" This is a participle — one who hides or a hiding place. The phrase is difficult and debated. It can mean like one from whom faces are hidden or like a hiding of faces. Either way the image is of averted eyes — people turning their faces away.",
+   "straightforward": false
+  },
+  "v3-13": {
+   "hebrew": "פָּנִים",
+   "translit": "panim",
+   "rendering": "faces",
+   "body": "always plural in Hebrew, as discussed in verse 2. There is no \"our\" in the Hebrew; KJV supplies it. Here it is faces being hidden or averted — the corporate turning away of human presence from him.",
+   "straightforward": false
+  },
+  "v3-14": {
+   "hebrew": "מִמֶּנּוּ",
+   "translit": "mimenu",
+   "rendering": "from him",
+   "body": "straightforward.",
+   "straightforward": true
+  },
+  "v3-15": {
+   "hebrew": "נִבְזֶה",
+   "translit": "nivzeh",
+   "rendering": "he was despised",
+   "body": "the same word as the opening of the verse, now repeated. This repetition is deliberate — the verse opens and closes with the same word, framing everything inside it with contempt.",
+   "straightforward": false
+  },
+  "v3-16": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v3-17": {
+   "hebrew": "לֹא",
+   "translit": "loʾ",
+   "rendering": "not",
+   "body": "negation, straightforward.",
+   "straightforward": true
+  },
+  "v3-18": {
+   "hebrew": "חֲשַׁבְנֻהוּ",
+   "translit": "khashavnuhu",
+   "rendering": "we esteemed him",
+   "body": "Root: חָשַׁב (khashav) \"to think, to reckon, to account, to value, to devise.\" KJV \"esteemed\" is adequate but the word is richer — to reckon, to count, to assign worth to. We did not count him, reckon him, assign any value to him. The ending נוּ marks \"we\" and הוּ marks \"him\" — it is we again, the corporate witness, who failed to reckon his worth.",
+   "straightforward": false
+  },
+  "v4-1": {
+   "hebrew": "אָכֵן",
+   "translit": "aken",
+   "rendering": "surely",
+   "body": "an emphatic adverb meaning truly, indeed, nevertheless, howbeit. It carries a sense of contrast or correction — but in truth, contrary to what we thought. KJV \"surely\" captures some of this but loses the corrective force — the speaker is reversing the misjudgment of verse 3.",
+   "straightforward": false
+  },
+  "v4-2": {
+   "hebrew": "חֳלָיֵנוּ",
+   "translit": "kholayyenu",
+   "rendering": "our griefs",
+   "body": "Root: חָלָה (khalah) \"to be sick, to be weak.\" As in verse 3, this is primarily sickness, disease, physical suffering — not merely grief. The suffix נוּ means \"our.\" He bore our sicknesses.",
+   "straightforward": false
+  },
+  "v4-3": {
+   "hebrew": "הוּא",
+   "translit": "hu",
+   "rendering": "he",
+   "body": "the personal pronoun, standing alone for emphasis. In Hebrew, pronouns are usually embedded in the verb — when a separate pronoun appears it is emphatic. He himself bore them — not another.",
+   "straightforward": false
+  },
+  "v4-4": {
+   "hebrew": "נָשָׂא",
+   "translit": "nasa",
+   "rendering": "hath borne",
+   "body": "Root: נָשָׂא (nasa) \"to lift, to carry, to bear, to take up.\" A rich word — used of carrying a load, of bearing sin, of lifting up. It is the word used for a priest bearing iniquity, for one taking up another's burden entirely. Not merely sympathizing but physically taking up and carrying away.",
+   "straightforward": false
+  },
+  "v4-5": {
+   "hebrew": "וּ",
+   "translit": "u",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v4-6": {
+   "hebrew": "מַכְאֹבֵינוּ",
+   "translit": "makʾoveinu",
+   "rendering": "our sorrows",
+   "body": "Root: כָּאַב (kaʾav) \"to be in pain.\" As in verse 3 — our pains, our sufferings, physical and emotional. The suffix נוּ means \"our.\"",
+   "straightforward": false
+  },
+  "v4-7": {
+   "hebrew": "סְבָלָם",
+   "translit": "sevalam",
+   "rendering": "carried",
+   "body": "Root: סָבַל (saval) \"to bear a heavy load, to be burdened, to toil under weight.\" A different word from נָשָׂא — this one emphasizes the heaviness of the load, the labor of carrying. He did not lift them lightly — he carried the full weight of them. The suffix ם means \"them.\"",
+   "straightforward": false
+  },
+  "v4-8": {
+   "hebrew": "וַ",
+   "translit": "va",
+   "rendering": "yet",
+   "body": "conjunction prefix. KJV renders it \"yet\" to show contrast, but the Hebrew is simply \"and\" — the contrast is implied by context.",
+   "straightforward": false
+  },
+  "v4-9": {
+   "hebrew": "אֲנַחְנוּ",
+   "translit": "anakhnu",
+   "rendering": "we",
+   "body": "the first person plural pronoun, again standing alone for emphasis. We ourselves — the corporate witness — are being indicted.",
+   "straightforward": false
+  },
+  "v4-10": {
+   "hebrew": "חֲשַׁבְנֻהוּ",
+   "translit": "khashavnuhu",
+   "rendering": "did esteem him",
+   "body": "Root: חָשַׁב (khashav) as in verse 3 — to reckon, to account, to assign value. We reckoned him, counted him as something — but wrongly.",
+   "straightforward": false
+  },
+  "v4-11": {
+   "hebrew": "נָגוּעַ",
+   "translit": "nagua",
+   "rendering": "stricken",
+   "body": "Root: נָגַע (nagaʿ) \"to touch, to strike, to afflict.\" The word carries the specific sense of being struck by God with plague or disease — it is the word used of those afflicted with leprosy. We thought he was plague-stricken by God.",
+   "straightforward": false
+  },
+  "v4-12": {
+   "hebrew": "מֻכֵּה",
+   "translit": "mukkeh",
+   "rendering": "smitten",
+   "body": "Root: נָכָה (nakah) \"to strike, to smite, to beat down.\" This is a passive participle — one who has been struck down. A stronger, more violent word than נָגוּעַ — the image is of being beaten.",
+   "straightforward": false
+  },
+  "v4-13": {
+   "hebrew": "אֱלֹהִים",
+   "translit": "Elohim",
+   "rendering": "of God",
+   "body": "the standard Hebrew word for God. Plural in form, but construed with singular verbs when it refers to Israel's God. Straightforward here.",
+   "straightforward": false
+  },
+  "v4-14": {
+   "hebrew": "וּ",
+   "translit": "u",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v4-15": {
+   "hebrew": "מְעֻנֶּה",
+   "translit": "meʿuneh",
+   "rendering": "afflicted",
+   "body": "Root: עָנָה (ʿanah) \"to be bowed down, to be humbled, to be afflicted, to be oppressed.\" The word carries the sense of being pressed down, crushed, made low. It is used of the oppressed, the humiliated, those ground down by suffering or by others.",
+   "straightforward": false
+  },
+  "v5-1": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "but",
+   "body": "conjunction prefix. KJV renders it \"but\" to show contrast, but the Hebrew is simply \"and\" — the contrast is implied by context.",
+   "straightforward": false
+  },
+  "v5-2": {
+   "hebrew": "הוּא",
+   "translit": "hu",
+   "rendering": "he",
+   "body": "the personal pronoun standing alone for emphasis, as in verse 4. He himself — not another.",
+   "straightforward": false
+  },
+  "v5-3": {
+   "hebrew": "מְחֹלָל",
+   "translit": "mekholal",
+   "rendering": "was wounded",
+   "body": "Root: חָלַל (khalal) \"to pierce, to bore through, to profane, to pollute.\" KJV \"wounded\" is too soft. The word means pierced through — a violent, penetrating wound. It is also the root of the word for a slain person. The image is not of a cut or bruise but of being run through.",
+   "straightforward": false
+  },
+  "v5-4": {
+   "hebrew": "מִ",
+   "translit": "mi",
+   "rendering": "for / because of",
+   "body": "prefix meaning \"from\" but here carrying causal force — on account of, because of, straightforward.",
+   "straightforward": true
+  },
+  "v5-5": {
+   "hebrew": "פְּשָׁעֵינוּ",
+   "translit": "peshaʿeinu",
+   "rendering": "our transgressions",
+   "body": "Root: פָּשַׁע (pashaʿ) \"to rebel, to revolt, to break away.\" This is the strongest Hebrew word for sin — not mere error or missing the mark but willful rebellion, deliberate revolt against authority. The suffix נוּ means \"our.\"",
+   "straightforward": false
+  },
+  "v5-6": {
+   "hebrew": "מְדֻכָּא",
+   "translit": "medukka",
+   "rendering": "bruised",
+   "body": "Root: דָּכָא (daka) \"to crush, to pulverize, to be crushed to pieces.\" Far stronger than \"bruised.\" The image is of something ground down, crushed flat, pulverized. Used of crushing grain. He was not merely hurt — he was crushed.",
+   "straightforward": false
+  },
+  "v5-7": {
+   "hebrew": "מֵ",
+   "translit": "me",
+   "rendering": "for / because of",
+   "body": "prefix meaning \"from,\" again carrying causal force, straightforward.",
+   "straightforward": true
+  },
+  "v5-8": {
+   "hebrew": "עֲוֹנֹתֵינוּ",
+   "translit": "avonotenu",
+   "rendering": "our iniquities",
+   "body": "Root: עָוָה (avah) \"to be bent, to be twisted, to be crooked.\" A different word from פֶּשַׁע — this is sin as moral distortion, crookedness, that which is twisted out of its proper shape. The suffix נוּ means \"our.\"",
+   "straightforward": false
+  },
+  "v5-9": {
+   "hebrew": "מוּסַר",
+   "translit": "musar",
+   "rendering": "the chastisement",
+   "body": "Root: יָסַר (yasar) \"to discipline, to instruct, to chasten, to correct.\" מוּסָר means discipline, correction, chastening — the kind a father gives a son. But it also carries the sense of punishment that produces correction. KJV \"chastisement\" is close but the word has a purposeful, instructive quality — this suffering has a goal.",
+   "straightforward": false
+  },
+  "v5-10": {
+   "hebrew": "שְׁלוֹמֵנוּ",
+   "translit": "shelomenu",
+   "rendering": "of our peace",
+   "body": "Root: שָׁלֵם (shalem) \"to be whole, complete, at peace.\" שָׁלוֹם (shalom) is far richer than \"peace\" — it means wholeness, completeness, wellbeing, flourishing, nothing broken, nothing missing. The suffix נוּ means \"our.\" The discipline that produces our wholeness was upon him.",
+   "straightforward": false
+  },
+  "v5-11": {
+   "hebrew": "עָלָיו",
+   "translit": "alav",
+   "rendering": "upon him",
+   "body": "the preposition עַל with the suffix \"him.\" As in verse 1 — something landing upon, descending on a person. Straightforward but weighty.",
+   "straightforward": false
+  },
+  "v5-12": {
+   "hebrew": "וּ",
+   "translit": "u",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v5-13": {
+   "hebrew": "בַ",
+   "translit": "va",
+   "rendering": "with / by",
+   "body": "prefix meaning \"in, by, with,\" straightforward.",
+   "straightforward": true
+  },
+  "v5-14": {
+   "hebrew": "חֲבֻרָתוֹ",
+   "translit": "khavurato",
+   "rendering": "his stripes",
+   "body": "Root: חָבַר (khavar) \"to join, to bind together\" but the noun חַבּוּרָה means a bruise, a welt, a stripe from a blow — the mark left when flesh is struck and bound up by injury. The suffix וֹ means \"his.\" The Hebrew is singular — his welt, his wound — used collectively; KJV \"stripes\" makes it plural.",
+   "straightforward": false
+  },
+  "v5-15": {
+   "hebrew": "נִרְפָּא",
+   "translit": "nirpa",
+   "rendering": "are healed / healing came",
+   "body": "Root: רָפָא (rafa) \"to heal, to restore, to make whole.\" A healing that restores to wholeness. The form is impersonal — literally \"it is healed\" or \"healing has come\" — with \"to us\" (לָנוּ) following; KJV recasts it as \"we are healed.\" The same root gives us the name Raphael — God heals.",
+   "straightforward": false
+  },
+  "v5-16": {
+   "hebrew": "לָנוּ",
+   "translit": "lanu",
+   "rendering": "for us / to us",
+   "body": "the preposition לְ with the suffix \"us.\" By his stripes healing came to us, belongs to us.",
+   "straightforward": false
+  },
+  "v6-1": {
+   "hebrew": "כֻּלָּנוּ",
+   "translit": "kullanu",
+   "rendering": "all we",
+   "body": "Root: כֹּל (kol) \"all, every, the whole.\" The suffix נוּ means \"us.\" All of us, every one of us, the whole of us — no exceptions implied. The word opens and closes the verse, framing everything within it.",
+   "straightforward": false
+  },
+  "v6-2": {
+   "hebrew": "כַּ",
+   "translit": "ka",
+   "rendering": "like",
+   "body": "comparison prefix, straightforward.",
+   "straightforward": true
+  },
+  "v6-3": {
+   "hebrew": "צֹּאן",
+   "translit": "tsoʾn",
+   "rendering": "sheep",
+   "body": "the collective noun for sheep or goats as a flock. Not a single sheep but the flock as a whole — which makes the next word more striking.",
+   "straightforward": false
+  },
+  "v6-4": {
+   "hebrew": "תָּעִינוּ",
+   "translit": "taʿinu",
+   "rendering": "have gone astray",
+   "body": "Root: תָּעָה (taʿah) \"to wander, to stray, to err, to reel, to go astray.\" Not a deliberate running away but aimless wandering, losing the path, drifting. Also used of staggering in drunkenness or confusion. The image is of a flock that has simply dispersed in every direction without purpose.",
+   "straightforward": false
+  },
+  "v6-5": {
+   "hebrew": "אִישׁ",
+   "translit": "ish",
+   "rendering": "every one / each man",
+   "body": "The ordinary word for a man, an individual. Here it is used distributively — each one, every individual among us.",
+   "straightforward": false
+  },
+  "v6-6": {
+   "hebrew": "לְ",
+   "translit": "le",
+   "rendering": "to",
+   "body": "directional prefix, straightforward.",
+   "straightforward": true
+  },
+  "v6-7": {
+   "hebrew": "דַרְכּוֹ",
+   "translit": "darko",
+   "rendering": "his own way",
+   "body": "Root: דֶּרֶךְ (derekh) \"way, road, path, journey, manner of life.\" Far more than a physical road — דֶּרֶךְ is one's chosen course, manner of living, direction of life. The suffix וֹ means \"his.\" Each one turned to his own chosen course.",
+   "straightforward": false
+  },
+  "v6-8": {
+   "hebrew": "פָּנִינוּ",
+   "translit": "paninu",
+   "rendering": "we have turned",
+   "body": "Root: פָּנָה (panah) \"to turn, to face toward, to turn away.\" Related to פָּנִים (panim, faces) — to turn one's face in a direction. Here it is the deliberate turning of the whole self toward one's own way.",
+   "straightforward": false
+  },
+  "v6-9": {
+   "hebrew": "וַ",
+   "translit": "va",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v6-10": {
+   "hebrew": "יהוָה",
+   "translit": "YHWH",
+   "rendering": "the LORD",
+   "body": "The divine name.",
+   "straightforward": false
+  },
+  "v6-11": {
+   "hebrew": "הִפְגִּיעַ",
+   "translit": "hifgiaʿ",
+   "rendering": "hath laid / caused to fall",
+   "body": "Root: פָּגַע (pagaʿ) \"to meet, to encounter, to strike, to intercede, to fall upon.\" This is a striking word. In its simple form פָּגַע means to meet or encounter — often violently, to strike or assail. In this causative form (hiphil) it means to cause to meet, to cause to strike, to cause to fall upon. The LORD caused our iniquity to collide with him, to strike him, to land upon him. KJV \"hath laid on\" is gentler than the Hebrew, which can carry the sense of a forceful meeting or striking.",
+   "straightforward": false
+  },
+  "v6-12": {
+   "hebrew": "בּוֹ",
+   "translit": "bo",
+   "rendering": "on him",
+   "body": "the preposition בְּ with the suffix \"him.\" Upon him, against him — בְּ is the preposition פָּגַע normally takes (to meet with, fall upon).",
+   "straightforward": false
+  },
+  "v6-13": {
+   "hebrew": "אֵת",
+   "translit": "et",
+   "rendering": null,
+   "body": "the direct object marker — untranslatable in English, simply marks what follows as the direct object of the verb, straightforward.",
+   "straightforward": true
+  },
+  "v6-14": {
+   "hebrew": "עֲוֹן",
+   "translit": "avon",
+   "rendering": "the iniquity",
+   "body": "Root: עָוָה (avah) as in verse 5 — moral crookedness, twistedness, guilt. Not just the act but the accumulated guilt and distortion of it.",
+   "straightforward": false
+  },
+  "v6-15": {
+   "hebrew": "כֻּלָּנוּ",
+   "translit": "kullanu",
+   "rendering": "of us all",
+   "body": "the same word that opened the verse. All of us, every one of us. The verse is deliberately framed — all of us wandered, and all of our iniquity was caused to collide with him. The bookending is exact and intentional.",
+   "straightforward": false
+  },
+  "v7-1": {
+   "hebrew": "נִגַּשׂ",
+   "translit": "nigas",
+   "rendering": "he was oppressed",
+   "body": "Root: נָגַשׂ (nagas) \"to press, to drive, to exact, to oppress, to push hard.\" The word is used of a taskmaster driving slaves, of an exactor demanding payment, of one who presses another without mercy. KJV \"oppressed\" is adequate but loses the image of being driven and pressed by an overbearing force.",
+   "straightforward": false
+  },
+  "v7-2": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v7-3": {
+   "hebrew": "הוּא",
+   "translit": "hu",
+   "rendering": "he",
+   "body": "the personal pronoun standing alone for emphasis, as in verses 4 and 5. He himself.",
+   "straightforward": false
+  },
+  "v7-4": {
+   "hebrew": "נַעֲנֶה",
+   "translit": "naʿaneh",
+   "rendering": "was afflicted",
+   "body": "Root: עָנָה (ʿanah) as in verse 4 — to be bowed down, humbled, afflicted, oppressed. But here it may also carry the sense of he submitted, he humbled himself — the form can be read as either passive (he was afflicted) or reflexive (he humbled himself). The ambiguity is significant — was this done to him or did he choose it?",
+   "straightforward": false
+  },
+  "v7-5": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "yet",
+   "body": "conjunction prefix. KJV renders it \"yet\" to show contrast, straightforward.",
+   "straightforward": true
+  },
+  "v7-6": {
+   "hebrew": "לֹא",
+   "translit": "loʾ",
+   "rendering": "not",
+   "body": "negation, straightforward.",
+   "straightforward": true
+  },
+  "v7-7": {
+   "hebrew": "יִפְתַּח",
+   "translit": "yiftakh",
+   "rendering": "he opened",
+   "body": "Root: פָּתַח (patakh) \"to open, to release, to loosen.\" The verb is imperfect tense here — which in Hebrew can carry a continuous or habitual sense: he would not open, he kept not opening. It may be not a single moment of silence but a sustained refusal to open his mouth — a sense KJV's simple past \"opened not\" flattens.",
+   "straightforward": false
+  },
+  "v7-8": {
+   "hebrew": "פִּיו",
+   "translit": "piv",
+   "rendering": "his mouth",
+   "body": "Root: פֶּה (peh) \"mouth.\" The suffix וֹ means \"his.\" Straightforward.",
+   "straightforward": false
+  },
+  "v7-9": {
+   "hebrew": "כַּ",
+   "translit": "ka",
+   "rendering": "as / like",
+   "body": "comparison prefix, straightforward.",
+   "straightforward": true
+  },
+  "v7-10": {
+   "hebrew": "שֶּׂה",
+   "translit": "seh",
+   "rendering": "a lamb",
+   "body": "a single animal of the flock, sheep or goat, of any age; KJV \"lamb\" narrows it to a young one. Not the collective flock (צֹּאן) of verse 6 but one particular animal — one among many.",
+   "straightforward": false
+  },
+  "v7-11": {
+   "hebrew": "לַ",
+   "translit": "la",
+   "rendering": "to the",
+   "body": "prefix combining the preposition לְ and the definite article הַ, straightforward.",
+   "straightforward": true
+  },
+  "v7-12": {
+   "hebrew": "טֶּבַח",
+   "translit": "tevakh",
+   "rendering": "slaughter",
+   "body": "Root: טָבַח (tavakh) \"to slaughter, to butcher.\" The word is used of the slaughter of animals for food or sacrifice — it is deliberate, purposeful killing. Not death in battle but the killing of one brought specifically for that end.",
+   "straightforward": false
+  },
+  "v7-13": {
+   "hebrew": "יוּבָל",
+   "translit": "yuval",
+   "rendering": "is brought",
+   "body": "Root: יָבַל (yaval) \"to lead, to bring, to carry along.\" A passive form — he is led, he is brought along. The lamb does not go on its own — it is conducted, led to the place of slaughter. There is a passivity and a submission in the image.",
+   "straightforward": false
+  },
+  "v7-14": {
+   "hebrew": "וּ",
+   "translit": "u",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v7-15": {
+   "hebrew": "כְ",
+   "translit": "ke",
+   "rendering": "as / like",
+   "body": "comparison prefix, straightforward.",
+   "straightforward": true
+  },
+  "v7-16": {
+   "hebrew": "רָחֵל",
+   "translit": "rakhel",
+   "rendering": "a sheep",
+   "body": "specifically a ewe — a female sheep. Not the generic word for sheep. It is the only sheep word in this chapter that specifies gender. The image shifts — from a lamb led to slaughter to a ewe before her shearers, silent and still.",
+   "straightforward": false
+  },
+  "v7-17": {
+   "hebrew": "לִפְנֵי",
+   "translit": "lifney",
+   "rendering": "before",
+   "body": "literally \"to the faces of,\" as with לְפָנָיו in verse 2. In the very presence of, directly before.",
+   "straightforward": false
+  },
+  "v7-18": {
+   "hebrew": "גֹזְזֶיהָ",
+   "translit": "gozezeyha",
+   "rendering": "her shearers",
+   "body": "Root: גָּזַז (gazaz) \"to shear, to cut off.\" The suffix הָ means \"her.\" Those who cut away from her — her wool, her covering stripped off. The image of exposure and taking from her without her resistance.",
+   "straightforward": false
+  },
+  "v7-19": {
+   "hebrew": "נֶאֱלָמָה",
+   "translit": "neʾelamah",
+   "rendering": "is dumb / is silent",
+   "body": "Root: אָלַם (alam) \"to be dumb, to be silent, to be bound, to be mute.\" Not merely quiet but struck silent, unable or unwilling to speak — the word carries the sense of being bound in silence. The ewe does not cry out as she is shorn.",
+   "straightforward": false
+  },
+  "v7-20": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "so",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v7-21": {
+   "hebrew": "לֹא",
+   "translit": "loʾ",
+   "rendering": "not",
+   "body": "negation, straightforward.",
+   "straightforward": true
+  },
+  "v7-22": {
+   "hebrew": "יִפְתַּח",
+   "translit": "yiftakh",
+   "rendering": "he opened",
+   "body": "the same word and form as earlier in the verse. The repetition is exact and deliberate — the phrase he did not open his mouth appears once before and once after, framing the two images of the lamb and the ewe within an unbroken silence.",
+   "straightforward": false
+  },
+  "v7-23": {
+   "hebrew": "פִּיו",
+   "translit": "piv",
+   "rendering": "his mouth",
+   "body": "same as above, straightforward.",
+   "straightforward": true
+  },
+  "v8-1": {
+   "hebrew": "מֵ",
+   "translit": "me",
+   "rendering": "from",
+   "body": "prefix meaning \"from, out of,\" but מִן can also mean \"by, because of\" — by oppression and judgment he was taken away. KJV takes it as \"from.\"",
+   "straightforward": false
+  },
+  "v8-2": {
+   "hebrew": "עֹצֶר",
+   "translit": "otser",
+   "rendering": "prison",
+   "body": "Root: עָצַר (atsar) \"to restrain, to hold back, to shut up, to arrest.\" The noun means restraint, confinement, detention. KJV renders it \"prison\" but the word is broader — any form of restraint or confinement, being held back by force. It can also mean oppression or distress.",
+   "straightforward": false
+  },
+  "v8-3": {
+   "hebrew": "וּ",
+   "translit": "u",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v8-4": {
+   "hebrew": "מִ",
+   "translit": "mi",
+   "rendering": "from",
+   "body": "prefix meaning \"from, out of,\" straightforward.",
+   "straightforward": true
+  },
+  "v8-5": {
+   "hebrew": "מִּשְׁפָּט",
+   "translit": "mishpat",
+   "rendering": "judgment",
+   "body": "Root: שָׁפַט (shafat) \"to judge, to govern, to decide.\" מִּשְׁפָּט means judgment, justice, a legal decision, a legal process, a sentence. KJV \"judgment\" is adequate but the word covers the entire process — the legal proceedings, the trial, the verdict, the sentence. He was taken away from the whole of it — removed before justice could be done, or removed by the process itself.",
+   "straightforward": false
+  },
+  "v8-6": {
+   "hebrew": "לֻקָּח",
+   "translit": "luqqakh",
+   "rendering": "he was taken",
+   "body": "Root: לָקַח (laqakh) \"to take, to fetch, to receive, to seize.\" A passive form — he was taken, he was seized, he was removed. The word is used of being taken away in death as well as being seized or arrested. Both senses are possible here — seized from restraint and from judgment, or taken away in death.",
+   "straightforward": false
+  },
+  "v8-7": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v8-8": {
+   "hebrew": "אֶת",
+   "translit": "et",
+   "rendering": null,
+   "body": "direct object marker — untranslatable, marks what follows as the direct object, straightforward.",
+   "straightforward": true
+  },
+  "v8-9": {
+   "hebrew": "דּוֹרוֹ",
+   "translit": "doro",
+   "rendering": "his generation",
+   "body": "Root: דּוֹר (dor) \"generation, period, age, dwelling.\" The suffix וֹ means \"his.\" דּוֹר can mean his contemporaries, his lifetime, his legacy, his descendants, his story. KJV \"generation\" is thin here — the word carries all of these: who will tell his story, who will speak of his time, who will carry on what he was, who will be his descendants? The question is one of profound loss — he leaves no continuation.",
+   "straightforward": false
+  },
+  "v8-10": {
+   "hebrew": "מִי",
+   "translit": "mî",
+   "rendering": "who",
+   "body": "straightforward.",
+   "straightforward": true
+  },
+  "v8-11": {
+   "hebrew": "יְשׂוֹחֵחַ",
+   "translit": "yesokheakh",
+   "rendering": "shall declare",
+   "body": "Root: שִׂיחַ (siakh) \"to speak, to meditate, to muse, to tell, to complain, to pour out words.\" A rich word — not a formal proclamation but to speak at length, to muse aloud, to pour out in words. KJV \"declare\" is too formal. The word is closer to who will speak of him, who will recount him, who will muse upon his story — the kind of telling that comes from deep reflection.",
+   "straightforward": false
+  },
+  "v8-12": {
+   "hebrew": "כִּי",
+   "translit": "ki",
+   "rendering": "for",
+   "body": "causal conjunction meaning \"for, because, indeed, that,\" straightforward.",
+   "straightforward": true
+  },
+  "v8-13": {
+   "hebrew": "נִגְזַר",
+   "translit": "nigzar",
+   "rendering": "he was cut off",
+   "body": "Root: גָּזַר (gazar) \"to cut, to divide, to cut off, to decree.\" A violent word — to be cut off as with a blade, severed, eliminated. Also used of a decree being cut — it was decreed. He was cut off from life — the image is of a sharp, definitive severance.",
+   "straightforward": false
+  },
+  "v8-14": {
+   "hebrew": "מֵ",
+   "translit": "me",
+   "rendering": "from",
+   "body": "prefix, straightforward.",
+   "straightforward": true
+  },
+  "v8-15": {
+   "hebrew": "אֶרֶץ",
+   "translit": "erets",
+   "rendering": "the land",
+   "body": "earth, land, world, as in verse 2, straightforward.",
+   "straightforward": true
+  },
+  "v8-16": {
+   "hebrew": "חַיִּים",
+   "translit": "khayyim",
+   "rendering": "of the living",
+   "body": "Root: חָיָה (khayah) \"to live.\" The plural form — lives, the living. Always plural in Hebrew when referring to life as a quality or state. Cut off from the land of those who live — removed from among the living entirely.",
+   "straightforward": false
+  },
+  "v8-17": {
+   "hebrew": "מִ",
+   "translit": "mi",
+   "rendering": "for / because of",
+   "body": "prefix carrying causal force, straightforward.",
+   "straightforward": true
+  },
+  "v8-18": {
+   "hebrew": "פֶּשַׁע",
+   "translit": "peshaʿ",
+   "rendering": "the transgression",
+   "body": "Root: פָּשַׁע (pashaʿ) as in verse 5 — willful rebellion, deliberate revolt. The strongest word for sin, as discussed.",
+   "straightforward": false
+  },
+  "v8-19": {
+   "hebrew": "עַמִּי",
+   "translit": "ammi",
+   "rendering": "my people",
+   "body": "Root: עַם (am) \"people, nation, folk.\" The suffix י means \"my.\" This is a striking shift — suddenly the speaker changes. Throughout the chapter the speakers have been we, us — the corporate witness. Here suddenly it is my people — a single voice speaking. Most naturally this is the voice of the prophet, or of God himself. The shift is abrupt and unresolved in the Hebrew.",
+   "straightforward": false
+  },
+  "v8-20": {
+   "hebrew": "נֶגַע",
+   "translit": "negaʿ",
+   "rendering": "a stroke / was stricken",
+   "body": "Root: נָגַע (nagaʿ) as in verse 4 — to touch, to strike, to afflict with plague, the word used of leprosy and divine affliction. Here it is a noun, not a verb — a stroke, a plague-blow (\"a stroke was to him/them\"); KJV turns it into the verb \"was he stricken.\"",
+   "straightforward": false
+  },
+  "v8-21": {
+   "hebrew": "לָמוֹ",
+   "translit": "lamo",
+   "rendering": "to him / to them",
+   "body": "an archaic poetic form that can mean either to him or to them. This is one of the most debated words in the verse. If to him — the stroke fell on him for their transgression. If to them — the stroke was on account of them. The ambiguity is ancient and unresolved — both readings are grammatically defensible.",
+   "straightforward": false
+  },
+  "v9-1": {
+   "hebrew": "וַ",
+   "translit": "va",
+   "rendering": "and",
+   "body": "narrative conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v9-2": {
+   "hebrew": "יִּתֵּן",
+   "translit": "yitten",
+   "rendering": "he made",
+   "body": "Root: נָתַן (natan) \"to give, to place, to set, to appoint, to assign.\" KJV renders it \"he made\" but the word is to give, to assign, to appoint. Someone assigned, appointed, gave his grave. The subject is ambiguous — who assigned it? The Hebrew does not say. It could be God, it could be his executioners, it could be an indefinite \"they.\" The verb is third person singular (\"he gave\"), but KJV \"he made\" can read as if the servant chose it himself.",
+   "straightforward": false
+  },
+  "v9-3": {
+   "hebrew": "אֶת",
+   "translit": "et",
+   "rendering": "with",
+   "body": "here not the object marker but the homonymous preposition אֵת \"with\" — with the wicked. KJV \"with\" is accurate.",
+   "straightforward": false
+  },
+  "v9-4": {
+   "hebrew": "רְשָׁעִים",
+   "translit": "reshaʿim",
+   "rendering": "the wicked",
+   "body": "Root: רָשַׁע (rashaʿ) \"to be wicked, to be guilty, to act wickedly.\" The plural — the wicked ones, the guilty, the condemned. In Hebrew legal and moral thought רָשָׁע is specifically one who has been found guilty, one who stands condemned. His grave was assigned among the condemned.",
+   "straightforward": false
+  },
+  "v9-5": {
+   "hebrew": "קִבְרוֹ",
+   "translit": "kivro",
+   "rendering": "his grave",
+   "body": "Root: קֶבֶר (kever) \"grave, tomb, burial place.\" The suffix וֹ means \"his.\" Straightforward.",
+   "straightforward": false
+  },
+  "v9-6": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v9-7": {
+   "hebrew": "אֶת",
+   "translit": "et",
+   "rendering": "with",
+   "body": "again the preposition אֵת \"with\" — with a rich man. Straightforward.",
+   "straightforward": false
+  },
+  "v9-8": {
+   "hebrew": "עָשִׁיר",
+   "translit": "ashir",
+   "rendering": "the rich",
+   "body": "Root: עָשַׁר (ashar) \"to be rich, to become wealthy.\" The singular — a rich man, a wealthy one. Notably singular here where רְשָׁעִים was plural — with a rich man specifically. This has puzzled interpreters for centuries. The rich man may parallel or contrast the wicked — buried among the condemned yet in the tomb of a wealthy man.",
+   "straightforward": false
+  },
+  "v9-9": {
+   "hebrew": "בְּ",
+   "translit": "be",
+   "rendering": "in",
+   "body": "prefix meaning \"in, at, with,\" straightforward.",
+   "straightforward": true
+  },
+  "v9-10": {
+   "hebrew": "מֹתָיו",
+   "translit": "motav",
+   "rendering": "his death",
+   "body": "Root: מָוֶת (mavet) \"death.\" The form here is unusual — it appears to be a plural: his deaths. The plural of מָוֶת is rare and debated. Some read it as an intensive plural — his great death, his utter death. Others read it as referring to the circumstances of his dying — the whole of his dying experience. KJV \"his death\" flattens what may be a deliberately intensified or plural form.",
+   "straightforward": false
+  },
+  "v9-11": {
+   "hebrew": "עַל",
+   "translit": "al",
+   "rendering": "because / on account of",
+   "body": "the preposition עַל here carries causal force — on account of, because of, despite. KJV renders it \"because\"; עַל לֹא can also mean \"although\" — although he had done no violence. Many modern translations read it that way.",
+   "straightforward": false
+  },
+  "v9-12": {
+   "hebrew": "לֹא",
+   "translit": "lo",
+   "rendering": "no / not",
+   "body": "negation, straightforward.",
+   "straightforward": true
+  },
+  "v9-13": {
+   "hebrew": "חָמָס",
+   "translit": "khamas",
+   "rendering": "violence",
+   "body": "Root: חָמַס (khamas) \"to wrong, to do violence, to treat violently.\" The noun means violence, wrong, injustice, cruelty. A strong word — not mere physical force but ruthless wrongdoing, violation of what is right. He had done no such thing.",
+   "straightforward": false
+  },
+  "v9-14": {
+   "hebrew": "עָשָׂה",
+   "translit": "asah",
+   "rendering": "he had done",
+   "body": "Root: עָשָׂה (asah) \"to do, to make, to act, to perform.\" Straightforward.",
+   "straightforward": false
+  },
+  "v9-15": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "neither",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v9-16": {
+   "hebrew": "לֹא",
+   "translit": "lo",
+   "rendering": "not / any",
+   "body": "negation, straightforward.",
+   "straightforward": true
+  },
+  "v9-17": {
+   "hebrew": "מִרְמָה",
+   "translit": "mirmah",
+   "rendering": "deceit",
+   "body": "Root: רָמָה (ramah) \"to beguile, to deceive, to throw, to betray.\" The noun means deceit, treachery, fraud, guile. More than a lie — calculated deception, deliberate betrayal of trust. There was no such thing in his mouth — his speech was entirely without guile.",
+   "straightforward": false
+  },
+  "v9-18": {
+   "hebrew": "בְּ",
+   "translit": "be",
+   "rendering": "in",
+   "body": "prefix, straightforward.",
+   "straightforward": true
+  },
+  "v9-19": {
+   "hebrew": "פִיו",
+   "translit": "fiv",
+   "rendering": "his mouth",
+   "body": "Root: פֶּה (peh) as in verse 7 — mouth. The suffix וֹ means \"his.\" Straightforward.",
+   "straightforward": false
+  },
+  "v10-1": {
+   "hebrew": "וַ",
+   "translit": "va",
+   "rendering": "yet",
+   "body": "narrative conjunction prefix. KJV renders it \"yet\" to show contrast, but the Hebrew is simply \"and,\" straightforward.",
+   "straightforward": true
+  },
+  "v10-2": {
+   "hebrew": "יהוָה",
+   "translit": "YHWH",
+   "rendering": "the LORD",
+   "body": "the divine name, straightforward.",
+   "straightforward": true
+  },
+  "v10-3": {
+   "hebrew": "חָפֵץ",
+   "translit": "khafets",
+   "rendering": "it pleased",
+   "body": "Root: חָפֵץ (khafets) \"to delight in, to take pleasure in, to desire, to will.\" KJV \"it pleased\" is too passive — as if it merely happened to please him. The Hebrew is active and volitional — he delighted in it, he willed it, he desired it.",
+   "straightforward": false
+  },
+  "v10-4": {
+   "hebrew": "דַּכְּאוֹ",
+   "translit": "dakkeo",
+   "rendering": "to bruise him",
+   "body": "Root: דָּכָא (daka) as in verse 5 — to crush, to pulverize, to grind down. The suffix וֹ means \"him.\" The same crushing as before — to crush him utterly.",
+   "straightforward": false
+  },
+  "v10-5": {
+   "hebrew": "הֶחֱלִי",
+   "translit": "hekheli",
+   "rendering": "he hath put him to grief",
+   "body": "Root: חָלָה (khalah) \"to be sick, to be weak, to make ill.\" A causative form — he caused him to be sick, he made him ill, he wounded him. KJV \"put him to grief\" is again too emotional and gentle. The word is physical sickness and suffering — the LORD made him ill, caused him to suffer physically.",
+   "straightforward": false
+  },
+  "v10-6": {
+   "hebrew": "אִם",
+   "translit": "im",
+   "rendering": "when / if",
+   "body": "a conditional particle meaning if or when. The choice between \"if\" and \"when\" is significant — if makes the following conditional and uncertain; when treats it as certain and forthcoming. KJV uses \"when\" but the Hebrew אִם is most naturally if — leaving the condition open.",
+   "straightforward": false
+  },
+  "v10-7": {
+   "hebrew": "תָּשִׂים",
+   "translit": "tasim",
+   "rendering": "thou shalt make",
+   "body": "Root: שִׂים (sim) \"to put, to place, to set, to appoint, to make.\" The form can be second person masculine (\"you make\") or third person feminine. If third feminine, the subject is נַפְשׁוֹ (his soul, a feminine noun): \"if his soul makes a guilt offering.\" If second person, the verse shifts suddenly from speaking about YHWH to addressing someone directly, and the addressee is unspecified — it could be the servant himself, the people, the prophet, or God. The ambiguity is ancient and unresolved.",
+   "straightforward": false
+  },
+  "v10-8": {
+   "hebrew": "אַשְׁמָה",
+   "translit": "ashmah",
+   "rendering": "an offering for sin",
+   "body": "Root: אָשַׁם (asham) \"to be guilty, to bear guilt, to make a guilt offering.\" The noun אָשָׁם is specifically a guilt offering — one of the five Levitical sacrifices, distinct from the sin offering. It is the offering made when one has trespassed against what is holy or violated another's rights and owes restitution. KJV \"offering for sin\" blurs this specificity — it is not a generic sin offering but a guilt offering, a reparation offering, one that satisfies a debt.",
+   "straightforward": false
+  },
+  "v10-9": {
+   "hebrew": "נַפְשׁוֹ",
+   "translit": "nafsho",
+   "rendering": "his soul",
+   "body": "Root: נֶפֶשׁ (nefesh) \"soul, self, life, breath, being, throat, appetite.\" נֶפֶשׁ is one of the richest words in the Hebrew Bible — it is not merely the soul in a Greek or Western sense but the whole living being, the self in its entirety, the life-breath. The suffix וֹ means \"his.\" His whole self, his very life, his entire being is the guilt offering.",
+   "straightforward": false
+  },
+  "v10-10": {
+   "hebrew": "יִרְאֶה",
+   "translit": "yirʾeh",
+   "rendering": "he shall see",
+   "body": "Root: רָאָה (raʾah) \"to see, to behold, to experience, to perceive.\" After being crushed and cut off from the land of the living (verse 8) — he shall see. Here the object follows directly: he shall see seed.",
+   "straightforward": false
+  },
+  "v10-11": {
+   "hebrew": "זֶרַע",
+   "translit": "zeraʿ",
+   "rendering": "his seed",
+   "body": "Root: זָרַע (zaraʿ) \"to sow, to scatter seed.\" The noun means seed, offspring, descendants, posterity. There is no \"his\" in the Hebrew — simply \"he shall see seed.\" Yet verse 8 asked who would declare his generation; the two verses stand in tension.",
+   "straightforward": false
+  },
+  "v10-12": {
+   "hebrew": "יַאֲרִיךְ",
+   "translit": "yaʾarikh",
+   "rendering": "he shall prolong",
+   "body": "Root: אָרַךְ (arakh) \"to be long, to lengthen, to extend, to prolong.\" He shall stretch out, extend, make long his days — the image of a life that continues and lengthens. Again, after death this is only possible through restoration.",
+   "straightforward": false
+  },
+  "v10-13": {
+   "hebrew": "יָמִים",
+   "translit": "yamim",
+   "rendering": "his days",
+   "body": "Root: יוֹם (yom) \"day.\" The plural — days, a span of days, a lifetime. Straightforward.",
+   "straightforward": false
+  },
+  "v10-14": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v10-15": {
+   "hebrew": "חֵפֶץ",
+   "translit": "khefets",
+   "rendering": "the pleasure",
+   "body": "Root: חָפֵץ (khafets) as earlier in this verse — delight, desire, will, pleasure, purpose. The same root — what the LORD delights in, wills, purposes. Not mere pleasure but the purposeful desire and will of the LORD.",
+   "straightforward": false
+  },
+  "v10-16": {
+   "hebrew": "יְהוָה",
+   "translit": "YHWH",
+   "rendering": "of the LORD",
+   "body": "the divine name, straightforward.",
+   "straightforward": true
+  },
+  "v10-17": {
+   "hebrew": "בְּ",
+   "translit": "be",
+   "rendering": "in",
+   "body": "prefix meaning \"in, by, through,\" straightforward.",
+   "straightforward": true
+  },
+  "v10-18": {
+   "hebrew": "יָדוֹ",
+   "translit": "yado",
+   "rendering": "his hand",
+   "body": "Root: יָד (yad) \"hand, arm, power, authority.\" The suffix וֹ means \"his.\" יָד is broader than the physical hand — it is the hand as the instrument of power and action, one's agency and authority. The pleasure of YHWH shall succeed, advance, prosper through his hand — through his agency and power.",
+   "straightforward": false
+  },
+  "v10-19": {
+   "hebrew": "יִצְלָח",
+   "translit": "yitslakh",
+   "rendering": "shall prosper",
+   "body": "Root: צָלַח (tsalakh) \"to rush forward, to advance, to succeed, to prosper, to push through.\" Not merely \"prosper\" in a financial sense — the word has a dynamic, forward-moving quality — to break through, to advance successfully, to push forward and succeed. The will of the LORD shall break through and advance in his hand.",
+   "straightforward": false
+  },
+  "v11-1": {
+   "hebrew": "מֵ",
+   "translit": "me",
+   "rendering": "of",
+   "body": "prefix meaning \"from, out of.\" KJV renders it \"of\" but the force is from out of — he shall see from out of the travail of his soul, emerging from within it.",
+   "straightforward": false
+  },
+  "v11-2": {
+   "hebrew": "עֲמַל",
+   "translit": "amal",
+   "rendering": "the travail",
+   "body": "Root: עָמַל (amal) \"to toil, to labor, to suffer, to be weary.\" The noun means toil, labor, trouble, suffering, misery, weariness. KJV \"travail\" captures the labor dimension but the word is broader — exhausting toil, grinding suffering, miserable labor. It is the word used of the crushing burden of hard servitude and of life's painful struggle. Not merely birth-pangs but the whole weight of suffering and toil.",
+   "straightforward": false
+  },
+  "v11-3": {
+   "hebrew": "נַפְשׁוֹ",
+   "translit": "nafsho",
+   "rendering": "of his soul",
+   "body": "Root: נֶפֶשׁ (nefesh) as in verse 10 — the whole living being, the self in its entirety, life itself. The suffix וֹ means \"his.\" Not just the suffering of his inner soul but the toil of his entire being.",
+   "straightforward": false
+  },
+  "v11-4": {
+   "hebrew": "יִרְאֶה",
+   "translit": "yirʾeh",
+   "rendering": "he shall see",
+   "body": "Root: רָאָה (raʾah) \"to see, to behold, to experience.\" The same word as in verse 10. In the Masoretic text he shall see stands alone, with no direct object: מֵעֲמַל נַפְשׁוֹ (\"from the travail of his soul\") is in the Hebrew, but it is a prepositional phrase, not the thing seen. KJV makes it the object (\"see of the travail\"). The Dead Sea Isaiah scroll and the Greek supply an object: \"he shall see light.\"",
+   "straightforward": false
+  },
+  "v11-5": {
+   "hebrew": "יִשְׂבָּע",
+   "translit": "yisbaʿ",
+   "rendering": "and shall be satisfied",
+   "body": "Root: שָׂבַע (sabaʿ) \"to be satisfied, to be sated, to have enough, to be full.\" Used of being satisfied with food, with life, with good things. After all the crushing and toil and death — he shall be full, he shall have enough, he shall be satisfied. The word implies abundance reaching the point of fullness — not mere contentment but satiation.",
+   "straightforward": false
+  },
+  "v11-6": {
+   "hebrew": "בְּ",
+   "translit": "be",
+   "rendering": "by / through / in",
+   "body": "prefix meaning \"in, by, with, through.\" The phrase בְּדַעְתּוֹ can attach backward (\"satisfied with his knowledge\") or forward (\"by his knowledge shall ... justify\"); KJV takes it forward.",
+   "straightforward": false
+  },
+  "v11-7": {
+   "hebrew": "דַעְתּוֹ",
+   "translit": "daʿto",
+   "rendering": "his knowledge",
+   "body": "Root: יָדַע (yadaʿ) as in verse 3 — intimate, experiential knowledge, knowing from the inside. The suffix וֹ means \"his.\" By his intimate knowing he shall justify many. \"His knowledge\" can also be read as the knowledge of him that others have.",
+   "straightforward": false
+  },
+  "v11-8": {
+   "hebrew": "יַצְדִּיק",
+   "translit": "yatsdiq",
+   "rendering": "shall justify",
+   "body": "Root: צָדַק (tsadaq) \"to be righteous, to be just, to justify, to declare righteous, to vindicate.\" A causative form — he shall cause many to be righteous, he shall declare many righteous, he shall make many just. Both a legal declaration and a making righteous fall within the word's range; the Hebrew does not decide between them.",
+   "straightforward": false
+  },
+  "v11-9": {
+   "hebrew": "צַדִּיק",
+   "translit": "tsaddiq",
+   "rendering": "righteous",
+   "body": "Root: צָדַק (tsadaq) as above. The adjective righteous, just, right. He is called my righteous servant — the same root used in יַצְדִּיק. The one who is righteous causes others to be righteous. The two words sit side by side — yatsdiq tsaddiq — a sound play English loses.",
+   "straightforward": false
+  },
+  "v11-10": {
+   "hebrew": "עַבְדִּי",
+   "translit": "avdi",
+   "rendering": "my servant",
+   "body": "Root: עֶבֶד (eved) \"servant, slave, worker, one who serves.\" The suffix י means \"my.\" This is the voice of God speaking — my servant. עֶבֶד carries the full range from slave to trusted royal official to one who is wholly devoted to another's purposes. It is a title of both lowliness and honor — the great servants of God in the Hebrew Bible are called by this name.",
+   "straightforward": false
+  },
+  "v11-11": {
+   "hebrew": "לָ",
+   "translit": "la",
+   "rendering": "for / to",
+   "body": "prefix combining לְ and the definite article, meaning \"for the, to the,\" straightforward.",
+   "straightforward": true
+  },
+  "v11-12": {
+   "hebrew": "רַבִּים",
+   "translit": "rabbim",
+   "rendering": "many",
+   "body": "Root: רַב (rav) \"many, great, numerous, much.\" The plural — the many, a great number. In Hebrew thought רַבִּים can carry the sense of the multitude, the mass of people — not merely some but the great many. The same word will appear again in verse 12.",
+   "straightforward": false
+  },
+  "v11-13": {
+   "hebrew": "וַ",
+   "translit": "va",
+   "rendering": "for",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v11-14": {
+   "hebrew": "עֲוֹנֹתָם",
+   "translit": "avonotam",
+   "rendering": "their iniquities",
+   "body": "Root: עָוָה (avah) as in verses 5 and 6 — moral crookedness, twistedness, guilt. The suffix ם means \"their.\" The iniquities of the many — the same multitude he justifies.",
+   "straightforward": false
+  },
+  "v11-15": {
+   "hebrew": "הוּא",
+   "translit": "hu",
+   "rendering": "he",
+   "body": "the personal pronoun standing alone for emphasis, as in verses 4, 5, and 7. He himself — no other.",
+   "straightforward": false
+  },
+  "v11-16": {
+   "hebrew": "יִסְבֹּל",
+   "translit": "yisbol",
+   "rendering": "shall bear",
+   "body": "Root: סָבַל (saval) as in verse 4 — to bear a heavy load, to toil under weight, to be burdened. The same word used of carrying the heavy weight of sorrows in verse 4. He who was crushed under the weight of suffering shall bear — still carrying, still laboring under the weight — but now it is their iniquities he carries. The repetition of this root from verse 4 ties the two verses together deliberately.",
+   "straightforward": false
+  },
+  "v12-1": {
+   "hebrew": "לָכֵן",
+   "translit": "lakhen",
+   "rendering": "therefore",
+   "body": "a strong consequential particle — therefore, for this reason, on account of this. It draws a direct line from everything that has come before — the suffering, the crushing, the bearing of iniquity — to what follows. The reward is a direct consequence of the servant's work.",
+   "straightforward": false
+  },
+  "v12-2": {
+   "hebrew": "אֲחַלֶּק",
+   "translit": "akhalleq",
+   "rendering": "will I divide",
+   "body": "Root: חָלַק (khalaq) \"to divide, to apportion, to share out, to distribute.\" A first person form — I will divide, I will apportion. The speaker is God — the same voice that called him my servant in verse 11. God himself is the one apportioning the reward. KJV \"divide him a portion\" is slightly awkward — the Hebrew is I will apportion to him among the many.",
+   "straightforward": false
+  },
+  "v12-3": {
+   "hebrew": "לוֹ",
+   "translit": "lo",
+   "rendering": "to him / for him",
+   "body": "the preposition לְ with the suffix \"him,\" straightforward.",
+   "straightforward": true
+  },
+  "v12-4": {
+   "hebrew": "בָ",
+   "translit": "va",
+   "rendering": "with / among",
+   "body": "prefix meaning \"in, among, with,\" straightforward.",
+   "straightforward": true
+  },
+  "v12-5": {
+   "hebrew": "רַבִּים",
+   "translit": "rabbim",
+   "rendering": "the great / the many",
+   "body": "Root: רַב (rav) as in verse 11 — many, great, numerous. KJV renders it \"the great\" here. רַב can mean great as well as many, and the parallel with עֲצוּמִים (the mighty) supports \"the great\" here; but it is the same word KJV renders \"many\" in verse 11 and later in this verse.",
+   "straightforward": false
+  },
+  "v12-6": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v12-7": {
+   "hebrew": "אֶת",
+   "translit": "et",
+   "rendering": "with",
+   "body": "here the preposition אֵת \"with\" — with the mighty. KJV \"with\" is accurate.",
+   "straightforward": false
+  },
+  "v12-8": {
+   "hebrew": "עַצוּמִים",
+   "translit": "atsumim",
+   "rendering": "the strong",
+   "body": "Root: עָצַם (atsam) \"to be strong, to be mighty, to be numerous, to be powerful.\" The plural — the strong ones, the mighty, the powerful. KJV \"the strong\" is accurate. He shall divide spoil with the mighty — a conqueror's language, the language of victory after battle.",
+   "straightforward": false
+  },
+  "v12-9": {
+   "hebrew": "יְחַלֵּק",
+   "translit": "yekhalleq",
+   "rendering": "he shall divide",
+   "body": "Root: חָלַק (khalaq) as above — to divide, to apportion, to share out. Now a third person form — he shall divide. The shift from first person (I will apportion) to third person (he shall divide) in the same breath is notable — God apportions to him, and he himself divides the spoil.",
+   "straightforward": false
+  },
+  "v12-10": {
+   "hebrew": "שָׁלָל",
+   "translit": "shalal",
+   "rendering": "the spoil",
+   "body": "Root: שָׁלַל (shalal) \"to plunder, to take spoil.\" The noun means plunder, booty, spoil of war — what a victorious warrior takes from the defeated enemy. The entire image is of a warrior who has won a decisive battle and now divides the plunder among his companions. The servant who was crushed and killed is now the conquering warrior distributing spoil.",
+   "straightforward": false
+  },
+  "v12-11": {
+   "hebrew": "תַּחַת",
+   "translit": "takhat",
+   "rendering": "because / in place of / instead of",
+   "body": "Root: תַּחַת (takhat) \"under, beneath, in place of, instead of, because of, in exchange for.\" A rich preposition. KJV renders it \"because.\" Joined with אֲשֶׁר, תַּחַת אֲשֶׁר is an ordinary idiom for \"because\"; but the root sense — in the place of, in exchange for — remains audible beneath it.",
+   "straightforward": false
+  },
+  "v12-12": {
+   "hebrew": "אֲשֶׁר",
+   "translit": "asher",
+   "rendering": "that / which / because",
+   "body": "relative pronoun or conjunction, straightforward.",
+   "straightforward": true
+  },
+  "v12-13": {
+   "hebrew": "הֶעֱרָה",
+   "translit": "heʿerah",
+   "rendering": "he hath poured out",
+   "body": "Root: עָרָה (arah) \"to pour out, to bare, to empty, to lay bare, to expose.\" A striking word — to pour out completely, to empty utterly, to strip bare. Not a gentle giving but a total emptying out. He poured out — emptied, stripped bare — his soul unto death. The image is of a vessel completely emptied of its contents.",
+   "straightforward": false
+  },
+  "v12-14": {
+   "hebrew": "לַ",
+   "translit": "la",
+   "rendering": "unto / to the",
+   "body": "prefix combining לְ and the definite article, straightforward.",
+   "straightforward": true
+  },
+  "v12-15": {
+   "hebrew": "מָּוֶת",
+   "translit": "mavet",
+   "rendering": "death",
+   "body": "Root: מוּת (mut) \"to die.\" The noun — death. He poured out his soul into death, unto death, to the point of death. Straightforward but weighty.",
+   "straightforward": false
+  },
+  "v12-16": {
+   "hebrew": "נַפְשׁוֹ",
+   "translit": "nafsho",
+   "rendering": "his soul",
+   "body": "Root: נֶפֶשׁ (nefesh) as in verses 10 and 11 — the whole living being, the self in its entirety, life itself. The suffix וֹ means \"his.\" He poured out his entire being, his whole self unto death — total self-expenditure.",
+   "straightforward": false
+  },
+  "v12-17": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v12-18": {
+   "hebrew": "אֶת",
+   "translit": "et",
+   "rendering": "with",
+   "body": "here the preposition אֵת \"with\" — with the transgressors. KJV \"with\" is accurate.",
+   "straightforward": false
+  },
+  "v12-19": {
+   "hebrew": "פֹּשְׁעִים",
+   "translit": "posheʿim",
+   "rendering": "the transgressors",
+   "body": "Root: פָּשַׁע (pashaʿ) as in verses 5 and 8 — willful rebels, those who deliberately revolt. The plural participle — the ones actively rebelling. He was numbered with the rebels.",
+   "straightforward": false
+  },
+  "v12-20": {
+   "hebrew": "נִמְנָה",
+   "translit": "nimnah",
+   "rendering": "he was numbered",
+   "body": "Root: מָנָה (manah) \"to count, to number, to reckon, to assign.\" A passive form — he was counted, he was reckoned, he was assigned to their number. Not by his own nature but by assignment — he was placed in their count though he was not of them.",
+   "straightforward": false
+  },
+  "v12-21": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v12-22": {
+   "hebrew": "הוּא",
+   "translit": "hu",
+   "rendering": "he",
+   "body": "the personal pronoun standing alone for emphasis, as throughout the chapter. He himself — the contrast is sharp. He was counted among rebels, and yet he himself —",
+   "straightforward": false
+  },
+  "v12-23": {
+   "hebrew": "חֵטְא",
+   "translit": "khet",
+   "rendering": "the sin",
+   "body": "Root: חָטָא (khata) \"to miss, to sin, to go wrong, to bear the consequence of sin.\" The noun חֵטְא means sin, wrongdoing, the offense itself. A different word from פֶּשַׁע (peshaʿ, rebellion) and עָוֹן (avon, crookedness) — this is sin as missing the mark, as going wrong. All three major Hebrew words for sin appear in this chapter — פֶּשַׁע (willful rebellion), עָוֹן (moral crookedness), and חֵטְא (missing the mark) — and all three are borne by the servant.",
+   "straightforward": false
+  },
+  "v12-24": {
+   "hebrew": "רַבִּים",
+   "translit": "rabbim",
+   "rendering": "of many",
+   "body": "Root: רַב (rav) as in verses 11 and earlier in this verse — the many, the multitude. The same word threaded throughout — he justifies the many, divides spoil among the many, and bears the sin of the many.",
+   "straightforward": false
+  },
+  "v12-25": {
+   "hebrew": "נָשָׂא",
+   "translit": "nasa",
+   "rendering": "bare",
+   "body": "Root: נָשָׂא (nasa) as in verse 4 — to lift, to carry, to bear, to take up. The same word used in verse 4 — he bore our griefs. Now at the close of the chapter the same word returns — he lifted and carried the sin of the many. The chapter ends where it began in terms of bearing.",
+   "straightforward": false
+  },
+  "v12-26": {
+   "hebrew": "וְ",
+   "translit": "ve",
+   "rendering": "and",
+   "body": "conjunction prefix, straightforward.",
+   "straightforward": true
+  },
+  "v12-27": {
+   "hebrew": "לַ",
+   "translit": "la",
+   "rendering": "for / to the",
+   "body": "prefix combining לְ and the definite article, straightforward.",
+   "straightforward": true
+  },
+  "v12-28": {
+   "hebrew": "פֹּשְׁעִים",
+   "translit": "posheʿim",
+   "rendering": "the transgressors",
+   "body": "the same word as above — the willful rebels. He was numbered among them, and now he acts on behalf of them.",
+   "straightforward": false
+  },
+  "v12-29": {
+   "hebrew": "יַפְגִּיעַ",
+   "translit": "yafgiaʿ",
+   "rendering": "made intercession",
+   "body": "Root: פָּגַע (pagaʿ) as in verse 6 — to meet, to encounter, to strike, to fall upon, to intercede. In verse 6 this same root was used of YHWH causing our iniquity to strike the servant — the LORD made iniquity collide with him. Now at the chapter's close the same root appears again — but now the servant himself makes intercession, causes a meeting on behalf of the rebels. The word that described violence done to him now describes his own action for others. The one who was struck now intercedes. The verb is imperfect — he intercedes, or will intercede — where KJV uses the past \"made intercession.\"",
+   "straightforward": false
+  }
+ }
+}
