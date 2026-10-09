@@ -186,7 +186,7 @@ Status: `[x]` done, `[ ]` not started. The phase in progress is marked "(in prog
 - [x] 1. UI mock: static HTML with hardcoded sample data (see Phase 1 Implementation Checklist)
 - [x] 2. Transcript ingestion and wiring: convert the Claude transcript into the JSON format for all 12 verses, refine it through subagent critique, and render it in the UI (see Phase 2 Implementation Checklist)
 - [x] 3. Wiring: folded into Phase 2.
-- [ ] 4. Deployment: GitHub Pages (in progress; see Phase 4 Implementation Checklist)
+- [x] 4. Deployment: GitHub Pages, live at https://nfitch.github.io/isaiah-53/ (see Phase 4 Implementation Checklist)
 - [ ] 5. Mobile: responsive layout and touch interaction.
 - [ ] 6. Transcript rework (subagent): verify the Mosiah differences, the KJV italics, and the Hebrew against the authoritative texts, then regenerate the JSON.
 
@@ -286,16 +286,16 @@ Human review:
 Scope: publish `static/` to GitHub Pages from a public `nfitch/isaiah-53` repository.
 
 ### Success criteria
-- [ ] G1. The public repository `nfitch/isaiah-53` exists, and `main` (with all commits) is pushed.
-- [ ] G2. `.github/workflows/pages.yml` deploys only `static/` to GitHub Pages on every push to `main`. It can also be run manually.
-- [ ] G3. https://nfitch.github.io/isaiah-53/ serves the page and `old-testament-isaiah-53.json`. A Playwright smoke test against the live URL shows Isaiah 53:1, and hovering a word shows a deep dive.
-- [ ] T1. All local tests pass, with the output captured to `./tmp/`.
-- [ ] D1. The README has the live URL and explains how deployment works; this document is updated.
+- [x] G1. The public repository `nfitch/isaiah-53` exists, and `main` (with all commits) is pushed.
+- [x] G2. `.github/workflows/pages.yml` deploys only `static/` to GitHub Pages on every push to `main`. It can also be run manually.
+- [x] G3. https://nfitch.github.io/isaiah-53/ serves the page and `old-testament-isaiah-53.json`. A Playwright smoke test against the live URL shows Isaiah 53:1, and hovering a word shows a deep dive.
+- [x] T1. All local tests pass, with the output captured to `./tmp/`.
+- [x] D1. The README has the live URL and explains how deployment works; this document is updated.
 
 ### Close-out
-- [ ] Run `/nf-check-work` to verify that every success criterion is met.
-- [ ] Meticulously review every checklist item. Do not skim. Read each item and verify it was actually completed -- not "probably done" or "I think I did that." Actually check.
-- [ ] Check off every box. If a box cannot be checked, explain why and resolve it before closing.
+- [x] Run `/nf-check-work` to verify that every success criterion is met.
+- [x] Meticulously review every checklist item. Do not skim. Read each item and verify it was actually completed -- not "probably done" or "I think I did that." Actually check.
+- [x] Check off every box. If a box cannot be checked, explain why and resolve it before closing.
 
 ## Decisions
 
