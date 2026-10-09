@@ -194,7 +194,7 @@ Status: `[x]` done, `[ ]` not started. The phase in progress is marked "(in prog
 - [x] 3. Wiring: folded into Phase 2.
 - [x] 4. Deployment: GitHub Pages, live at https://nfitch.github.io/isaiah-53/ (see Phase 4 Implementation Checklist)
 - [x] 5. Mobile: responsive layout and touch interaction (see Phase 5 Implementation Checklist)
-- [ ] 6. Transcript rework (subagent): verify the Mosiah differences, the KJV italics, and the Hebrew against the authoritative texts, then regenerate the JSON (in progress; see Phase 6 Implementation Checklist)
+- [x] 6. Transcript rework (subagent): verify the Mosiah differences, the KJV italics, and the Hebrew against the authoritative texts, then regenerate the JSON (see Phase 6 Implementation Checklist)
 
 ## Phase 1 Implementation Checklist
 
@@ -381,12 +381,12 @@ The sources are saved in `design/source/texts/`, so the build does not depend on
 - [x] S7. The changes from this phase are recorded in a before/after review file, for nf.
 - [x] T1. All tests pass (desktop and phone), with the output captured to `./tmp/`. The data tests are updated for the new differences.
 - [x] D1. This document (Source Material, Data Model) and the README are updated.
-- [ ] H1. nf reviews the before/after file and the live site before the phase closes.
+- [x] H1. nf reviews the before/after file and the live site before the phase closes.
 
 ### Close-out
-- [ ] Run `/nf-check-work` to verify that every success criterion is met.
-- [ ] Meticulously review every checklist item. Do not skim. Read each item and verify it was actually completed -- not "probably done" or "I think I did that." Actually check.
-- [ ] Check off every box. If a box cannot be checked, explain why and resolve it before closing.
+- [x] Run `/nf-check-work` to verify that every success criterion is met.
+- [x] Meticulously review every checklist item. Do not skim. Read each item and verify it was actually completed -- not "probably done" or "I think I did that." Actually check.
+- [x] Check off every box. If a box cannot be checked, explain why and resolve it before closing.
 
 ## Decisions
 
