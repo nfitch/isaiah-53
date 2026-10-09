@@ -61,6 +61,22 @@ The build fails if:
 
 Do not edit the JSON file by hand.
 
+## Adding another chapter
+
+The page renders whatever chapter its JSON file describes: the title, verses, Hebrew, English, Mosiah differences, and deep dives all come from the data. The format is documented in `design/design.md` (Data Model). Some chapter-specific values are still hard-coded in the page and the tools, so adding a chapter takes these steps:
+
+1. **Breakdown:** produce a word-by-word transcript for the chapter in the same format as `design/source/transcript.md`, using `design/source/hebrew-verse-breakdown.skill`.
+2. **Source texts:** save the chapter's WLC Hebrew, the KJV (USFM with `\add` italics), and the parallel text (if any) in `design/source/texts/`, and record where each came from in that folder's README.
+3. **Readers:** in `tools/sources.py`, point the readers at the new files. The file names and the `Isa.53` verse ids are hard-coded there today.
+4. **English alignment:** in `tools/build_data.py`, write the `ENGLISH` alignment for every verse (one `word:group` pair per KJV token), and update `OUT` and the `chapter` block (id, book, chapter number, parallel).
+5. **Parallel notes:** write the parallel-text notes (the equivalent of `tools/mosiah_notes.json`). Optionally, run the critique rounds and record accepted edits in `tools/revisions.json`.
+6. **Build:** run `python3 tools/build_data.py`, then `python3 tools/report.py` to review the alignments.
+7. **Page:** in `static/index.html`, update `DATA_URL` and the `<title>`.
+
+Limitations today:
+- The page shows one chapter. Choosing between chapters, or putting the verse in the URL, is not built (Decision 9).
+- The page expects a parallel text (`chapter.parallel`) for the toggle. A chapter without one needs the toggle hidden.
+
 ## Deployment
 
 Every push to `main` runs `.github/workflows/pages.yml`, which publishes `static/` to GitHub Pages. To check the live site:
