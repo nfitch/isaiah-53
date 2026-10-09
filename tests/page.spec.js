@@ -143,7 +143,7 @@ test("F5 moving into the deep-dive pane keeps the hovered group", async ({ page 
 test("F6 click pins, hover is ignored while pinned, click again or Esc unpins, click elsewhere moves the pin", async ({ page }) => {
   await gotoVerse(page, 11);
   await page.click(heb("v11-2"));
-  await expect(page.locator("#dive-pin")).toBeVisible();
+  await expect(page.locator("#dive-pin")).toHaveText("Pinned (Esc to clear)");
   await page.hover(heb("v11-3"));
   await expect(page.locator("#dive-rendering")).toHaveText("“the travail”");
   await expect(page.locator(heb("v11-3"))).not.toHaveClass(/hl/);

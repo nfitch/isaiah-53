@@ -27,9 +27,11 @@ Then open http://localhost:8000/.
 
 ```bash
 npm install
-npx playwright install chromium
+npx playwright install chromium webkit
 npm test 2>&1 | tee tmp/test-output.txt
 ```
+
+Desktop tests run in Chromium. Phone tests (`tests/mobile.spec.js`) run in WebKit and Chromium, in portrait and landscape.
 
 The tests start their own server on port 8053. It serves the project root, so the page is loaded from the `/static/` subpath.
 

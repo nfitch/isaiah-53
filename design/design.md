@@ -55,10 +55,13 @@ Notation used in the mock (ASCII only):
 - Right pane: the deep dive for the active phrase.
 - The text scales to fill each pane. Only vertical scrolling is allowed.
 
-### Mobile (later)
+### Mobile
 
-- Planned approach: on small screens, split the panes vertically (text on top, deep dive below). To be refined by iteration.
-- Priority: desktop first. GitHub Pages and mobile may come after the first usable version.
+- The page never scrolls; each pane scrolls on its own. Panes are sized to the visible viewport (`100dvh`).
+- Portrait (width 700px or less): the panes are stacked, with the text on top (58%) and the deep dive below (42%).
+- Landscape phones: the panes stay side by side.
+- Phones (width 700px or less, or height 500px or less) get a tighter control bar. The English never shrinks below 18px; when the verse doesn't fit at that size, the text pane scrolls.
+- Touch: a tap pins a phrase and a second tap unpins it; touch is never treated as hover. The pin label reads "tap again to clear" on touch screens and "Esc to clear" elsewhere.
 
 ## Behavior
 
@@ -187,7 +190,7 @@ Status: `[x]` done, `[ ]` not started. The phase in progress is marked "(in prog
 - [x] 2. Transcript ingestion and wiring: convert the Claude transcript into the JSON format for all 12 verses, refine it through subagent critique, and render it in the UI (see Phase 2 Implementation Checklist)
 - [x] 3. Wiring: folded into Phase 2.
 - [x] 4. Deployment: GitHub Pages, live at https://nfitch.github.io/isaiah-53/ (see Phase 4 Implementation Checklist)
-- [ ] 5. Mobile: responsive layout and touch interaction.
+- [ ] 5. Mobile: responsive layout and touch interaction (in progress; see Phase 5 Implementation Checklist)
 - [ ] 6. Transcript rework (subagent): verify the Mosiah differences, the KJV italics, and the Hebrew against the authoritative texts, then regenerate the JSON.
 
 ## Phase 1 Implementation Checklist
@@ -297,6 +300,36 @@ Scope: publish `static/` to GitHub Pages from a public `nfitch/isaiah-53` reposi
 - [x] Meticulously review every checklist item. Do not skim. Read each item and verify it was actually completed -- not "probably done" or "I think I did that." Actually check.
 - [x] Check off every box. If a box cannot be checked, explain why and resolve it before closing.
 
+## Phase 5 Implementation Checklist
+
+Bug that started this phase: on a phone, the page does not scroll vertically in either portrait or landscape. Cause: the panes are sized to `100vh`, which on mobile browsers is taller than the visible area (it ignores the browser toolbars). The page itself has `overflow: hidden`, so the cut-off part can never be reached.
+
+Approach:
+- Size panes to the visible viewport (`100dvh`).
+- Portrait (narrow screens): split the screen vertically, text on top and the deep dive below. Each half scrolls on its own.
+- Landscape: keep the side-by-side layout. Each pane scrolls on its own.
+- On small screens, the text never shrinks below a readable minimum. When it doesn't fit at that size, the text pane scrolls.
+
+### Success criteria
+- [x] M1. Portrait phone (iPhone-size, 390x844):
+  - text pane on top and deep-dive pane below, each filling its share of the visible height;
+  - both panes scroll vertically when their content overflows;
+  - no horizontal scrolling;
+  - the control bar is always visible.
+- [x] M2. Landscape phone (844x390): side-by-side panes. Both scroll vertically when their content overflows, there is no horizontal scrolling, and the control bar is always visible.
+- [x] M3. On narrow screens, the Hebrew and English never render below a readable minimum font size. Overflow scrolls instead.
+- [x] M4. Touch: tapping a word pins its phrase and shows the deep dive. Tapping it again unpins. Tested with touch emulation.
+- [x] M5. The desktop layout and behavior are unchanged: all existing tests pass.
+- [x] M6. Tests run in WebKit (Safari's engine) as well as Chromium for the mobile cases.
+- [x] T1. All tests pass, with the output captured to `./tmp/`.
+- [x] D1. This document (Layout > Mobile) and the README are updated.
+- [ ] H1. nf checks the deployed site on a phone in both orientations before the phase closes.
+
+### Close-out
+- [ ] Run `/nf-check-work` to verify that every success criterion is met.
+- [ ] Meticulously review every checklist item. Do not skim. Read each item and verify it was actually completed -- not "probably done" or "I think I did that." Actually check.
+- [ ] Check off every box. If a box cannot be checked, explain why and resolve it before closing.
+
 ## Decisions
 
 | # | Question | Decision |
@@ -307,7 +340,7 @@ Scope: publish `static/` to GitHub Pages from a public `nfitch/isaiah-53` reposi
 | 4 | What the toggle does | Adds the diff overlay to the KJV text |
 | 5 | KJV italics | Shown |
 | 6 | Deep-dive trigger | Hover updates the deep dive; click pins a phrase |
-| 7 | Mobile | Vertical split on small screens; refine later. Desktop first |
+| 7 | Mobile | Portrait: stacked panes. Landscape: side by side. Each pane scrolls on its own (Phase 5) |
 | 8 | Diff granularity | Show every difference, including punctuation |
 | 9 | Verse in the URL | Not now |
 | 10 | Tech stack | One HTML page and one JSON file |
