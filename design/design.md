@@ -190,7 +190,7 @@ Status: `[x]` done, `[ ]` not started. The phase in progress is marked "(in prog
 - [x] 2. Transcript ingestion and wiring: convert the Claude transcript into the JSON format for all 12 verses, refine it through subagent critique, and render it in the UI (see Phase 2 Implementation Checklist)
 - [x] 3. Wiring: folded into Phase 2.
 - [x] 4. Deployment: GitHub Pages, live at https://nfitch.github.io/isaiah-53/ (see Phase 4 Implementation Checklist)
-- [ ] 5. Mobile: responsive layout and touch interaction (in progress; see Phase 5 Implementation Checklist)
+- [x] 5. Mobile: responsive layout and touch interaction (see Phase 5 Implementation Checklist)
 - [ ] 6. Transcript rework (subagent): verify the Mosiah differences, the KJV italics, and the Hebrew against the authoritative texts, then regenerate the JSON.
 
 ## Phase 1 Implementation Checklist
@@ -323,12 +323,12 @@ Approach:
 - [x] M6. Tests run in WebKit (Safari's engine) as well as Chromium for the mobile cases.
 - [x] T1. All tests pass, with the output captured to `./tmp/`.
 - [x] D1. This document (Layout > Mobile) and the README are updated.
-- [ ] H1. nf checks the deployed site on a phone in both orientations before the phase closes.
+- [x] H1. nf checks the deployed site on a phone in both orientations before the phase closes.
 
 ### Close-out
-- [ ] Run `/nf-check-work` to verify that every success criterion is met.
-- [ ] Meticulously review every checklist item. Do not skim. Read each item and verify it was actually completed -- not "probably done" or "I think I did that." Actually check.
-- [ ] Check off every box. If a box cannot be checked, explain why and resolve it before closing.
+- [x] Run `/nf-check-work` to verify that every success criterion is met.
+- [x] Meticulously review every checklist item. Do not skim. Read each item and verify it was actually completed -- not "probably done" or "I think I did that." Actually check.
+- [x] Check off every box. If a box cannot be checked, explain why and resolve it before closing.
 
 ## Decisions
 
