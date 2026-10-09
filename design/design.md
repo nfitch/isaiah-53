@@ -376,6 +376,7 @@ The sources are saved in `design/source/texts/`, so the build does not depend on
 - [x] S5. A subagent rewrites the 12 Mosiah notes from the verified differences, in the transcript's style, and a second subagent critiques them. The rewrites include the verse 11 correction.
 - [x] S6. The transliterations use one rule for aleph (ʾ) and ayin (ʿ) (critique item H17).
 - [x] S8. MIT `LICENSE` at the repository root. The README notes that the scripture texts in `design/source/texts/` keep their own terms.
+- [x] S9. Favicon: נג (the Hebrew numeral 53) on the highlight color, as `static/favicon.svg`, with PNG fallbacks (`favicon-32.png`, and `apple-touch-icon.png` for phone home screens). Requested by nf during Phase 6.
 - [x] S7. The changes from this phase are recorded in a before/after review file, for nf.
 - [x] T1. All tests pass (desktop and phone), with the output captured to `./tmp/`. The data tests are updated for the new differences.
 - [x] D1. This document (Source Material, Data Model) and the README are updated.

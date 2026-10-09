@@ -262,3 +262,9 @@ test("F12 every local asset reference is relative", async () => {
   expect(rootAbsolute).toEqual([]);
   expect(html).not.toMatch(/fetch\(\s*["'`]\//);
 });
+
+test("favicon and touch icon links resolve", async ({ page }) => {
+  const hrefs = await page.locator('link[rel="icon"], link[rel="apple-touch-icon"]').evaluateAll((els) => els.map((e) => e.href));
+  expect(hrefs).toHaveLength(3);
+  for (const href of hrefs) expect((await page.request.get(href)).status(), href).toBe(200);
+});
