@@ -131,6 +131,7 @@ How the content maps to the page:
   | `revisions.json` | Reviewed edits applied on top of the transcript. Each edit records its source and reason. |
   | `report.py` | Writes the alignment and deep-dive review report. |
   | `changes_report.py` | Writes a before/after view of every revision. |
+  | `favicon_png.js` | Renders `static/favicon.svg` to the PNG icon fallbacks. |
 
 - `design/critique/` keeps the critique rounds (the proposals and reviews from each critic) and `changes.md`, the before/after view nf approved.
 - nf serves `static/` with a static file server of their choice. A server is needed because browsers block `fetch` from `file://`.
