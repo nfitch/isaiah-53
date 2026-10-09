@@ -2,6 +2,8 @@
 
 A single webpage for studying Isaiah 53 verse by verse: the Hebrew, the KJV, the Mosiah 14 differences, Hebrew-to-English phrase highlighting, and a deep dive for each phrase. See `design/design.md`.
 
+Live site: https://nfitch.github.io/isaiah-53/
+
 ## Layout
 
 | Path | Contents |
@@ -49,3 +51,11 @@ The build fails if:
 - a revision's `from` text does not occur exactly once.
 
 Do not edit the JSON file by hand.
+
+## Deployment
+
+Every push to `main` runs `.github/workflows/pages.yml`, which publishes `static/` to GitHub Pages. To check the live site:
+
+```bash
+LIVE_URL=https://nfitch.github.io/isaiah-53/ npx playwright test tests/live.spec.js
+```
