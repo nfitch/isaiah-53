@@ -1,24 +1,33 @@
-"""Build chapter data from the transcript, hand-made English alignments, and reviewed revisions.
+"""Build chapter data from the source texts, the transcript, hand-made English alignments, and
+reviewed revisions.
+
+- Hebrew: the WLC line (tools/sources.py), split into the transcript's word-by-word segments.
+- English: the KJV source text and italics, aligned to segments by ENGLISH below.
+- Mosiah differences: computed by diffing the KJV against Mosiah 14 (capitalization ignored).
+- Deep dives: the transcript's entries with tools/revisions.json applied.
+- Mosiah notes: tools/mosiah_notes.json when present, otherwise the transcript's notes.
 
 Usage:
   python3 tools/build_data.py            # all verses -> static/old-testament-isaiah-53.json
   python3 tools/build_data.py 11 12      # selected verses -> stdout
 """
-import json, re, sys
+import difflib, json, re, sys
 from pathlib import Path
 from parse_transcript import parse, SRC
+import sources
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "static/old-testament-isaiah-53.json"
 REVISIONS = ROOT / "tools/revisions.json"
-DIVE_FIELDS = {"translit", "rendering", "body"}
+DIVE_FIELDS = {"hebrew", "translit", "rendering", "body"}
+MOSIAH_NOTES = ROOT / "tools/mosiah_notes.json"
 
 MAQAF, SOF_PASUQ = "־", "׃"
 
-# English alignment per verse, one "word:group" pair per token, in KJV order.
+# English alignment per verse, one "word:group" pair per KJV token, in order.
 # group = 1-based entry number in the transcript's word-by-word list; "-" = punctuation (unaligned).
-# A trailing "-" on the group marks a KJV-only token (removed in Mosiah); a trailing "+" marks a
-# Mosiah-only token (added). Words with no Hebrew counterpart join an adjacent phrase.
+# Words with no Hebrew counterpart join an adjacent phrase. Mosiah differences are computed, not
+# listed here.
 ENGLISH = {
     1: "Who:1 hath:2 believed:2 our:3 report:3 ?:- and:4 to:7 whom:7 is:8 the:5 arm:5 of:6 the:6 "
        "LORD:6 revealed:8 ?:-",
@@ -39,20 +48,20 @@ ENGLISH = {
        "of:15 us:15 all:15 .:-",
     7: "He:1 was:1 oppressed:1 ,:- and:2 he:3 was:4 afflicted:4 ,:- yet:5 he:7 opened:7 not:6 his:8 "
        "mouth:8 ::- he:13 is:13 brought:13 as:9 a:10 lamb:10 to:11 the:11 slaughter:12 ,:- and:14 as:15 "
-       "a:16 sheep:16 before:17 her:18 shearers:18 is:19 dumb:19 ,:- so:20 he:22 opened:22 not:21 "
+       "a:16 sheep:16 before:17 her:18 shearers:18 is:19 dumb:19 ,:- so:20 he:22 openeth:22 not:21 "
        "his:23 mouth:23 .:-",
     8: "He:6 was:6 taken:6 from:1 prison:2 and:3 from:4 judgment:5 ::- and:7 who:10 shall:11 "
        "declare:11 his:9 generation:9 ?:- for:12 he:13 was:13 cut:13 off:13 out:14 of:14 the:15 land:15 "
        "of:16 the:16 living:16 ::- for:17 the:18 transgression:18 of:19 my:19 people:19 was:20 he:21 "
        "stricken:20 .:-",
     9: "And:1 he:2 made:2 his:5 grave:5 with:3 the:4 wicked:4 ,:- and:6 with:7 the:8 rich:8 in:9 "
-       "his:10 death:10 ;:- because:11 he:14 had:14 done:14 no:12 violence:13- evil:13+ ,:- neither:15 "
+       "his:10 death:10 ;:- because:11 he:14 had:14 done:14 no:12 violence:13 ,:- neither:15 "
        "was:16 any:16 deceit:17 in:18 his:19 mouth:19 .:-",
     10: "Yet:1 it:3 pleased:3 the:2 LORD:2 to:4 bruise:4 him:4 ;:- he:5 hath:5 put:5 him:5 to:5 "
         "grief:5 ::- when:6 thou:7 shalt:7 make:7 his:9 soul:9 an:8 offering:8 for:8 sin:8 ,:- he:10 "
         "shall:10 see:10 his:11 seed:11 ,:- he:12 shall:12 prolong:12 his:13 days:13 ,:- and:14 the:15 "
         "pleasure:15 of:16 the:16 LORD:16 shall:19 prosper:19 in:17 his:18 hand:18 .:-",
-    11: "He:4 shall:4 see:4 of:1- the:2 travail:2 of:3 his:3 soul:3 ,:- and:5 shall:5 be:5 "
+    11: "He:4 shall:4 see:4 of:1 the:2 travail:2 of:3 his:3 soul:3 ,:- and:5 shall:5 be:5 "
         "satisfied:5 ::- by:6 his:7 knowledge:7 shall:8 my:10 righteous:9 servant:10 justify:8 many:12 "
         ";:- for:13 he:15 shall:16 bear:16 their:14 iniquities:14 .:-",
     12: "Therefore:1 will:2 I:2 divide:2 him:3 a:2 portion:2 with:4 the:5 great:5 ,:- and:6 he:9 "
@@ -63,8 +72,8 @@ ENGLISH = {
 }
 
 def hebrew_tokens(v, gid):
-    """Split the verse's Hebrew line into the transcript's segments, in order."""
-    line, pos, toks = v["hebrew"], 0, []
+    """Split the verse's WLC Hebrew line into the transcript's segments, in order."""
+    line, pos, toks = sources.hebrew(v["number"]), 0, []
     for n, e in enumerate(v["entries"], 1):
         seg = e["hebrew"]
         joined = pos > 0 and line[pos] != " "
@@ -83,22 +92,48 @@ def hebrew_tokens(v, gid):
         sys.exit(f"verse {v['number']}: unconsumed Hebrew {line[pos:]!r}")
     return toks
 
-def english_tokens(v, gid):
+def kjv_tokens(v, gid):
+    """KJV source tokens with their alignment (from ENGLISH) and italics (from the source)."""
+    src = sources.kjv(v["number"])
+    pairs = [p.rsplit(":", 1) for p in ENGLISH[v["number"]].split()]
+    if [t["text"] for t in src] != [w for w, _ in pairs]:
+        sys.exit(f"verse {v['number']}: ENGLISH does not match the KJV source:\n"
+                 f"{sources.join(w for w, _ in pairs)}\n{sources.join(t['text'] for t in src)}")
     toks = []
-    for pair in ENGLISH[v["number"]].split():
-        text, g = pair.rsplit(":", 1)
-        if g == "-":
-            toks.append({"text": text, "align": None, "punct": True})
-            continue
-        tok = {"text": text, "align": gid(int(g.rstrip("+-")))}
-        if g[-1] in "+-":
-            tok["diff"] = "added" if g[-1] == "+" else "removed"
+    for t, (_, g) in zip(src, pairs):
+        tok = {"text": t["text"], "align": None if g == "-" else gid(int(g))}
+        if t["punct"]:
+            tok["punct"] = True
+        if t["italic"]:
+            tok["italic"] = True
         toks.append(tok)
-    kjv = " ".join(t["text"] for t in toks if t.get("diff") != "added")
-    kjv = re.sub(r" ([,:;.?!])", r"\1", kjv)
-    if kjv != v["kjv"]:
-        sys.exit(f"verse {v['number']}: English tokens do not rebuild the KJV:\n{kjv}\n{v['kjv']}")
     return toks
+
+def english_tokens(v, gid):
+    """KJV tokens merged with the Mosiah 14 differences.
+
+    Removed tokens (KJV only) keep their phrase. Added tokens (Mosiah only) that replace KJV text
+    join the phrase of the first word they replace; pure additions are unaligned.
+    """
+    kjv = kjv_tokens(v, gid)
+    mos = sources.tokenize(sources.mosiah(v["number"]))
+    sm = difflib.SequenceMatcher(None, [t["text"].lower() for t in kjv], [t.lower() for t in mos], autojunk=False)
+    out = []
+    for op, i1, i2, j1, j2 in sm.get_opcodes():
+        if op == "equal":
+            out += kjv[i1:i2]
+            continue
+        removed = [dict(t, diff="removed") for t in kjv[i1:i2]]
+        out += removed
+        group = next((t["align"] for t in removed if t["align"]), None)
+        for text in mos[j1:j2]:
+            punct = text in sources.PUNCT
+            out.append({"text": text, "align": None if punct else group, "diff": "added",
+                        **({"punct": True} if punct else {})})
+    rebuilt = sources.join(t["text"] for t in out if t.get("diff") != "removed")
+    if rebuilt.lower() != sources.mosiah(v["number"]).lower():
+        sys.exit(f"verse {v['number']}: Mosiah tokens do not rebuild Mosiah 14")
+    return out
 
 def apply_revisions(verses):
     """Apply tools/revisions.json to the parsed transcript entries.
@@ -122,7 +157,11 @@ def apply_revisions(verses):
 def build(numbers):
     verses, dives = [], {}
     parsed = parse(SRC.read_text())
+    for v in parsed:
+        for e in v["entries"]:
+            e["hebrew"] = sources._strip_marks(e["hebrew"])
     apply_revisions(parsed)
+    notes = json.loads(MOSIAH_NOTES.read_text()) if MOSIAH_NOTES.exists() else {}
     for v in parsed:
         if v["number"] not in numbers:
             continue
@@ -136,7 +175,7 @@ def build(numbers):
             "hebrew": hebrew_tokens(v, gid),
             "english": english_tokens(v, gid),
             "alignments": [{"id": gid(n), "deepDive": gid(n)} for n in range(1, len(v["entries"]) + 1)],
-            "mosiahNote": v["mosiahNote"],
+            "mosiahNote": notes.get(str(v["number"]), v["mosiahNote"]),
         })
     return {"chapter": {"id": "isaiah-53", "book": "Isaiah", "chapterNumber": 53,
                         "parallel": {"book": "Mosiah", "chapterNumber": 14}},

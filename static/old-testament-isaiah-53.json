@@ -42,7 +42,7 @@
      "align": "v1-7"
     },
     {
-     "text": "נִגְלָֽתָה",
+     "text": "נִגְלָתָה",
      "align": "v1-8"
     },
     {
@@ -52,6 +52,48 @@
     }
    ],
    "english": [
+    {
+     "text": "Yea",
+     "align": null,
+     "diff": "added"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "diff": "added",
+     "punct": true
+    },
+    {
+     "text": "even",
+     "align": null,
+     "diff": "added"
+    },
+    {
+     "text": "doth",
+     "align": null,
+     "diff": "added"
+    },
+    {
+     "text": "not",
+     "align": null,
+     "diff": "added"
+    },
+    {
+     "text": "Isaiah",
+     "align": null,
+     "diff": "added"
+    },
+    {
+     "text": "say",
+     "align": null,
+     "diff": "added"
+    },
+    {
+     "text": ":",
+     "align": null,
+     "diff": "added",
+     "punct": true
+    },
     {
      "text": "Who",
      "align": "v1-1"
@@ -75,6 +117,13 @@
     {
      "text": "?",
      "align": null,
+     "punct": true,
+     "diff": "removed"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "diff": "added",
      "punct": true
     },
     {
@@ -157,7 +206,7 @@
      "deepDive": "v1-8"
     }
    ],
-   "mosiahNote": "Identical to KJV — no differences."
+   "mosiahNote": "Mosiah opens with \"Yea, even doth not Isaiah say:\" before the verse. That line is Abinadi introducing the quotation, not part of Isaiah's text. Mosiah also joins the two questions with a comma where KJV has a question mark after \"report.\""
   },
   {
    "number": 2,
@@ -351,7 +400,8 @@
     },
     {
      "text": "a",
-     "align": "v2-10"
+     "align": "v2-10",
+     "diff": "removed"
     },
     {
      "text": "dry",
@@ -364,6 +414,13 @@
     {
      "text": ":",
      "align": null,
+     "punct": true,
+     "diff": "removed"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "diff": "added",
      "punct": true
     },
     {
@@ -422,15 +479,18 @@
     {
      "text": ",",
      "align": null,
-     "punct": true
+     "punct": true,
+     "diff": "removed"
     },
     {
      "text": "there",
-     "align": "v2-21"
+     "align": "v2-21",
+     "italic": true
     },
     {
      "text": "is",
-     "align": "v2-21"
+     "align": "v2-21",
+     "italic": true
     },
     {
      "text": "no",
@@ -564,7 +624,7 @@
      "deepDive": "v2-24"
     }
    ],
-   "mosiahNote": "Identical to KJV — no differences."
+   "mosiahNote": "Mosiah reads \"out of dry ground\" where KJV reads \"out of a dry ground.\" Punctuation also differs (a semicolon for a colon, and no comma after \"see him\")."
   },
   {
    "number": 3,
@@ -726,6 +786,13 @@
     {
      "text": ":",
      "align": null,
+     "punct": true,
+     "diff": "removed"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "diff": "added",
      "punct": true
     },
     {
@@ -754,7 +821,8 @@
     },
     {
      "text": "our",
-     "align": "v3-13"
+     "align": "v3-13",
+     "italic": true
     },
     {
      "text": "faces",
@@ -890,7 +958,7 @@
      "deepDive": "v3-18"
     }
    ],
-   "mosiahNote": "Identical to KJV — no differences."
+   "mosiahNote": "Only punctuation differs: Mosiah has a semicolon where KJV has a colon after \"grief.\""
   },
   {
    "number": 4,
@@ -975,7 +1043,13 @@
     },
     {
      "text": "hath",
-     "align": "v4-4"
+     "align": "v4-4",
+     "diff": "removed"
+    },
+    {
+     "text": "has",
+     "align": "v4-4",
+     "diff": "added"
     },
     {
      "text": "borne",
@@ -1013,6 +1087,13 @@
     {
      "text": ":",
      "align": null,
+     "punct": true,
+     "diff": "removed"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "diff": "added",
      "punct": true
     },
     {
@@ -1137,7 +1218,7 @@
      "deepDive": "v4-15"
     }
    ],
-   "mosiahNote": "Identical to KJV — no differences."
+   "mosiahNote": "Mosiah reads \"he has borne our griefs\" where KJV reads \"he hath borne our griefs.\" Punctuation also differs (a semicolon for a colon)."
   },
   {
    "number": 5,
@@ -1160,7 +1241,7 @@
      "align": "v5-4"
     },
     {
-     "text": "פְּשָׁעֵינוּ",
+     "text": "פְּשָׁעֵנוּ",
      "align": "v5-5",
      "joined": true
     },
@@ -1229,7 +1310,8 @@
     },
     {
      "text": "was",
-     "align": "v5-3"
+     "align": "v5-3",
+     "italic": true
     },
     {
      "text": "wounded",
@@ -1254,11 +1336,13 @@
     },
     {
      "text": "he",
-     "align": "v5-6"
+     "align": "v5-6",
+     "italic": true
     },
     {
      "text": "was",
-     "align": "v5-6"
+     "align": "v5-6",
+     "italic": true
     },
     {
      "text": "bruised",
@@ -1279,6 +1363,13 @@
     {
      "text": ":",
      "align": null,
+     "punct": true,
+     "diff": "removed"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "diff": "added",
      "punct": true
     },
     {
@@ -1303,7 +1394,8 @@
     },
     {
      "text": "was",
-     "align": "v5-11"
+     "align": "v5-11",
+     "italic": true
     },
     {
      "text": "upon",
@@ -1418,7 +1510,7 @@
      "deepDive": "v5-16"
     }
    ],
-   "mosiahNote": "Identical to KJV — no differences."
+   "mosiahNote": "Only punctuation differs: Mosiah has a semicolon where KJV has a colon after \"iniquities.\""
   },
   {
    "number": 6,
@@ -1502,12 +1594,24 @@
      "align": "v6-1"
     },
     {
+     "text": ",",
+     "align": null,
+     "diff": "added",
+     "punct": true
+    },
+    {
      "text": "like",
      "align": "v6-2"
     },
     {
      "text": "sheep",
      "align": "v6-3"
+    },
+    {
+     "text": ",",
+     "align": null,
+     "diff": "added",
+     "punct": true
     },
     {
      "text": "have",
@@ -1601,7 +1705,13 @@
     },
     {
      "text": "iniquity",
-     "align": "v6-14"
+     "align": "v6-14",
+     "diff": "removed"
+    },
+    {
+     "text": "iniquities",
+     "align": "v6-14",
+     "diff": "added"
     },
     {
      "text": "of",
@@ -1683,7 +1793,7 @@
      "deepDive": "v6-15"
     }
    ],
-   "mosiahNote": "Identical to KJV — no differences."
+   "mosiahNote": "Mosiah reads \"the iniquities of us all\" where KJV reads \"the iniquity of us all.\" The Hebrew עֲוֹן is singular. Mosiah also sets off \"like sheep\" with commas."
   },
   {
    "number": 7,
@@ -1715,12 +1825,13 @@
      "joined": true
     },
     {
-     "text": "יִפְתַּח",
+     "text": "יִפְתַּח־",
      "align": "v7-7"
     },
     {
      "text": "פִּיו",
-     "align": "v7-8"
+     "align": "v7-8",
+     "joined": true
     },
     {
      "text": "כַּ",
@@ -1859,6 +1970,13 @@
     {
      "text": ":",
      "align": null,
+     "punct": true,
+     "diff": "removed"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "diff": "added",
      "punct": true
     },
     {
@@ -1941,7 +2059,8 @@
     {
      "text": ",",
      "align": null,
-     "punct": true
+     "punct": true,
+     "diff": "removed"
     },
     {
      "text": "so",
@@ -1952,8 +2071,14 @@
      "align": "v7-22"
     },
     {
+     "text": "openeth",
+     "align": "v7-22",
+     "diff": "removed"
+    },
+    {
      "text": "opened",
-     "align": "v7-22"
+     "align": "v7-22",
+     "diff": "added"
     },
     {
      "text": "not",
@@ -2067,7 +2192,7 @@
      "deepDive": "v7-23"
     }
    ],
-   "mosiahNote": "Identical to KJV — no differences."
+   "mosiahNote": "Mosiah reads \"so he opened not his mouth\" where KJV reads \"so he openeth not his mouth.\" Punctuation also differs (a semicolon for a colon, and no comma after \"dumb\")."
   },
   {
    "number": 8,
@@ -2205,6 +2330,13 @@
     {
      "text": ":",
      "align": null,
+     "punct": true,
+     "diff": "removed"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "diff": "added",
      "punct": true
     },
     {
@@ -2287,6 +2419,13 @@
     {
      "text": ":",
      "align": null,
+     "punct": true,
+     "diff": "removed"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "diff": "added",
      "punct": true
     },
     {
@@ -2299,7 +2438,13 @@
     },
     {
      "text": "transgression",
-     "align": "v8-18"
+     "align": "v8-18",
+     "diff": "removed"
+    },
+    {
+     "text": "transgressions",
+     "align": "v8-18",
+     "diff": "added"
     },
     {
      "text": "of",
@@ -2417,7 +2562,7 @@
      "deepDive": "v8-21"
     }
    ],
-   "mosiahNote": "Identical to KJV — no differences."
+   "mosiahNote": "Mosiah reads \"the transgressions of my people\" where KJV reads \"the transgression of my people.\" The Hebrew פֶּשַׁע is singular. Punctuation also differs (semicolons for colons)."
   },
   {
    "number": 9,
@@ -2624,11 +2769,13 @@
     },
     {
      "text": "was",
-     "align": "v9-16"
+     "align": "v9-16",
+     "italic": true
     },
     {
      "text": "any",
-     "align": "v9-16"
+     "align": "v9-16",
+     "italic": true
     },
     {
      "text": "deceit",
@@ -2730,7 +2877,7 @@
      "deepDive": "v9-19"
     }
    ],
-   "mosiahNote": "Mosiah reads \"and he had done no evil\" where KJV reads \"because he had done no violence.\" The Hebrew חָמָס (khamas) means violence, wrong, injustice — the Book of Mormon rendering \"no evil\" is broader and less specific than either the Hebrew or the KJV."
+   "mosiahNote": "Mosiah reads \"he had done no evil\" where KJV reads \"he had done no violence.\" The Hebrew חָמָס means violence or wrong."
   },
   {
    "number": 10,
@@ -2766,7 +2913,7 @@
      "joined": true
     },
     {
-     "text": "אַשְׁמָה",
+     "text": "אָשָׁם",
      "align": "v10-8"
     },
     {
@@ -2873,7 +3020,8 @@
     },
     {
      "text": "him",
-     "align": "v10-5"
+     "align": "v10-5",
+     "italic": true
     },
     {
      "text": "to",
@@ -2886,6 +3034,13 @@
     {
      "text": ":",
      "align": null,
+     "punct": true,
+     "diff": "removed"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "diff": "added",
      "punct": true
     },
     {
@@ -2931,7 +3086,8 @@
     {
      "text": ",",
      "align": null,
-     "punct": true
+     "punct": true,
+     "diff": "removed"
     },
     {
      "text": "he",
@@ -2947,7 +3103,8 @@
     },
     {
      "text": "his",
-     "align": "v10-11"
+     "align": "v10-11",
+     "italic": true
     },
     {
      "text": "seed",
@@ -2972,7 +3129,8 @@
     },
     {
      "text": "his",
-     "align": "v10-13"
+     "align": "v10-13",
+     "italic": true
     },
     {
      "text": "days",
@@ -3111,7 +3269,7 @@
      "deepDive": "v10-19"
     }
    ],
-   "mosiahNote": "Mosiah reads \"when thou shalt make his soul an offering for sin\" — identical to KJV. However Mosiah adds no textual differences elsewhere. One notable point — the Book of Mormon text preserves the same ambiguity of \"if\" vs \"when\" as the KJV, rendering אִם as \"when\" throughout, identical to KJV — no differences."
+   "mosiahNote": "Only punctuation differs: Mosiah has a semicolon where KJV has a colon after \"grief,\" and no comma after \"sin.\""
   },
   {
    "number": 11,
@@ -3235,7 +3393,8 @@
     },
     {
      "text": "and",
-     "align": "v11-5"
+     "align": "v11-5",
+     "italic": true
     },
     {
      "text": "shall",
@@ -3252,6 +3411,13 @@
     {
      "text": ":",
      "align": null,
+     "punct": true,
+     "diff": "removed"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "diff": "added",
      "punct": true
     },
     {
@@ -3391,7 +3557,7 @@
      "deepDive": "v11-16"
     }
    ],
-   "mosiahNote": "Mosiah reads \"he shall see the travail of his soul and shall be satisfied\" — inserting \"the travail of his soul\" as the explicit object of \"he shall see,\" where the Hebrew leaves the object unstated and KJV supplies it from context. Both KJV and Mosiah resolve the ambiguity the same way, but the Hebrew leaves he shall see standing alone."
+   "mosiahNote": "Mosiah reads \"He shall see the travail of his soul\" where KJV reads \"He shall see of the travail of his soul.\" Punctuation also differs (a semicolon for a colon)."
   },
   {
    "number": 12,
@@ -3428,7 +3594,7 @@
      "joined": true
     },
     {
-     "text": "עַצוּמִים",
+     "text": "עֲצוּמִים",
      "align": "v12-8",
      "joined": true
     },
@@ -3552,11 +3718,13 @@
     },
     {
      "text": "a",
-     "align": "v12-2"
+     "align": "v12-2",
+     "italic": true
     },
     {
      "text": "portion",
-     "align": "v12-2"
+     "align": "v12-2",
+     "italic": true
     },
     {
      "text": "with",
@@ -3655,6 +3823,13 @@
     {
      "text": ":",
      "align": null,
+     "punct": true,
+     "diff": "removed"
+    },
+    {
+     "text": ";",
+     "align": null,
+     "diff": "added",
      "punct": true
     },
     {
@@ -3700,7 +3875,13 @@
     },
     {
      "text": "bare",
-     "align": "v12-25"
+     "align": "v12-25",
+     "diff": "removed"
+    },
+    {
+     "text": "bore",
+     "align": "v12-25",
+     "diff": "added"
     },
     {
      "text": "the",
@@ -3708,7 +3889,13 @@
     },
     {
      "text": "sin",
-     "align": "v12-23"
+     "align": "v12-23",
+     "diff": "removed"
+    },
+    {
+     "text": "sins",
+     "align": "v12-23",
+     "diff": "added"
     },
     {
      "text": "of",
@@ -3871,7 +4058,7 @@
      "deepDive": "v12-29"
     }
    ],
-   "mosiahNote": "Identical to KJV — no differences."
+   "mosiahNote": "Mosiah reads \"he bore the sins of many\" where KJV reads \"he bare the sin of many.\" The Hebrew חֵטְא is singular. Punctuation also differs (a semicolon for a colon)."
   }
  ],
  "deepDives": {
@@ -3905,7 +4092,7 @@
   },
   "v1-5": {
    "hebrew": "זְרוֹעַ",
-   "translit": "zroaʿ",
+   "translit": "zeroaʿ",
    "rendering": "the arm",
    "body": "Specifically the forearm — the working, striking, saving limb. In Hebrew idiom this is always the arm of power and action. Frequently used for God's saving intervention at the Exodus.",
    "straightforward": false
@@ -3925,7 +4112,7 @@
    "straightforward": false
   },
   "v1-8": {
-   "hebrew": "נִגְלָֽתָה",
+   "hebrew": "נִגְלָתָה",
    "translit": "niglatah",
    "rendering": "is revealed",
    "body": "Root: גָּלָה (galah). To uncover, strip bare, expose. The KJV \"revealed\" is thinner. The image is of a covering being stripped away, something hidden suddenly laid bare.",
@@ -4010,7 +4197,7 @@
   },
   "v2-12": {
    "hebrew": "לֹא",
-   "translit": "loʾ",
+   "translit": "lo",
    "rendering": "no / not",
    "body": "negation, straightforward.",
    "straightforward": true
@@ -4038,7 +4225,7 @@
   },
   "v2-16": {
    "hebrew": "לֹא",
-   "translit": "loʾ",
+   "translit": "lo",
    "rendering": "not",
    "body": "negation, straightforward.",
    "straightforward": true
@@ -4073,7 +4260,7 @@
   },
   "v2-21": {
    "hebrew": "לֹא",
-   "translit": "loʾ",
+   "translit": "lo",
    "rendering": "no / not",
    "body": "negation, straightforward.",
    "straightforward": true
@@ -4094,7 +4281,7 @@
   },
   "v2-24": {
    "hebrew": "נֶחְמְדֵהוּ",
-   "translit": "nekhmdehu",
+   "translit": "nekhmedehu",
    "rendering": "we should desire him",
    "body": "Root: חָמַד (khamad) \"to desire, to covet, to take pleasure in.\" The same root used in the tenth commandment \"do not covet.\" It is appetite, longing, deep desire. The KJV rendering is actually quite close here.",
    "straightforward": false
@@ -4122,14 +4309,14 @@
   },
   "v3-4": {
    "hebrew": "אִישִׁים",
-   "translit": "ishim",
+   "translit": "ʾishim",
    "rendering": "of men",
    "body": "plural of אִישׁ (ish) — a rare plural, rather than the generic word for humanity (אָדָם, adam). Some read it as men of standing, prominent men — abandoned not just by people generally but by those who matter; others take it simply as \"men.\"",
    "straightforward": false
   },
   "v3-5": {
    "hebrew": "אִישׁ",
-   "translit": "ish",
+   "translit": "ʾish",
    "rendering": "a man",
    "body": "here the singular, in a construct phrase — \"a man of pains,\" a Hebrew idiom that characterizes a person by what marks him.",
    "straightforward": false
@@ -4192,7 +4379,7 @@
   },
   "v3-14": {
    "hebrew": "מִמֶּנּוּ",
-   "translit": "mimenu",
+   "translit": "mimmennu",
    "rendering": "from him",
    "body": "straightforward.",
    "straightforward": true
@@ -4213,7 +4400,7 @@
   },
   "v3-17": {
    "hebrew": "לֹא",
-   "translit": "loʾ",
+   "translit": "lo",
    "rendering": "not",
    "body": "negation, straightforward.",
    "straightforward": true
@@ -4227,14 +4414,14 @@
   },
   "v4-1": {
    "hebrew": "אָכֵן",
-   "translit": "aken",
+   "translit": "ʾaken",
    "rendering": "surely",
    "body": "an emphatic adverb meaning truly, indeed, nevertheless, howbeit. It carries a sense of contrast or correction — but in truth, contrary to what we thought. KJV \"surely\" captures some of this but loses the corrective force — the speaker is reversing the misjudgment of verse 3.",
    "straightforward": false
   },
   "v4-2": {
    "hebrew": "חֳלָיֵנוּ",
-   "translit": "kholayyenu",
+   "translit": "kholayenu",
    "rendering": "our griefs",
    "body": "Root: חָלָה (khalah) \"to be sick, to be weak.\" As in verse 3, this is primarily sickness, disease, physical suffering — not merely grief. The suffix נוּ means \"our.\" He bore our sicknesses.",
    "straightforward": false
@@ -4283,7 +4470,7 @@
   },
   "v4-9": {
    "hebrew": "אֲנַחְנוּ",
-   "translit": "anakhnu",
+   "translit": "ʾanakhnu",
    "rendering": "we",
    "body": "the first person plural pronoun, again standing alone for emphasis. We ourselves — the corporate witness — are being indicted.",
    "straightforward": false
@@ -4297,7 +4484,7 @@
   },
   "v4-11": {
    "hebrew": "נָגוּעַ",
-   "translit": "nagua",
+   "translit": "naguaʿ",
    "rendering": "stricken",
    "body": "Root: נָגַע (nagaʿ) \"to touch, to strike, to afflict.\" The word carries the specific sense of being struck by God with plague or disease — it is the word used of those afflicted with leprosy. We thought he was plague-stricken by God.",
    "straightforward": false
@@ -4311,7 +4498,7 @@
   },
   "v4-13": {
    "hebrew": "אֱלֹהִים",
-   "translit": "Elohim",
+   "translit": "ʾElohim",
    "rendering": "of God",
    "body": "the standard Hebrew word for God. Plural in form, but construed with singular verbs when it refers to Israel's God. Straightforward here.",
    "straightforward": false
@@ -4359,8 +4546,8 @@
    "straightforward": true
   },
   "v5-5": {
-   "hebrew": "פְּשָׁעֵינוּ",
-   "translit": "peshaʿeinu",
+   "hebrew": "פְּשָׁעֵנוּ",
+   "translit": "peshaʿenu",
    "rendering": "our transgressions",
    "body": "Root: פָּשַׁע (pashaʿ) \"to rebel, to revolt, to break away.\" This is the strongest Hebrew word for sin — not mere error or missing the mark but willful rebellion, deliberate revolt against authority. The suffix נוּ means \"our.\"",
    "straightforward": false
@@ -4381,7 +4568,7 @@
   },
   "v5-8": {
    "hebrew": "עֲוֹנֹתֵינוּ",
-   "translit": "avonotenu",
+   "translit": "ʿavonotenu",
    "rendering": "our iniquities",
    "body": "Root: עָוָה (avah) \"to be bent, to be twisted, to be crooked.\" A different word from פֶּשַׁע — this is sin as moral distortion, crookedness, that which is twisted out of its proper shape. The suffix נוּ means \"our.\"",
    "straightforward": false
@@ -4402,7 +4589,7 @@
   },
   "v5-11": {
    "hebrew": "עָלָיו",
-   "translit": "alav",
+   "translit": "ʿalav",
    "rendering": "upon him",
    "body": "the preposition עַל with the suffix \"him.\" As in verse 1 — something landing upon, descending on a person. Straightforward but weighty.",
    "straightforward": false
@@ -4458,7 +4645,7 @@
   },
   "v6-3": {
    "hebrew": "צֹּאן",
-   "translit": "tsoʾn",
+   "translit": "tson",
    "rendering": "sheep",
    "body": "the collective noun for sheep or goats as a flock. Not a single sheep but the flock as a whole — which makes the next word more striking.",
    "straightforward": false
@@ -4472,7 +4659,7 @@
   },
   "v6-5": {
    "hebrew": "אִישׁ",
-   "translit": "ish",
+   "translit": "ʾish",
    "rendering": "every one / each man",
    "body": "The ordinary word for a man, an individual. Here it is used distributively — each one, every individual among us.",
    "straightforward": false
@@ -4528,14 +4715,14 @@
   },
   "v6-13": {
    "hebrew": "אֵת",
-   "translit": "et",
+   "translit": "ʾet",
    "rendering": null,
    "body": "the direct object marker — untranslatable in English, simply marks what follows as the direct object of the verb, straightforward.",
    "straightforward": true
   },
   "v6-14": {
    "hebrew": "עֲוֹן",
-   "translit": "avon",
+   "translit": "ʿavon",
    "rendering": "the iniquity",
    "body": "Root: עָוָה (avah) as in verse 5 — moral crookedness, twistedness, guilt. Not just the act but the accumulated guilt and distortion of it.",
    "straightforward": false
@@ -4549,7 +4736,7 @@
   },
   "v7-1": {
    "hebrew": "נִגַּשׂ",
-   "translit": "nigas",
+   "translit": "niggas",
    "rendering": "he was oppressed",
    "body": "Root: נָגַשׂ (nagas) \"to press, to drive, to exact, to oppress, to push hard.\" The word is used of a taskmaster driving slaves, of an exactor demanding payment, of one who presses another without mercy. KJV \"oppressed\" is adequate but loses the image of being driven and pressed by an overbearing force.",
    "straightforward": false
@@ -4584,7 +4771,7 @@
   },
   "v7-6": {
    "hebrew": "לֹא",
-   "translit": "loʾ",
+   "translit": "lo",
    "rendering": "not",
    "body": "negation, straightforward.",
    "straightforward": true
@@ -4668,7 +4855,7 @@
   },
   "v7-18": {
    "hebrew": "גֹזְזֶיהָ",
-   "translit": "gozezeyha",
+   "translit": "gozezeha",
    "rendering": "her shearers",
    "body": "Root: גָּזַז (gazaz) \"to shear, to cut off.\" The suffix הָ means \"her.\" Those who cut away from her — her wool, her covering stripped off. The image of exposure and taking from her without her resistance.",
    "straightforward": false
@@ -4689,7 +4876,7 @@
   },
   "v7-21": {
    "hebrew": "לֹא",
-   "translit": "loʾ",
+   "translit": "lo",
    "rendering": "not",
    "body": "negation, straightforward.",
    "straightforward": true
@@ -4717,7 +4904,7 @@
   },
   "v8-2": {
    "hebrew": "עֹצֶר",
-   "translit": "otser",
+   "translit": "ʿotser",
    "rendering": "prison",
    "body": "Root: עָצַר (atsar) \"to restrain, to hold back, to shut up, to arrest.\" The noun means restraint, confinement, detention. KJV renders it \"prison\" but the word is broader — any form of restraint or confinement, being held back by force. It can also mean oppression or distress.",
    "straightforward": false
@@ -4759,7 +4946,7 @@
   },
   "v8-8": {
    "hebrew": "אֶת",
-   "translit": "et",
+   "translit": "ʾet",
    "rendering": null,
    "body": "direct object marker — untranslatable, marks what follows as the direct object, straightforward.",
    "straightforward": true
@@ -4808,7 +4995,7 @@
   },
   "v8-15": {
    "hebrew": "אֶרֶץ",
-   "translit": "erets",
+   "translit": "ʾerets",
    "rendering": "the land",
    "body": "earth, land, world, as in verse 2, straightforward.",
    "straightforward": true
@@ -4836,7 +5023,7 @@
   },
   "v8-19": {
    "hebrew": "עַמִּי",
-   "translit": "ammi",
+   "translit": "ʿammi",
    "rendering": "my people",
    "body": "Root: עַם (am) \"people, nation, folk.\" The suffix י means \"my.\" This is a striking shift — suddenly the speaker changes. Throughout the chapter the speakers have been we, us — the corporate witness. Here suddenly it is my people — a single voice speaking. Most naturally this is the voice of the prophet, or of God himself. The shift is abrupt and unresolved in the Hebrew.",
    "straightforward": false
@@ -4871,7 +5058,7 @@
   },
   "v9-3": {
    "hebrew": "אֶת",
-   "translit": "et",
+   "translit": "ʾet",
    "rendering": "with",
    "body": "here not the object marker but the homonymous preposition אֵת \"with\" — with the wicked. KJV \"with\" is accurate.",
    "straightforward": false
@@ -4885,7 +5072,7 @@
   },
   "v9-5": {
    "hebrew": "קִבְרוֹ",
-   "translit": "kivro",
+   "translit": "qivro",
    "rendering": "his grave",
    "body": "Root: קֶבֶר (kever) \"grave, tomb, burial place.\" The suffix וֹ means \"his.\" Straightforward.",
    "straightforward": false
@@ -4899,14 +5086,14 @@
   },
   "v9-7": {
    "hebrew": "אֶת",
-   "translit": "et",
+   "translit": "ʾet",
    "rendering": "with",
    "body": "again the preposition אֵת \"with\" — with a rich man. Straightforward.",
    "straightforward": false
   },
   "v9-8": {
    "hebrew": "עָשִׁיר",
-   "translit": "ashir",
+   "translit": "ʿashir",
    "rendering": "the rich",
    "body": "Root: עָשַׁר (ashar) \"to be rich, to become wealthy.\" The singular — a rich man, a wealthy one. Notably singular here where רְשָׁעִים was plural — with a rich man specifically. This has puzzled interpreters for centuries. The rich man may parallel or contrast the wicked — buried among the condemned yet in the tomb of a wealthy man.",
    "straightforward": false
@@ -4927,7 +5114,7 @@
   },
   "v9-11": {
    "hebrew": "עַל",
-   "translit": "al",
+   "translit": "ʿal",
    "rendering": "because / on account of",
    "body": "the preposition עַל here carries causal force — on account of, because of, despite. KJV renders it \"because\"; עַל לֹא can also mean \"although\" — although he had done no violence. Many modern translations read it that way.",
    "straightforward": false
@@ -4948,7 +5135,7 @@
   },
   "v9-14": {
    "hebrew": "עָשָׂה",
-   "translit": "asah",
+   "translit": "ʿasah",
    "rendering": "he had done",
    "body": "Root: עָשָׂה (asah) \"to do, to make, to act, to perform.\" Straightforward.",
    "straightforward": false
@@ -5011,7 +5198,7 @@
   },
   "v10-4": {
    "hebrew": "דַּכְּאוֹ",
-   "translit": "dakkeo",
+   "translit": "dakkeʾo",
    "rendering": "to bruise him",
    "body": "Root: דָּכָא (daka) as in verse 5 — to crush, to pulverize, to grind down. The suffix וֹ means \"him.\" The same crushing as before — to crush him utterly.",
    "straightforward": false
@@ -5025,7 +5212,7 @@
   },
   "v10-6": {
    "hebrew": "אִם",
-   "translit": "im",
+   "translit": "ʾim",
    "rendering": "when / if",
    "body": "a conditional particle meaning if or when. The choice between \"if\" and \"when\" is significant — if makes the following conditional and uncertain; when treats it as certain and forthcoming. KJV uses \"when\" but the Hebrew אִם is most naturally if — leaving the condition open.",
    "straightforward": false
@@ -5038,8 +5225,8 @@
    "straightforward": false
   },
   "v10-8": {
-   "hebrew": "אַשְׁמָה",
-   "translit": "ashmah",
+   "hebrew": "אָשָׁם",
+   "translit": "ʾasham",
    "rendering": "an offering for sin",
    "body": "Root: אָשַׁם (asham) \"to be guilty, to bear guilt, to make a guilt offering.\" The noun אָשָׁם is specifically a guilt offering — one of the five Levitical sacrifices, distinct from the sin offering. It is the offering made when one has trespassed against what is holy or violated another's rights and owes restitution. KJV \"offering for sin\" blurs this specificity — it is not a generic sin offering but a guilt offering, a reparation offering, one that satisfies a debt.",
    "straightforward": false
@@ -5130,7 +5317,7 @@
   },
   "v11-2": {
    "hebrew": "עֲמַל",
-   "translit": "amal",
+   "translit": "ʿamal",
    "rendering": "the travail",
    "body": "Root: עָמַל (amal) \"to toil, to labor, to suffer, to be weary.\" The noun means toil, labor, trouble, suffering, misery, weariness. KJV \"travail\" captures the labor dimension but the word is broader — exhausting toil, grinding suffering, miserable labor. It is the word used of the crushing burden of hard servitude and of life's painful struggle. Not merely birth-pangs but the whole weight of suffering and toil.",
    "straightforward": false
@@ -5186,7 +5373,7 @@
   },
   "v11-10": {
    "hebrew": "עַבְדִּי",
-   "translit": "avdi",
+   "translit": "ʿavdi",
    "rendering": "my servant",
    "body": "Root: עֶבֶד (eved) \"servant, slave, worker, one who serves.\" The suffix י means \"my.\" This is the voice of God speaking — my servant. עֶבֶד carries the full range from slave to trusted royal official to one who is wholly devoted to another's purposes. It is a title of both lowliness and honor — the great servants of God in the Hebrew Bible are called by this name.",
    "straightforward": false
@@ -5214,7 +5401,7 @@
   },
   "v11-14": {
    "hebrew": "עֲוֹנֹתָם",
-   "translit": "avonotam",
+   "translit": "ʿavonotam",
    "rendering": "their iniquities",
    "body": "Root: עָוָה (avah) as in verses 5 and 6 — moral crookedness, twistedness, guilt. The suffix ם means \"their.\" The iniquities of the many — the same multitude he justifies.",
    "straightforward": false
@@ -5242,7 +5429,7 @@
   },
   "v12-2": {
    "hebrew": "אֲחַלֶּק",
-   "translit": "akhalleq",
+   "translit": "ʾakhalleq",
    "rendering": "will I divide",
    "body": "Root: חָלַק (khalaq) \"to divide, to apportion, to share out, to distribute.\" A first person form — I will divide, I will apportion. The speaker is God — the same voice that called him my servant in verse 11. God himself is the one apportioning the reward. KJV \"divide him a portion\" is slightly awkward — the Hebrew is I will apportion to him among the many.",
    "straightforward": false
@@ -5277,14 +5464,14 @@
   },
   "v12-7": {
    "hebrew": "אֶת",
-   "translit": "et",
+   "translit": "ʾet",
    "rendering": "with",
    "body": "here the preposition אֵת \"with\" — with the mighty. KJV \"with\" is accurate.",
    "straightforward": false
   },
   "v12-8": {
-   "hebrew": "עַצוּמִים",
-   "translit": "atsumim",
+   "hebrew": "עֲצוּמִים",
+   "translit": "ʿatsumim",
    "rendering": "the strong",
    "body": "Root: עָצַם (atsam) \"to be strong, to be mighty, to be numerous, to be powerful.\" The plural — the strong ones, the mighty, the powerful. KJV \"the strong\" is accurate. He shall divide spoil with the mighty — a conqueror's language, the language of victory after battle.",
    "straightforward": false
@@ -5312,7 +5499,7 @@
   },
   "v12-12": {
    "hebrew": "אֲשֶׁר",
-   "translit": "asher",
+   "translit": "ʾasher",
    "rendering": "that / which / because",
    "body": "relative pronoun or conjunction, straightforward.",
    "straightforward": true
@@ -5354,7 +5541,7 @@
   },
   "v12-18": {
    "hebrew": "אֶת",
-   "translit": "et",
+   "translit": "ʾet",
    "rendering": "with",
    "body": "here the preposition אֵת \"with\" — with the transgressors. KJV \"with\" is accurate.",
    "straightforward": false

@@ -95,7 +95,7 @@ test("M4 tap pins a phrase and shows its deep dive; tapping again unpins and cle
 
   // Tapping another phrase moves the pin
   await page.tap('#english .tok[data-g="v1-5"] >> nth=1');
-  await expect(page.locator("#dive-translit")).toHaveText("zroaʿ");
+  await expect(page.locator("#dive-translit")).toHaveText("zeroaʿ");
 
   await page.tap('#english .tok[data-g="v1-5"] >> nth=1');
   await expect(page.locator("#right")).toBeEmpty();

@@ -1,0 +1,238 @@
+{
+ "revisions": [
+  {
+   "id": "v2-12",
+   "from": "loʾ",
+   "to": "lo"
+  },
+  {
+   "id": "v2-16",
+   "from": "loʾ",
+   "to": "lo"
+  },
+  {
+   "id": "v2-21",
+   "from": "loʾ",
+   "to": "lo"
+  },
+  {
+   "id": "v3-4",
+   "from": "ishim",
+   "to": "ʾishim"
+  },
+  {
+   "id": "v3-5",
+   "from": "ish",
+   "to": "ʾish"
+  },
+  {
+   "id": "v3-17",
+   "from": "loʾ",
+   "to": "lo"
+  },
+  {
+   "id": "v4-1",
+   "from": "aken",
+   "to": "ʾaken"
+  },
+  {
+   "id": "v4-9",
+   "from": "anakhnu",
+   "to": "ʾanakhnu"
+  },
+  {
+   "id": "v4-11",
+   "from": "nagua",
+   "to": "naguaʿ"
+  },
+  {
+   "id": "v4-13",
+   "from": "Elohim",
+   "to": "ʾElohim"
+  },
+  {
+   "id": "v5-8",
+   "from": "avonotenu",
+   "to": "ʿavonotenu"
+  },
+  {
+   "id": "v5-11",
+   "from": "alav",
+   "to": "ʿalav"
+  },
+  {
+   "id": "v6-3",
+   "from": "tsoʾn",
+   "to": "tson"
+  },
+  {
+   "id": "v6-5",
+   "from": "ish",
+   "to": "ʾish"
+  },
+  {
+   "id": "v6-13",
+   "from": "et",
+   "to": "ʾet"
+  },
+  {
+   "id": "v6-14",
+   "from": "avon",
+   "to": "ʿavon"
+  },
+  {
+   "id": "v7-6",
+   "from": "loʾ",
+   "to": "lo"
+  },
+  {
+   "id": "v7-21",
+   "from": "loʾ",
+   "to": "lo"
+  },
+  {
+   "id": "v8-2",
+   "from": "otser",
+   "to": "ʿotser"
+  },
+  {
+   "id": "v8-8",
+   "from": "et",
+   "to": "ʾet"
+  },
+  {
+   "id": "v8-15",
+   "from": "erets",
+   "to": "ʾerets"
+  },
+  {
+   "id": "v8-19",
+   "from": "ammi",
+   "to": "ʿammi"
+  },
+  {
+   "id": "v9-3",
+   "from": "et",
+   "to": "ʾet"
+  },
+  {
+   "id": "v9-7",
+   "from": "et",
+   "to": "ʾet"
+  },
+  {
+   "id": "v9-8",
+   "from": "ashir",
+   "to": "ʿashir"
+  },
+  {
+   "id": "v9-11",
+   "from": "al",
+   "to": "ʿal"
+  },
+  {
+   "id": "v9-14",
+   "from": "asah",
+   "to": "ʿasah"
+  },
+  {
+   "id": "v10-4",
+   "from": "dakkeo",
+   "to": "dakkeʾo"
+  },
+  {
+   "id": "v10-6",
+   "from": "im",
+   "to": "ʾim"
+  },
+  {
+   "id": "v10-8",
+   "from": "asham",
+   "to": "ʾasham"
+  },
+  {
+   "id": "v11-2",
+   "from": "amal",
+   "to": "ʿamal"
+  },
+  {
+   "id": "v11-10",
+   "from": "avdi",
+   "to": "ʿavdi"
+  },
+  {
+   "id": "v11-14",
+   "from": "avonotam",
+   "to": "ʿavonotam"
+  },
+  {
+   "id": "v12-2",
+   "from": "akhalleq",
+   "to": "ʾakhalleq"
+  },
+  {
+   "id": "v12-7",
+   "from": "et",
+   "to": "ʾet"
+  },
+  {
+   "id": "v12-8",
+   "from": "atsumim",
+   "to": "ʿatsumim"
+  },
+  {
+   "id": "v12-12",
+   "from": "asher",
+   "to": "ʾasher"
+  },
+  {
+   "id": "v12-18",
+   "from": "et",
+   "to": "ʾet"
+  }
+ ],
+ "other_typos": [
+  {
+   "id": "v2-24",
+   "current": "nekhmdehu",
+   "suggested": "nekhmedehu",
+   "reason": "vocal sheva under mem not represented"
+  },
+  {
+   "id": "v3-8",
+   "current": "duaʿ",
+   "suggested": "yduaʿ or duaʿ (check)",
+   "reason": "segment ידוּעַ; yod is mater for preceding vi, so duaʿ is defensible, but split looks odd"
+  },
+  {
+   "id": "v3-14",
+   "current": "mimenu",
+   "suggested": "mimmennu",
+   "reason": "doubling (dagesh in mem and nun) not shown, unlike other entries (kullanu, tsaddiq)"
+  },
+  {
+   "id": "v7-1",
+   "current": "nigas",
+   "suggested": "niggas",
+   "reason": "dagesh forte in gimel not doubled, inconsistent with doubling convention"
+  },
+  {
+   "id": "v7-18",
+   "current": "gozezeyha",
+   "suggested": "gozezeha",
+   "reason": "yod in -ֶיהָ is a silent mater; 'ey' unusual"
+  },
+  {
+   "id": "v9-5",
+   "current": "kivro",
+   "suggested": "qivro",
+   "reason": "qof written q elsewhere (yoneq, tsaddiq, luqqakh)"
+  },
+  {
+   "id": "v4-2",
+   "current": "kholayyenu",
+   "suggested": "kholayenu",
+   "reason": "no dagesh in yod of חֳלָיֵנוּ; doubling unwarranted"
+  }
+ ]
+}

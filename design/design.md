@@ -106,13 +106,13 @@ Files in `design/source/`:
 | `hebrew-verse-breakdown.skill` | A zip that contains `SKILL.md`, which defines the breakdown format above. Its example is verse 1. |
 
 How the content maps to the page:
+- The Hebrew line and the KJV text (with italics) come from the source texts in `design/source/texts/` (see Phase 6). The transcript supplies the word-by-word segments, renderings, and deep dives.
 - Each word-by-word entry becomes one alignment: Hebrew segment, then English rendering, then the deep dive (the explanation).
 - Entries are sub-word: prefixes (`ve`, `la`, `me`, ...) are separate entries. So one Hebrew word can contain several hoverable segments.
 - "Straightforward" entries have no explanation; their deep dive is the short form (see Deep dive).
-- The Mosiah notes are prose and are not reliable: they report "identical" for verses 1-8 and 12, and the note on verse 11 is muddled. From memory, Mosiah 14:1 begins "Yea," 14:4 has "has borne" for "hath borne", 14:9 has "evil" for "violence", and 14:11 omits "of". For now the transcript is used as-is. A later rework (done by a subagent) will verify the Mosiah differences and KJV italics against authoritative texts.
-- KJV italics are not in the transcript and must come from a KJV source that records them.
-- The Mosiah note for verse 11 repeats an error that the critique corrected in the v11-4 deep dive: KJV did not supply "of the travail of his soul"; that phrase is in the Hebrew. Fix it in Phase 6.
-- The transliterations do not follow one consistent rule for aleph and ayin (critique item H17, not applied). Revisit in Phase 6.
+- The Mosiah differences are computed by comparing the KJV with Mosiah 14, word by word and including punctuation, with capitalization ignored.
+- The Mosiah notes in `tools/mosiah_notes.json` were written from those verified differences and critiqued by a subagent. They replace the transcript's notes, which were unreliable.
+- Transliterations follow one rule: ayin is always ʿ, and aleph is ʾ when pronounced and omitted when silent.
 
 ## Architecture
 
@@ -124,7 +124,9 @@ How the content maps to the page:
 
   | File | Purpose |
   |------|---------|
+  | `sources.py` | Reads the WLC Hebrew, the KJV (with italics), and Mosiah 14 from `design/source/texts/`. |
   | `parse_transcript.py` | Parses the transcript. |
+  | `mosiah_notes.json` | The verified Mosiah note for each verse. |
   | `build_data.py` | Holds the English alignments and builds `static/old-testament-isaiah-53.json`. |
   | `revisions.json` | Reviewed edits applied on top of the transcript. Each edit records its source and reason. |
   | `report.py` | Writes the alignment and deep-dive review report. |
@@ -191,7 +193,7 @@ Status: `[x]` done, `[ ]` not started. The phase in progress is marked "(in prog
 - [x] 3. Wiring: folded into Phase 2.
 - [x] 4. Deployment: GitHub Pages, live at https://nfitch.github.io/isaiah-53/ (see Phase 4 Implementation Checklist)
 - [x] 5. Mobile: responsive layout and touch interaction (see Phase 5 Implementation Checklist)
-- [ ] 6. Transcript rework (subagent): verify the Mosiah differences, the KJV italics, and the Hebrew against the authoritative texts, then regenerate the JSON.
+- [ ] 6. Transcript rework (subagent): verify the Mosiah differences, the KJV italics, and the Hebrew against the authoritative texts, then regenerate the JSON (in progress; see Phase 6 Implementation Checklist)
 
 ## Phase 1 Implementation Checklist
 
@@ -330,6 +332,60 @@ Approach:
 - [x] Meticulously review every checklist item. Do not skim. Read each item and verify it was actually completed -- not "probably done" or "I think I did that." Actually check.
 - [x] Check off every box. If a box cannot be checked, explain why and resolve it before closing.
 
+## Phase 6 Implementation Checklist
+
+Scope: replace the transcript's unverified text with authoritative sources, then rebuild.
+
+### Sources
+
+| Text | Source | Notes |
+|------|--------|-------|
+| Hebrew | Westminster Leningrad Codex, from the Open Scriptures Hebrew Bible (`openscriptures/morphhb`, `wlc/Isa.xml`) | Cantillation marks and meteg are stripped; vowel points are kept. |
+| KJV | 1769 standard text with translators' italics, from eBible.org (`eng-kjv2006` USFM, `\add` markup) | |
+| Mosiah 14 | The current edition of the Book of Mormon, from churchofjesuschrist.org | |
+
+The sources are saved in `design/source/texts/`, so the build does not depend on the network.
+
+### First comparison against the sources
+
+- KJV: the transcript has one error. 7 ends "so he openeth not his mouth", not "opened".
+- Hebrew:
+  - Some differences are encoding only (holam on vav).
+  - Some are real:
+    - 5: מִפְּשָׁעֵנוּ
+    - 7: a maqaf in יִפְתַּח־פִּיו
+    - 10: אָשָׁם, not אַשְׁמָה (this affects the v10-8 entry)
+    - 12: עֲצוּמִים
+- Mosiah: there are many more differences than the transcript's notes report. Examples:
+  - 1: the opening "Yea, even doth not Isaiah say:"
+  - 2: "out of dry ground" for "out of a dry ground"
+  - 6: "iniquities" for "iniquity"
+  - 7: "opened" for "openeth"
+  - 8: "transgressions" for "transgression"
+  - widespread punctuation changes (colon to semicolon)
+
+### Success criteria
+- [x] S1. The three sources are saved under `design/source/texts/` with a README giving each one's origin. A parser extracts Isaiah 53 and Mosiah 14 from them.
+- [x] S2. The build uses the WLC Hebrew and the source KJV text. It fails if:
+  - a verse's Hebrew segments do not rejoin into the WLC line (after normalization);
+  - the English tokens do not rebuild the source KJV.
+
+  The transcript's Hebrew segments and English renderings are corrected where the sources differ, including the deep-dive Hebrew and transliteration for affected entries such as v10-8.
+- [x] S3. KJV italics come from the source `\add` markup and render in italics (the existing F3 behavior, now with real data).
+- [x] S4. The Mosiah differences are computed from the source texts at the word and punctuation level, for all 12 verses. Each added or removed token is assigned to a phrase. A replacement joins the phrase of the text it replaces; a pure addition is unaligned. A test checks that the Mosiah tokens rebuild the Mosiah text exactly.
+- [x] S5. A subagent rewrites the 12 Mosiah notes from the verified differences, in the transcript's style, and a second subagent critiques them. The rewrites include the verse 11 correction.
+- [x] S6. The transliterations use one rule for aleph (ʾ) and ayin (ʿ) (critique item H17).
+- [x] S8. MIT `LICENSE` at the repository root. The README notes that the scripture texts in `design/source/texts/` keep their own terms.
+- [x] S7. The changes from this phase are recorded in a before/after review file, for nf.
+- [x] T1. All tests pass (desktop and phone), with the output captured to `./tmp/`. The data tests are updated for the new differences.
+- [x] D1. This document (Source Material, Data Model) and the README are updated.
+- [ ] H1. nf reviews the before/after file and the live site before the phase closes.
+
+### Close-out
+- [ ] Run `/nf-check-work` to verify that every success criterion is met.
+- [ ] Meticulously review every checklist item. Do not skim. Read each item and verify it was actually completed -- not "probably done" or "I think I did that." Actually check.
+- [ ] Check off every box. If a box cannot be checked, explain why and resolve it before closing.
+
 ## Decisions
 
 | # | Question | Decision |
@@ -358,6 +414,9 @@ Approach:
 | 23 | Phase 3 | Folded into Phase 2 |
 | 25 | Deep-dive font size | Scales with the window: `clamp(20px, 1.45vw, 30px)` for the body text (increased at nf's request) |
 | 26 | Repository | Public `nfitch/isaiah-53`, including the design docs and transcript |
+| 27 | Capitalization-only differences | Not shown as Mosiah differences (for example LORD vs Lord) |
+| 28 | Mosiah 14:1 opening | "Yea, even doth not Isaiah say:" is shown as added text |
+| 29 | License | MIT |
 | 24 | Content refinement | Subagent critique rounds on the phrasing, renderings, and deep dives; small changes only, kept in `tools/revisions.json` |
 | 22 | Look | Panes 60/40, Noto Serif Hebrew, light theme plus dark mode that follows the system setting, one shared highlight color |
 

@@ -85,8 +85,8 @@ test("F4 Mosiah toggle: removed struck through, added shown in the Mosiah color"
   await loadFixture(page, `
     const en = data.verses[0].english;
     en.splice(1, 0, { text: "surely", align: "v11-4", diff: "added" });`);
-  const removed = page.locator("#english .tok.removed");
-  const added = page.locator("#english .tok.added");
+  const removed = page.locator("#english .tok.removed[data-g]"); // the removed word "of"
+  const added = page.locator('#english .tok.added[data-g="v11-4"]'); // the fixture's added word
   await expect(removed).toHaveText("of");
 
   // Off
@@ -172,7 +172,7 @@ test("F7 right pane: empty when idle, full and straightforward entries, Mosiah n
 
   await page.hover(heb("v11-2"));
   await expect(page.locator("#dive-hebrew")).toHaveText("עֲמַל");
-  await expect(page.locator("#dive-translit")).toHaveText("amal");
+  await expect(page.locator("#dive-translit")).toHaveText("ʿamal");
   await expect(page.locator("#dive-body")).toContainText("Root:");
   await expect(page.locator("#dive-body .he").first()).toHaveText("עָמַל");
   await expect(page.locator("#dive-mosiah h2")).toHaveText("Mosiah 14:11");

@@ -527,6 +527,406 @@
    "to": " can read as if the servant chose it himself.",
    "reason": "Seam: 'the Hebrew does not say' already appears earlier in the entry.",
    "source": "consolidator:seam"
+  },
+  {
+   "id": "v5-5",
+   "field": "hebrew",
+   "from": "פְּשָׁעֵינוּ",
+   "to": "פְּשָׁעֵנוּ",
+   "reason": "Corrected to the Westminster Leningrad Codex.",
+   "source": "phase6:wlc"
+  },
+  {
+   "id": "v5-5",
+   "field": "translit",
+   "from": "peshaʿeinu",
+   "to": "peshaʿenu",
+   "reason": "Corrected to the Westminster Leningrad Codex.",
+   "source": "phase6:wlc"
+  },
+  {
+   "id": "v10-8",
+   "field": "hebrew",
+   "from": "אַשְׁמָה",
+   "to": "אָשָׁם",
+   "reason": "Corrected to the Westminster Leningrad Codex.",
+   "source": "phase6:wlc"
+  },
+  {
+   "id": "v10-8",
+   "field": "translit",
+   "from": "ashmah",
+   "to": "asham",
+   "reason": "Corrected to the Westminster Leningrad Codex.",
+   "source": "phase6:wlc"
+  },
+  {
+   "id": "v12-8",
+   "field": "hebrew",
+   "from": "עַצוּמִים",
+   "to": "עֲצוּמִים",
+   "reason": "Corrected to the Westminster Leningrad Codex.",
+   "source": "phase6:wlc"
+  },
+  {
+   "id": "v2-12",
+   "field": "translit",
+   "from": "loʾ",
+   "to": "lo",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v2-16",
+   "field": "translit",
+   "from": "loʾ",
+   "to": "lo",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v2-21",
+   "field": "translit",
+   "from": "loʾ",
+   "to": "lo",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v3-4",
+   "field": "translit",
+   "from": "ishim",
+   "to": "ʾishim",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v3-5",
+   "field": "translit",
+   "from": "ish",
+   "to": "ʾish",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v3-17",
+   "field": "translit",
+   "from": "loʾ",
+   "to": "lo",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v4-1",
+   "field": "translit",
+   "from": "aken",
+   "to": "ʾaken",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v4-9",
+   "field": "translit",
+   "from": "anakhnu",
+   "to": "ʾanakhnu",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v4-11",
+   "field": "translit",
+   "from": "nagua",
+   "to": "naguaʿ",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v4-13",
+   "field": "translit",
+   "from": "Elohim",
+   "to": "ʾElohim",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v5-8",
+   "field": "translit",
+   "from": "avonotenu",
+   "to": "ʿavonotenu",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v5-11",
+   "field": "translit",
+   "from": "alav",
+   "to": "ʿalav",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v6-3",
+   "field": "translit",
+   "from": "tsoʾn",
+   "to": "tson",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v6-5",
+   "field": "translit",
+   "from": "ish",
+   "to": "ʾish",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v6-13",
+   "field": "translit",
+   "from": "et",
+   "to": "ʾet",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v6-14",
+   "field": "translit",
+   "from": "avon",
+   "to": "ʿavon",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v7-6",
+   "field": "translit",
+   "from": "loʾ",
+   "to": "lo",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v7-21",
+   "field": "translit",
+   "from": "loʾ",
+   "to": "lo",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v8-2",
+   "field": "translit",
+   "from": "otser",
+   "to": "ʿotser",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v8-8",
+   "field": "translit",
+   "from": "et",
+   "to": "ʾet",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v8-15",
+   "field": "translit",
+   "from": "erets",
+   "to": "ʾerets",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v8-19",
+   "field": "translit",
+   "from": "ammi",
+   "to": "ʿammi",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v9-3",
+   "field": "translit",
+   "from": "et",
+   "to": "ʾet",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v9-7",
+   "field": "translit",
+   "from": "et",
+   "to": "ʾet",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v9-8",
+   "field": "translit",
+   "from": "ashir",
+   "to": "ʿashir",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v9-11",
+   "field": "translit",
+   "from": "al",
+   "to": "ʿal",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v9-14",
+   "field": "translit",
+   "from": "asah",
+   "to": "ʿasah",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v10-4",
+   "field": "translit",
+   "from": "dakkeo",
+   "to": "dakkeʾo",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v10-6",
+   "field": "translit",
+   "from": "im",
+   "to": "ʾim",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v10-8",
+   "field": "translit",
+   "from": "asham",
+   "to": "ʾasham",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v11-2",
+   "field": "translit",
+   "from": "amal",
+   "to": "ʿamal",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v11-10",
+   "field": "translit",
+   "from": "avdi",
+   "to": "ʿavdi",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v11-14",
+   "field": "translit",
+   "from": "avonotam",
+   "to": "ʿavonotam",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v12-2",
+   "field": "translit",
+   "from": "akhalleq",
+   "to": "ʾakhalleq",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v12-7",
+   "field": "translit",
+   "from": "et",
+   "to": "ʾet",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v12-8",
+   "field": "translit",
+   "from": "atsumim",
+   "to": "ʿatsumim",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v12-12",
+   "field": "translit",
+   "from": "asher",
+   "to": "ʾasher",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v12-18",
+   "field": "translit",
+   "from": "et",
+   "to": "ʾet",
+   "reason": "Consistent aleph (ʾ) / ayin (ʿ) rule (critique item H17).",
+   "source": "phase6:translit"
+  },
+  {
+   "id": "v2-24",
+   "field": "translit",
+   "from": "nekhmdehu",
+   "to": "nekhmedehu",
+   "reason": "vocal sheva under mem not represented",
+   "source": "phase6:translit-typo"
+  },
+  {
+   "id": "v3-14",
+   "field": "translit",
+   "from": "mimenu",
+   "to": "mimmennu",
+   "reason": "doubling (dagesh in mem and nun) not shown, unlike other entries (kullanu, tsaddiq)",
+   "source": "phase6:translit-typo"
+  },
+  {
+   "id": "v7-1",
+   "field": "translit",
+   "from": "nigas",
+   "to": "niggas",
+   "reason": "dagesh forte in gimel not doubled, inconsistent with doubling convention",
+   "source": "phase6:translit-typo"
+  },
+  {
+   "id": "v7-18",
+   "field": "translit",
+   "from": "gozezeyha",
+   "to": "gozezeha",
+   "reason": "yod in -ֶיהָ is a silent mater; 'ey' unusual",
+   "source": "phase6:translit-typo"
+  },
+  {
+   "id": "v9-5",
+   "field": "translit",
+   "from": "kivro",
+   "to": "qivro",
+   "reason": "qof written q elsewhere (yoneq, tsaddiq, luqqakh)",
+   "source": "phase6:translit-typo"
+  },
+  {
+   "id": "v4-2",
+   "field": "translit",
+   "from": "kholayyenu",
+   "to": "kholayenu",
+   "reason": "no dagesh in yod of חֳלָיֵנוּ; doubling unwarranted",
+   "source": "phase6:translit-typo"
+  },
+  {
+   "id": "v1-5",
+   "field": "translit",
+   "from": "zroaʿ",
+   "to": "zeroaʿ",
+   "reason": "Vocal sheva under zayin (Phase 6 critic).",
+   "source": "phase6:translit-typo"
   }
  ]
 }

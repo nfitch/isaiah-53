@@ -1,0 +1,80 @@
+{
+  "notes": [
+    {
+      "verse": "1",
+      "verdict": "ok",
+      "reason": "Covers the added introduction (including its comma and colon) and the question mark after 'report' becoming a comma. Saying Abinadi introduces the quotation is a factual attribution, not commentary."
+    },
+    {
+      "verse": "2",
+      "verdict": "ok",
+      "reason": "Covers the missing 'a', the colon after 'ground' becoming a semicolon, and the dropped comma after 'see him'. Quotes match."
+    },
+    {
+      "verse": "3",
+      "verdict": "ok",
+      "reason": "The colon after 'grief' becomes a semicolon; that is the only difference."
+    },
+    {
+      "verse": "4",
+      "verdict": "ok",
+      "reason": "Covers hath->has and the colon after 'sorrows' becoming a semicolon. Quotes match."
+    },
+    {
+      "verse": "5",
+      "verdict": "ok",
+      "reason": "The colon after 'iniquities' becomes a semicolon; that is the only difference."
+    },
+    {
+      "verse": "6",
+      "verdict": "ok",
+      "reason": "Covers the two commas around 'like sheep' and iniquity->iniquities. עֲוֹן is singular, as the note says."
+    },
+    {
+      "verse": "7",
+      "verdict": "ok",
+      "reason": "Covers the colon->semicolon after 'mouth', the dropped comma after 'dumb', and openeth->opened. Quotes match."
+    },
+    {
+      "verse": "8",
+      "verdict": "ok",
+      "reason": "Covers both colons becoming semicolons and transgression->transgressions. פֶּשַׁע is singular, as the note says."
+    },
+    {
+      "verse": "9",
+      "verdict": "ok",
+      "reason": "Covers violence->evil, the only difference. Glossing חָמָס as 'violence or wrong' is accurate."
+    },
+    {
+      "verse": "10",
+      "verdict": "ok",
+      "reason": "The colon after 'grief' becomes a semicolon and the comma after 'sin' is dropped. Both are right."
+    },
+    {
+      "verse": "11",
+      "verdict": "ok",
+      "reason": "Covers the missing 'of' and the colon after 'satisfied' becoming a semicolon. Quotes match."
+    },
+    {
+      "verse": "12",
+      "verdict": "ok",
+      "reason": "Covers the colon after 'death' becoming a semicolon, bare->bore and sin->sins. חֵטְא is singular, as the note says."
+    }
+  ],
+  "translits": [
+    {
+      "id": "v1-5",
+      "verdict": "fix",
+      "current": "zroaʿ",
+      "proposed": "zeroaʿ",
+      "reason": "A missed change in the same class as the v2-24 typo fix. The word-initial vocal sheva under zayin is not written, while every other initial vocal sheva in the set is written as e (mekholal, meʿuneh, reshaʿim, shelomenu, sevalam, yekhalleq, yesokheakh). The aleph/ayin rule itself is satisfied."
+    },
+    {
+      "id": "v3-12",
+      "verdict": "fix",
+      "current": "mastēr",
+      "proposed": "master",
+      "reason": "A missed typo. This is the only entry that marks tsere with a macron; every other tsere is a plain e (yoneq, rakhel, khafets, lakhen). The rule does not cover it; flagged for consistency."
+    }
+  ]
+}
